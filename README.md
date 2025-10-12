@@ -1,2 +1,2 @@
-# harbor-measuring-devive-SPRO3
+# harbor-measuring-device-SPRO3
 SPRO3, SDU Electronics
