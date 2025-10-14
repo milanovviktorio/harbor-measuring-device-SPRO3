@@ -1,0 +1,24 @@
+Micropython:
+- Use when sensors are SPI/I2C
+- Easier to develop
+- Slow control loops
+- No time dependency
+
+Steps for use:
+- “PyMakr” (by Pycom) or “MicroPico” extensions for VS code
+- Flash the ucontroller with the latest firmware
+- Open a serial REPL
+- Hard to debug (There’s no full source-level debugger like in C++)
+
+C++:
+- Fast operations
+- PWM output control
+
+Steps for use:
+- Required tools:
+   - CMake
+   - ARM GCC (arm-none-eabi-gcc)
+   - pico-sdk (clone from GitHub)
+- C/C++” (Microsoft), “CMake Tools” extensions
+- Open the pico-sdk example folder or your project folder with a CMakeLists.txt; The CMake Tools extension handles builds
+- Real debugging
