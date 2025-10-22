@@ -2707,7 +2707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tuss4470.pdf"
 			(at 91.44 71.12 0)
 			(effects
 				(font
