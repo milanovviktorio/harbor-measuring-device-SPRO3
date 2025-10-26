@@ -1,0 +1,881 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "64aee9f2-a448-43ef-b28d-f00e276bd9f5")
+	(paper "A5")
+	(title_block
+		(title "SPROJ3EE ESC & BMS")
+		(date "2025-10-25")
+		(rev "1.0")
+		(company "SDU")
+		(comment 1 "Author: Theodor E. D. Hansen")
+		(comment 2 "Author: Viktorio Milanov")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 58.42 52.07)
+		(end 76.2 61.976)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid 4964e552-3106-4b25-805d-1f7839213f50)
+	)
+	(rectangle
+		(start 121.92 26.67)
+		(end 163.83 100.33)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 653e3af1-c475-45ac-a629-3eb2f55458d8)
+	)
+	(rectangle
+		(start 96.52 52.07)
+		(end 114.3 61.976)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid 6a568378-47f1-4705-86ea-ed4ce7ed40ab)
+	)
+	(rectangle
+		(start 96.52 33.02)
+		(end 114.3 43.18)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid 86e2f405-fd23-4bab-84f2-148e1703e58d)
+	)
+	(rectangle
+		(start 58.42 33.02)
+		(end 76.2 43.18)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid 9afe7f22-63f5-4d10-ba89-3e34d7fdf951)
+	)
+	(rectangle
+		(start 55.88 26.67)
+		(end 116.84 63.5)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid fc3e2ed0-7008-4edb-92e6-13d75732b4bd)
+	)
+	(text "Schematic Overview"
+		(exclude_from_sim no)
+		(at 43.942 17.018 0)
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.8)
+				(bold yes)
+			)
+		)
+		(uuid "10fb77ce-967b-4633-a0cc-e48021af228f")
+	)
+	(text "+Vprot"
+		(exclude_from_sim no)
+		(at 111.252 30.734 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "751139a9-8bee-42b4-b03f-6db864af6fdf")
+	)
+	(text "+3.3V"
+		(exclude_from_sim no)
+		(at 60.706 50.038 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "7551f01f-fcda-413e-8ca0-f026a2a25fe1")
+	)
+	(text "Schematic hierarchy"
+		(exclude_from_sim no)
+		(at 134.62 29.21 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "860be514-44b9-48af-802f-fb24e13b0349")
+	)
+	(text "Battery-pack"
+		(exclude_from_sim no)
+		(at 67.31 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "88fceb09-c042-4c70-b188-494b28a1de71")
+	)
+	(text "Main Board\nMotor"
+		(exclude_from_sim no)
+		(at 67.31 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8a0ea923-245d-498e-b53a-7463faaa1f46")
+	)
+	(text "ABC_PWM"
+		(exclude_from_sim no)
+		(at 86.36 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9a46730d-c342-416c-b50e-9768fca4b655")
+	)
+	(text "Block diagram of the schematic"
+		(exclude_from_sim no)
+		(at 75.184 29.21 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "a92e63a0-d1fe-459d-bdd2-7f27099953d7")
+	)
+	(text "ABC_PHASE"
+		(exclude_from_sim no)
+		(at 86.106 58.674 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b37bc47e-47ad-469b-9d2e-20f3f85a8efb")
+	)
+	(text "BEMF"
+		(exclude_from_sim no)
+		(at 85.852 61.214 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bc94afa0-f04c-4aa7-8c5c-a25dddb6df35")
+	)
+	(text "ESC"
+		(exclude_from_sim no)
+		(at 105.41 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cc19e11b-ff29-4f8b-87ae-e2303ae228f5")
+	)
+	(text "BMS"
+		(exclude_from_sim no)
+		(at 105.41 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dd86bc80-e480-4b12-8f93-26e59b757e0f")
+	)
+	(polyline
+		(pts
+			(xy 78.74 58.42) (xy 77.47 59.69)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "020430a4-a832-493e-a669-1fc8cad32da6")
+	)
+	(polyline
+		(pts
+			(xy 77.47 38.1) (xy 95.25 38.1)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "0e065a71-5411-44a2-aac4-7fade519762f")
+	)
+	(polyline
+		(pts
+			(xy 95.25 59.69) (xy 77.47 59.69)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "15c1c286-e723-4688-977d-1eb9ec58ca6a")
+	)
+	(polyline
+		(pts
+			(xy 77.47 54.61) (xy 95.25 54.61)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "16b0b6a0-8b1a-4bd2-bcab-6483544c4f6f")
+	)
+	(polyline
+		(pts
+			(xy 93.98 39.37) (xy 95.25 38.1)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "1946af02-5c13-4a44-a350-bbf36cce44dd")
+	)
+	(wire
+		(pts
+			(xy 137.16 45.72) (xy 147.32 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eba5ede-559e-4cb3-a35a-b05fdb671cac")
+	)
+	(wire
+		(pts
+			(xy 137.16 53.34) (xy 147.32 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35b3cb23-84b4-43a7-a7dd-2e19625cd833")
+	)
+	(polyline
+		(pts
+			(xy 105.41 44.45) (xy 105.41 50.8)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "46517ee9-b964-4269-9b89-12a0d7f5720d")
+	)
+	(wire
+		(pts
+			(xy 137.16 55.88) (xy 147.32 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "540922e3-d442-4793-b621-1c1456026ab3")
+	)
+	(polyline
+		(pts
+			(xy 111.76 31.75) (xy 113.03 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b8f293-d91c-48d9-8a9f-bc62fb746217")
+	)
+	(wire
+		(pts
+			(xy 137.16 40.64) (xy 147.32 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a1d93f2-98a9-43c1-8544-c4fb84cb9355")
+	)
+	(polyline
+		(pts
+			(xy 60.96 50.8) (xy 62.23 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6255d890-6ecf-49c5-886d-ae3659817d01")
+	)
+	(polyline
+		(pts
+			(xy 105.41 50.8) (xy 106.68 49.53)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "6b6bf91d-b721-4785-aaf8-33dee7ca8993")
+	)
+	(wire
+		(pts
+			(xy 137.16 43.18) (xy 147.32 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74ef64b4-6f45-4fae-a711-bdcf05c13b94")
+	)
+	(polyline
+		(pts
+			(xy 93.98 36.83) (xy 95.25 38.1)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "76102e14-ec71-4c44-a666-16cc032a7842")
+	)
+	(wire
+		(pts
+			(xy 137.16 58.42) (xy 147.32 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c0023bb-d68c-43be-a2af-f20762cd6b51")
+	)
+	(wire
+		(pts
+			(xy 137.16 48.26) (xy 147.32 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ccc9269-3151-4fae-9a0d-085b13439be2")
+	)
+	(polyline
+		(pts
+			(xy 110.49 31.75) (xy 113.03 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a6ecf6-fa1c-48ad-beea-a202d39ffc45")
+	)
+	(polyline
+		(pts
+			(xy 93.98 36.83) (xy 95.25 38.1)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "8e5409a6-7365-471c-86a2-3cdee00de762")
+	)
+	(polyline
+		(pts
+			(xy 60.96 50.8) (xy 60.96 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b04b2ad-4f38-4cef-8542-d31b6b4e1be3")
+	)
+	(polyline
+		(pts
+			(xy 77.47 59.69) (xy 78.74 60.96)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "9e60663e-376d-4743-a6b8-53aa89f6e6a9")
+	)
+	(wire
+		(pts
+			(xy 137.16 60.96) (xy 147.32 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1f53ba6-c115-4af2-84ef-ec9faddef7cb")
+	)
+	(wire
+		(pts
+			(xy 137.16 38.1) (xy 147.32 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b218e2f7-5374-4ebf-9d93-31eb2f1b7a2e")
+	)
+	(polyline
+		(pts
+			(xy 111.76 31.75) (xy 111.76 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7c14793-c08b-4642-8a38-8fb7b904d7e2")
+	)
+	(polyline
+		(pts
+			(xy 59.69 50.8) (xy 62.23 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d10d3472-a247-415d-a410-72010912e241")
+	)
+	(polyline
+		(pts
+			(xy 93.98 53.34) (xy 95.25 54.61)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "dc317e95-e91f-43e9-b949-c29fd7e97213")
+	)
+	(wire
+		(pts
+			(xy 137.16 72.39) (xy 147.32 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebf0d9ba-5e73-4a9d-b637-78805f7f58d6")
+	)
+	(polyline
+		(pts
+			(xy 93.98 55.88) (xy 95.25 54.61)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "f1472bbc-96fe-42a0-8361-5c8fe1fce0ab")
+	)
+	(wire
+		(pts
+			(xy 137.16 50.8) (xy 147.32 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9dddb8d-c071-4d46-8e27-8965faac2b47")
+	)
+	(polyline
+		(pts
+			(xy 104.14 49.53) (xy 105.41 50.8)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "fb512ac9-1159-4015-b9d7-995d632fc988")
+	)
+	(polyline
+		(pts
+			(xy 95.25 54.61) (xy 93.98 53.34)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(uuid "fe83d8e3-ea46-4f78-97f5-bd6b94356340")
+	)
+	(sheet
+		(at 147.32 35.56)
+		(size 13.97 62.23)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "b843d17e-7d6d-4569-97d7-0fdd5bf8acb0")
+		(property "Sheetname" "3. Connectors"
+			(at 147.32 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "3.Connectors.kicad_sch"
+			(at 161.798 98.044 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "A_PHASE" input
+			(at 147.32 43.18 180)
+			(uuid "4f6c2a20-1b89-4e76-8c39-3724b84ced49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "B_PHASE" input
+			(at 147.32 50.8 180)
+			(uuid "c00c26ce-fe37-4a8b-8741-5a5262304df0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "C_PHASE" input
+			(at 147.32 58.42 180)
+			(uuid "a937bf6b-5e6a-4df8-a906-f9cce188cea1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AHS" output
+			(at 147.32 38.1 180)
+			(uuid "548c47cf-7139-4e25-a093-ef1df17e93be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BHS" output
+			(at 147.32 45.72 180)
+			(uuid "5305da89-185a-48b0-9321-8703de9f506c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CLS" output
+			(at 147.32 53.34 180)
+			(uuid "16df632f-8fb7-401c-b04b-44f30ebe9857")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BLS" output
+			(at 147.32 48.26 180)
+			(uuid "04918d87-d699-416f-a8b4-e003e591a2d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CHS" output
+			(at 147.32 55.88 180)
+			(uuid "aeb2fcd0-5a28-4842-b653-4ca3590aa457")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ALS" output
+			(at 147.32 40.64 180)
+			(uuid "80e09988-44e3-4937-95b7-01e666d8dbc7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BEMF" input
+			(at 147.32 60.96 180)
+			(uuid "54101435-1ee0-440f-a51e-f6878a58b35c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+VBATT" output
+			(at 147.32 72.39 180)
+			(uuid "6c7ee984-8bd1-4275-9e85-42d373f63155")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 35.56)
+		(size 12.7 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "cbf19aec-b6c8-49c6-ab18-d6d5f10759f9")
+		(property "Sheetname" "1. ECS"
+			(at 124.46 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "1.ECS.kicad_sch"
+			(at 124.206 64.008 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "AHS" input
+			(at 137.16 38.1 0)
+			(uuid "448d6944-1a79-4d1d-8676-8518074b3944")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ALS" input
+			(at 137.16 40.64 0)
+			(uuid "5b43be62-7ab8-421d-b959-e8e5a78b1da9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "A_PHASE" output
+			(at 137.16 43.18 0)
+			(uuid "81a155c2-c0e5-4818-b601-e617a8701568")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CHS" input
+			(at 137.16 55.88 0)
+			(uuid "907f6e14-374f-4c1b-8248-44766fc33c89")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BLS" input
+			(at 137.16 48.26 0)
+			(uuid "958473f7-3da8-48ff-a75c-14cc36128e51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BHS" input
+			(at 137.16 45.72 0)
+			(uuid "320cac63-30be-4294-acab-1852f2678196")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "C_PHASE" output
+			(at 137.16 58.42 0)
+			(uuid "c0e8fb1b-1913-4034-bb0e-fabefc1f079b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CLS" input
+			(at 137.16 53.34 0)
+			(uuid "2f33ca3e-6315-4814-9799-d34ddc6865c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "B_PHASE" output
+			(at 137.16 50.8 0)
+			(uuid "c67f3f60-9136-481f-9705-ad0a2e2bdc08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BEMF" output
+			(at 137.16 60.96 0)
+			(uuid "73b74a37-6d7e-4ca8-9363-aaee7f824d69")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 69.85)
+		(size 12.7 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "eb2740b7-11f5-4644-9e72-e71a449b99af")
+		(property "Sheetname" "2. BMS"
+			(at 124.46 69.1384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "2.BMS.kicad_sch"
+			(at 124.206 98.298 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+VBATT" input
+			(at 137.16 72.39 0)
+			(uuid "147d9abb-4adc-4e66-aecf-12019758bbc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

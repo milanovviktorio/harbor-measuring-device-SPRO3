@@ -1,0 +1,28 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3209672c-b604-419e-af48-5073c35c87b2")
+	(paper "A3")
+	(title_block
+		(title "SPROJ3EE ESC & BMS")
+		(date "2025-10-25")
+		(rev "1.0")
+		(company "SDU")
+		(comment 1 "Author: Viktorio Milanov")
+	)
+	(lib_symbols)
+	(hierarchical_label "+VBATT"
+		(shape input)
+		(at 27.94 22.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "05edad4a-0798-47b8-ba7c-b9a14c70c15d")
+	)
+)
