@@ -7580,7 +7580,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "820R"
+		(property "Value" "820"
 			(at 118.11 224.7899 0)
 			(effects
 				(font
