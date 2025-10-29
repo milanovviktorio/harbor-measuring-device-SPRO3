@@ -173,6 +173,230 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "ESC_BMS:BQ2969T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -1.778 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BQ2969T"
+				(at 6.096 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq2962.pdf?ts=1761657217789&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ2962"
+				(at 2.032 -18.034 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "BQ296xxx Overvoltage Protection for 2-Series, 3-Series, and 4-Series Cell Li-Ion Batteries with Regulated Output Supply"
+				(at 3.048 -21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BQ2969T_1_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "V4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -3.81 0)
+					(length 2.54)
+					(name "V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -6.35 0)
+					(length 2.54)
+					(name "V4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -10.16 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "CTL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -3.81 180)
+					(length 2.54)
+					(name "REG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -6.35 180)
+					(length 2.54)
+					(name "V1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(hierarchical_label "+VBATT"
 		(shape input)
@@ -197,7 +421,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a3b6361-9857-48b5-9a18-6ec0b5915db7")
-		(property "Reference" "C301"
+		(property "Reference" "C21"
 			(at 48.26 35.9409 0)
 			(effects
 				(font
@@ -251,7 +475,96 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "C301")
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ESC_BMS:BQ2969T")
+		(at 95.25 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f3a7074-a128-4830-82a6-5540a5dc9edd")
+		(property "Reference" "U12"
+			(at 97.79 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BQ2969T"
+			(at 97.79 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq2962.pdf?ts=1761657217789&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ2962"
+			(at 97.282 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "BQ296xxx Overvoltage Protection for 2-Series, 3-Series, and 4-Series Cell Li-Ion Batteries with Regulated Output Supply"
+			(at 98.298 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7a48d39d-5951-480a-94be-0e225568652c")
+		)
+		(pin "4"
+			(uuid "0f3cdb10-e1fe-4619-b05b-a447a0de6707")
+		)
+		(pin "2"
+			(uuid "196218be-b7cb-41af-b13a-58d7c1f7bce9")
+		)
+		(pin "9"
+			(uuid "2a0dcdcb-efea-4475-a9b4-c2bda72b7702")
+		)
+		(pin "8"
+			(uuid "d6b0f71e-5642-4762-827a-6d93d2ff58c4")
+		)
+		(pin "7"
+			(uuid "72fe64e9-a0a6-4fbc-a908-e2035ce70740")
+		)
+		(pin "6"
+			(uuid "4e4d835b-dd77-4f6e-807d-a0209299d6c6")
+		)
+		(pin "1"
+			(uuid "476e85fa-af3f-4583-9c0a-55c4836ab3cf")
+		)
+		(pin "5"
+			(uuid "1debca87-9ef0-488a-9c7e-ba2463278dd4")
+		)
+		(instances
+			(project ""
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -267,7 +580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19f7200d-e726-435b-8771-71d7ec61505b")
-		(property "Reference" "C305"
+		(property "Reference" "C25"
 			(at 101.6 35.9409 0)
 			(effects
 				(font
@@ -321,7 +634,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "C305")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -337,7 +650,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5df0c4e9-c2e7-4c9d-8e70-340816482c7e")
-		(property "Reference" "C303"
+		(property "Reference" "C23"
 			(at 76.2 35.9409 0)
 			(effects
 				(font
@@ -391,7 +704,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "C303")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -407,7 +720,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74962ae6-1336-4958-a760-fd5ad6ae7b02")
-		(property "Reference" "C304"
+		(property "Reference" "C24"
 			(at 88.9 35.9409 0)
 			(effects
 				(font
@@ -461,7 +774,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "C304")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -477,7 +790,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb61c6a6-df09-403d-970d-03e8a0db1591")
-		(property "Reference" "C302"
+		(property "Reference" "C22"
 			(at 62.23 35.9409 0)
 			(effects
 				(font
@@ -531,7 +844,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "C302")
+					(reference "C22")
 					(unit 1)
 				)
 			)

@@ -1539,7 +1539,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17572f47-ef11-488f-9798-ec88d848781a")
-		(property "Reference" "J404"
+		(property "Reference" "J5"
 			(at 89.916 30.988 0)
 			(effects
 				(font
@@ -1611,7 +1611,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J404")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -1627,7 +1627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cd522c8-d69d-419f-b6e3-f177f0a8550e")
-		(property "Reference" "J408"
+		(property "Reference" "J9"
 			(at 170.18 52.0699 90)
 			(effects
 				(font
@@ -1678,7 +1678,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J408")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -1694,7 +1694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ffe7c03-f43b-4ddb-a733-c6074c0e239c")
-		(property "Reference" "J405"
+		(property "Reference" "J6"
 			(at 123.19 31.7499 0)
 			(effects
 				(font
@@ -1751,7 +1751,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J405")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -1766,7 +1766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ff54a31-1fe0-4436-8383-cdd083bb50c8")
-		(property "Reference" "#PWR0405"
+		(property "Reference" "#PWR058"
 			(at 161.29 43.18 0)
 			(effects
 				(font
@@ -1816,7 +1816,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR0405")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -1831,7 +1831,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "41fa5e73-29b4-4557-bdd7-a03788e16e0a")
-		(property "Reference" "#PWR0407"
+		(property "Reference" "#PWR059"
 			(at 161.29 67.31 0)
 			(effects
 				(font
@@ -1881,7 +1881,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR0407")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -1896,7 +1896,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a81b68e-8114-47f8-b860-1c6f06c4083d")
-		(property "Reference" "#PWR0403"
+		(property "Reference" "#PWR057"
 			(at 115.57 43.18 0)
 			(effects
 				(font
@@ -1946,7 +1946,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR0403")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -1962,7 +1962,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52d77cd2-0804-4329-86ce-26f5c5266c40")
-		(property "Reference" "J409"
+		(property "Reference" "J10"
 			(at 170.18 58.4199 90)
 			(effects
 				(font
@@ -2013,7 +2013,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J409")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -2029,7 +2029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f0c757e-445c-4888-a872-c3e69f627f0a")
-		(property "Reference" "J403"
+		(property "Reference" "J4"
 			(at 39.37 36.8299 90)
 			(effects
 				(font
@@ -2080,7 +2080,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J403")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -2096,7 +2096,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3d0371d-4bb2-4d26-8bef-0205613cc8ef")
-		(property "Reference" "J401"
+		(property "Reference" "J2"
 			(at 39.37 24.1299 90)
 			(effects
 				(font
@@ -2147,7 +2147,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J401")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -2163,7 +2163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c04c8dfc-df82-43e5-be77-9a8afdb4089f")
-		(property "Reference" "J406"
+		(property "Reference" "J7"
 			(at 170.18 27.9399 90)
 			(effects
 				(font
@@ -2214,7 +2214,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J406")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -2230,7 +2230,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca78b7c0-b1b3-40b2-94cb-9dd082b53547")
-		(property "Reference" "J402"
+		(property "Reference" "J3"
 			(at 39.37 30.4799 90)
 			(effects
 				(font
@@ -2281,7 +2281,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J402")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -2296,7 +2296,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f45b99cd-0670-4e13-b3a8-15e81f178cea")
-		(property "Reference" "#PWR0402"
+		(property "Reference" "#PWR056"
 			(at 115.57 33.02 0)
 			(effects
 				(font
@@ -2346,7 +2346,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR0402")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -2362,7 +2362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6cce8d7-a853-4194-8b1b-57ba90e71bfa")
-		(property "Reference" "J407"
+		(property "Reference" "J8"
 			(at 170.18 34.2899 90)
 			(effects
 				(font
@@ -2413,7 +2413,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J407")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -2428,7 +2428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f7773bb7-4800-407a-9c5f-48fa49add0e7")
-		(property "Reference" "#PWR0401"
+		(property "Reference" "#PWR055"
 			(at 107.95 33.02 0)
 			(effects
 				(font
@@ -2478,7 +2478,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR0401")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
