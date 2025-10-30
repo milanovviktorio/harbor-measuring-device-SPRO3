@@ -420,6 +420,14 @@
     [
       "8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761",
       "RP2040"
+    ],
+    [
+      "79ff824f-4c51-4a7c-b4c4-8feeb92b093c",
+      "Power supplies"
+    ],
+    [
+      "c6d47e36-3031-4d07-ba70-df8c4b187df5",
+      "ICM42688"
     ]
   ],
   "text_variables": {}
