@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ESC_BMS")(type "KiCad")(uri "${KIPRJMOD}/ESC_BMS.kicad_sym")(options "")(descr ""))
+)
