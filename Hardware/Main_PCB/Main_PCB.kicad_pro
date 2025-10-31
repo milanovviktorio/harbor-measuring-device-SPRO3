@@ -246,7 +246,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "MainPCB"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -724,10 +726,6 @@
     [
       "79ff824f-4c51-4a7c-b4c4-8feeb92b093c",
       "Power supply unit"
-    ],
-    [
-      "d2f1354b-a472-4b18-b816-6d0b24f86e12",
-      "Power supply unit1"
     ],
     [
       "c6d47e36-3031-4d07-ba70-df8c4b187df5",

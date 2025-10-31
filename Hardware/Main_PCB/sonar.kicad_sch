@@ -1756,7 +1756,7 @@
 	)
 	(text "5V"
 		(exclude_from_sim no)
-		(at 71.374 52.07 0)
+		(at 69.596 44.958 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1984,6 +1984,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 53.34) (xy 73.66 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d4b3763-e85a-4c2c-abd1-c3015997721d")
+	)
+	(wire
+		(pts
 			(xy 143.51 50.8) (xy 143.51 54.61)
 		)
 		(stroke
@@ -2124,16 +2134,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 53.34) (xy 73.66 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b2bb11e-3f3b-490b-92b7-4cac0883bbf6")
-	)
-	(wire
-		(pts
 			(xy 111.76 93.98) (xy 111.76 96.52)
 		)
 		(stroke
@@ -2141,16 +2141,6 @@
 			(type default)
 		)
 		(uuid "8c7416d1-53ce-4d34-8959-27b1aed9fcd4")
-	)
-	(wire
-		(pts
-			(xy 69.85 44.45) (xy 69.85 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "960c0a04-1444-4d6a-bdbc-eaae5d15193d")
 	)
 	(wire
 		(pts
@@ -2214,6 +2204,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 40.64) (xy 71.12 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad85217c-c6ba-4531-a7c9-efe4519ab145")
+	)
+	(wire
+		(pts
 			(xy 121.92 21.59) (xy 124.46 21.59)
 		)
 		(stroke
@@ -2234,6 +2234,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 50.8) (xy 71.12 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b550344d-10cf-4ea2-b5a8-96aa2fda7168")
+	)
+	(wire
+		(pts
 			(xy 130.81 58.42) (xy 130.81 50.8)
 		)
 		(stroke
@@ -2241,6 +2251,16 @@
 			(type default)
 		)
 		(uuid "bd79356c-aa8e-45e1-91ba-e5ad6a8c7125")
+	)
+	(wire
+		(pts
+			(xy 66.04 46.99) (xy 66.04 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c61e7ddd-b066-45a6-adac-b20e5cebc70e")
 	)
 	(wire
 		(pts
@@ -2361,6 +2381,16 @@
 			(type default)
 		)
 		(uuid "f77b94c3-29d2-4f80-83ac-34b79681248f")
+	)
+	(wire
+		(pts
+			(xy 66.04 40.64) (xy 71.12 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f83906c3-7b02-49dd-a8d2-5fb7cf511eb6")
 	)
 	(wire
 		(pts
@@ -2745,7 +2775,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TUSS4470TRTJT:QFN50P400X400X80-21N"
+		(property "Footprint" "MainPCB:QFN50P400X400X80-21N"
 			(at 91.44 71.12 0)
 			(effects
 				(font
@@ -3294,7 +3324,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 44.45 180)
+		(at 66.04 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3302,7 +3332,7 @@
 		(dnp no)
 		(uuid "2a4928f2-7113-480b-b416-03aeaf7285ca")
 		(property "Reference" "#PWR0202"
-			(at 69.85 38.1 0)
+			(at 66.04 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3311,7 +3341,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 40.132 0)
+			(at 66.04 51.308 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3319,7 +3349,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 44.45 0)
+			(at 66.04 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3328,7 +3358,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 44.45 0)
+			(at 66.04 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3337,7 +3367,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 44.45 0)
+			(at 66.04 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3724,7 +3754,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 52.832 41.91 90)
 			(effects
 				(font
@@ -3835,7 +3865,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 69.85 49.53 180)
+		(at 71.12 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3843,7 +3873,7 @@
 		(dnp no)
 		(uuid "742f78f8-09b4-4307-a0a6-3006b400e44d")
 		(property "Reference" "C204"
-			(at 66.548 46.99 0)
+			(at 74.168 44.958 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3851,7 +3881,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 67.564 51.816 0)
+			(at 73.406 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,7 +3889,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 68.8848 45.72 0)
+			(at 70.1548 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,7 +3898,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 49.53 0)
+			(at 71.12 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +3907,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 69.85 49.53 0)
+			(at 71.12 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)

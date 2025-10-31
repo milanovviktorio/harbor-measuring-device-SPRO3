@@ -23,6 +23,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 48.26) (xy 62.23 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0727b7e3-e8ca-49ad-83e8-792785347810")
+	)
+	(wire
+		(pts
 			(xy 115.57 26.67) (xy 125.73 26.67)
 		)
 		(stroke
@@ -153,6 +163,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 72.39) (xy 62.23 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d582d70-a4d9-4416-b1fd-88ac0bb3fb76")
+	)
+	(wire
+		(pts
 			(xy 43.18 25.4) (xy 67.31 25.4)
 		)
 		(stroke
@@ -280,29 +300,6 @@
 			(type default)
 		)
 		(uuid "fae2894c-a8aa-48c2-b10c-57355777c6ad")
-	)
-	(global_label "Voltage_level"
-		(shape output)
-		(at 62.23 48.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify right)
-		)
-		(uuid "262fe4b9-31d9-43b8-8a91-89ee136832f0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.7869 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "MISO"
 		(shape input)
@@ -594,7 +591,7 @@
 		)
 	)
 	(sheet
-		(at 55.88 96.012)
+		(at 26.416 96.52)
 		(size 21.082 20.066)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -610,7 +607,7 @@
 		)
 		(uuid "2fd609f6-122d-440e-b3d6-5f283f47ac3b")
 		(property "Sheetname" "Connections with other PCBs"
-			(at 55.88 95.3004 0)
+			(at 26.416 95.8084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -619,7 +616,7 @@
 			)
 		)
 		(property "Sheetfile" "connections.kicad_sch"
-			(at 55.88 116.6626 0)
+			(at 26.416 117.1706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -636,8 +633,8 @@
 		)
 	)
 	(sheet
-		(at 21.844 96.52)
-		(size 20.828 20.32)
+		(at 26.416 68.834)
+		(size 21.844 19.812)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -652,7 +649,7 @@
 		)
 		(uuid "79ff824f-4c51-4a7c-b4c4-8feeb92b093c")
 		(property "Sheetname" "Power supply unit"
-			(at 21.844 95.8084 0)
+			(at 26.416 68.1224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -661,12 +658,22 @@
 			)
 		)
 		(property "Sheetfile" "Power_supplies.kicad_sch"
-			(at 21.844 117.4246 0)
+			(at 26.416 89.2306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Battery_voltage_level" output
+			(at 48.26 72.39 0)
+			(uuid "4f9c1300-be03-49dc-ab89-fd5e33a0c182")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
