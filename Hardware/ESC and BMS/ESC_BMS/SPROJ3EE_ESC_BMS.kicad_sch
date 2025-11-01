@@ -78,6 +78,19 @@
 		(uuid 6a568378-47f1-4705-86ea-ed4ce7ed40ab)
 	)
 	(rectangle
+		(start 50.8 64.77)
+		(end 55.88 68.58)
+		(stroke
+			(width 0)
+			(type dash)
+			(color 46 63 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7460be63-e424-4afe-bf3f-1ea8901aaa90)
+	)
+	(rectangle
 		(start 17.526 58.674)
 		(end 79.756 94.234)
 		(stroke
@@ -265,7 +278,7 @@
 	)
 	(text "B-"
 		(exclude_from_sim no)
-		(at 58.166 67.564 0)
+		(at 62.484 61.468 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -335,6 +348,17 @@
 			)
 		)
 		(uuid "9b63ac0a-c3f1-4799-8523-04a805882549")
+	)
+	(text "RPP"
+		(exclude_from_sim no)
+		(at 53.34 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 46 63 255 1)
+			)
+		)
+		(uuid "9c7266a1-13b6-4a62-aa2d-7c595cea3341")
 	)
 	(text "Block diagram of the schematic"
 		(exclude_from_sim no)
@@ -502,7 +526,7 @@
 	)
 	(polyline
 		(pts
-			(xy 49.53 73.66) (xy 49.53 66.04)
+			(xy 48.26 73.66) (xy 48.26 67.31)
 		)
 		(stroke
 			(width 0)
@@ -549,16 +573,6 @@
 			(type solid)
 		)
 		(uuid "1946af02-5c13-4a44-a350-bbf36cce44dd")
-	)
-	(polyline
-		(pts
-			(xy 48.26 72.39) (xy 48.26 64.77)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "1c5b9fc7-1894-410a-96b1-dbd57b92f423")
 	)
 	(polyline
 		(pts
@@ -632,7 +646,7 @@
 	)
 	(polyline
 		(pts
-			(xy 49.53 63.5) (xy 50.8 63.5)
+			(xy 63.5 62.23) (xy 64.77 62.23)
 		)
 		(stroke
 			(width 0)
@@ -649,16 +663,6 @@
 			(type default)
 		)
 		(uuid "35b3cb23-84b4-43a7-a7dd-2e19625cd833")
-	)
-	(polyline
-		(pts
-			(xy 48.26 64.77) (xy 49.53 64.77)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "367e442b-c2d4-4f74-864a-b4cfd6e966a6")
 	)
 	(polyline
 		(pts
@@ -682,6 +686,16 @@
 	)
 	(polyline
 		(pts
+			(xy 46.99 62.23) (xy 46.99 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38862cbb-939e-4a44-9d74-052e45a17996")
+	)
+	(polyline
+		(pts
 			(xy 21.59 74.93) (xy 24.13 74.93)
 		)
 		(stroke
@@ -702,16 +716,6 @@
 	)
 	(polyline
 		(pts
-			(xy 49.53 64.77) (xy 50.8 64.77)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "430338a0-be67-483b-8a3d-5a18fd2e93eb")
-	)
-	(polyline
-		(pts
 			(xy 137.16 36.83) (xy 137.16 43.18)
 		)
 		(stroke
@@ -719,16 +723,6 @@
 			(type solid)
 		)
 		(uuid "46517ee9-b964-4269-9b89-12a0d7f5720d")
-	)
-	(polyline
-		(pts
-			(xy 46.99 82.55) (xy 46.99 72.39)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "47a933fe-75cd-4b1f-b990-71b1858697f0")
 	)
 	(polyline
 		(pts
@@ -802,7 +796,7 @@
 	)
 	(polyline
 		(pts
-			(xy 49.53 66.04) (xy 50.8 66.04)
+			(xy 48.26 67.31) (xy 50.8 67.31)
 		)
 		(stroke
 			(width 0)
@@ -832,7 +826,7 @@
 	)
 	(polyline
 		(pts
-			(xy 46.99 63.5) (xy 49.53 63.5)
+			(xy 46.99 62.23) (xy 63.5 62.23)
 		)
 		(stroke
 			(width 0)
@@ -952,7 +946,7 @@
 	)
 	(polyline
 		(pts
-			(xy 48.26 73.66) (xy 49.53 73.66)
+			(xy 48.26 73.66) (xy 48.26 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1022,7 +1016,7 @@
 	)
 	(polyline
 		(pts
-			(xy 46.99 71.12) (xy 46.99 63.5)
+			(xy 46.99 71.12) (xy 46.99 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1089,16 +1083,6 @@
 			(type default)
 		)
 		(uuid "dd135c16-9d70-404c-acc5-ff11e2a5fcd6")
-	)
-	(polyline
-		(pts
-			(xy 46.99 72.39) (xy 48.26 72.39)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "e0b18321-d03c-4f58-8729-0031f27f04f4")
 	)
 	(polyline
 		(pts
