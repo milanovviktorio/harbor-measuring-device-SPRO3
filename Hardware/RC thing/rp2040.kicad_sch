@@ -8821,12 +8821,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDC"
-			(at 132.08 105.41 0)
+		(property "Value" "VUSB"
+			(at 134.62 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
