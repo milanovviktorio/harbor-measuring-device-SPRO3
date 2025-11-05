@@ -15,7 +15,7 @@
         "copper_text_upright": false,
         "courtyard_line_width": 0.05,
         "dimension_precision": 4,
-        "dimension_units": 3,
+        "dimension_units": 2,
         "dimensions": {
           "arrow_length": 1270000,
           "extension_offset": 500000,
@@ -43,9 +43,9 @@
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.1,
+        "silk_text_size_h": 0.3,
+        "silk_text_size_v": 0.3,
+        "silk_text_thickness": 0.075,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.5
@@ -493,7 +493,14 @@
     "meta": {
       "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "+12V": "rgb(115, 45, 255)",
+      "+1V1": "rgb(255, 235, 23)",
+      "+3.3V": "rgb(255, 0, 22)",
+      "+5V": "rgb(138, 255, 6)",
+      "GND": "rgb(0, 98, 255)",
+      "VDC": "rgb(255, 170, 0)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
