@@ -1,4 +1,4 @@
-26817862198815472
+26817863042335730
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70553,6 +70553,13 @@ Yellow 5381 Series LED
 2
 2
 MainPCB
+CUI_UJC-HP-3-SMT-TR
+
+
+0
+10
+10
+MainPCB
 IC_TPS27S100BPWPR
 
 
@@ -70560,16 +70567,9 @@ IC_TPS27S100BPWPR
 21
 21
 MainPCB
-IND_SRR6038-100Y
-
-
-0
-2
-2
-MainPCB
 L_33uH
-Inductor, Changjiang, FTC404020S, 4.1x4.1x2.0mm, (http://www.cjiang.com.cn/Pr_download_id_1117.html), generated with kicad-footprint-generator gen_inductor.py
-cjiang ftc molded power shielded
+
+
 0
 2
 2

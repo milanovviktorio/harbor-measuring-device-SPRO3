@@ -8997,7 +8997,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_Molex_105450-0101"
+		(property "Footprint" "MainPCB:CUI_UJC-HP-3-SMT-TR"
 			(at 208.28 120.65 0)
 			(effects
 				(font

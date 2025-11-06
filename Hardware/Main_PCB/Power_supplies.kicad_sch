@@ -4938,7 +4938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://docs.rs-online.com/e0aa/0900766b813022f4.pdf"
 			(at 74.93 41.91 0)
 			(effects
 				(font
