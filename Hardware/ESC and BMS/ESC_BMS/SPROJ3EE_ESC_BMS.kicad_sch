@@ -246,7 +246,7 @@
 		)
 		(uuid "1eabbae8-16d3-452b-b080-a757b748f08e")
 	)
-	(text "J14"
+	(text "J409"
 		(exclude_from_sim no)
 		(at 53.34 77.47 0)
 		(effects
@@ -257,9 +257,9 @@
 		)
 		(uuid "2c233552-ba9b-4c8e-b253-b44e03fc4472")
 	)
-	(text "J11"
+	(text "J406"
 		(exclude_from_sim no)
-		(at 30.734 77.47 0)
+		(at 30.48 77.47 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -279,9 +279,9 @@
 		)
 		(uuid "2ec48093-99c9-4db1-ade3-798f93f84c9e")
 	)
-	(text "J12"
+	(text "J407\n"
 		(exclude_from_sim no)
-		(at 39.116 77.47 0)
+		(at 39.37 77.47 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -434,7 +434,7 @@
 		)
 		(uuid "8a0ea923-245d-498e-b53a-7463faaa1f46")
 	)
-	(text "J13"
+	(text "J408"
 		(exclude_from_sim no)
 		(at 44.45 77.47 0)
 		(effects
