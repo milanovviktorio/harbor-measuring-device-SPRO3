@@ -518,6 +518,174 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -2468,8 +2636,8 @@
 		)
 	)
 	(rectangle
-		(start 17.145 16.51)
-		(end 66.04 57.15)
+		(start 16.51 16.51)
+		(end 65.405 57.15)
 		(stroke
 			(width 0)
 			(type default)
@@ -2530,6 +2698,16 @@
 			(type none)
 		)
 		(uuid e72245aa-56c1-4349-8605-40a6a23a5b4c)
+	)
+	(text "9V"
+		(exclude_from_sim no)
+		(at 147.574 158.496 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "67f9e57c-8944-4aff-b98b-28ff81183778")
 	)
 	(text "IF OUT=LOW (NORMAL OPERATION) -> Q305 IS ON\nELSE - OVERVOLTAGE (OUT=HIGH) => Q305 IS OFF => OVP"
 		(exclude_from_sim no)
@@ -2686,10 +2864,22 @@
 		(uuid "38ed330d-7d1e-4903-b0d8-0ce03728f82f")
 	)
 	(junction
+		(at 236.22 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d6f09e8-f75d-41bd-a79c-4f5fc12b3128")
+	)
+	(junction
 		(at 180.34 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "412b22e4-a84c-48c3-86b6-ff37b32ca233")
+	)
+	(junction
+		(at 252.73 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "449cd521-9597-4e6c-89f7-4805e61ea819")
 	)
 	(junction
 		(at 172.72 167.64)
@@ -2722,12 +2912,6 @@
 		(uuid "609b361c-54bc-4a00-aa75-11f8c8af5f12")
 	)
 	(junction
-		(at 237.49 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64492806-6b83-49c4-97f5-2f6ef2416efa")
-	)
-	(junction
 		(at 165.1 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2744,6 +2928,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ec53b40-f624-4498-b82d-57da114de3ff")
+	)
+	(junction
+		(at 241.3 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bc01615-5284-4bcf-a421-a39c284af8d1")
 	)
 	(junction
 		(at 238.76 105.41)
@@ -2917,7 +3107,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 86.36) (xy 237.49 86.36)
+			(xy 215.9 86.36) (xy 236.22 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2944,16 +3134,6 @@
 			(type default)
 		)
 		(uuid "16fd37a3-f919-4955-b6f7-9e7c6be0fa01")
-	)
-	(wire
-		(pts
-			(xy 237.49 86.36) (xy 247.65 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17e81c95-72d8-4eba-a8fc-a6147f2ef221")
 	)
 	(wire
 		(pts
@@ -3024,6 +3204,16 @@
 			(type default)
 		)
 		(uuid "200d6ca0-3822-4422-963e-20b501d70bb0")
+	)
+	(wire
+		(pts
+			(xy 241.3 93.98) (xy 252.73 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "209136ee-6464-4498-b355-1da47c89403d")
 	)
 	(wire
 		(pts
@@ -3287,7 +3477,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 97.79) (xy 237.49 102.87)
+			(xy 236.22 97.79) (xy 236.22 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3387,7 +3577,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 90.17) (xy 237.49 86.36)
+			(xy 236.22 90.17) (xy 236.22 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3717,6 +3907,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 86.36) (xy 241.3 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1b429a2-4380-4f28-a4c0-1a6060e6b92d")
+	)
+	(wire
+		(pts
 			(xy 116.84 36.83) (xy 129.54 36.83)
 		)
 		(stroke
@@ -3724,6 +3924,16 @@
 			(type default)
 		)
 		(uuid "a3011a8f-b532-4e25-bcb5-86bbdf0d4104")
+	)
+	(wire
+		(pts
+			(xy 241.3 86.36) (xy 247.65 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3dc8eff-c6f1-4e1b-a2f3-5c444ec60eb0")
 	)
 	(wire
 		(pts
@@ -3807,7 +4017,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 102.87) (xy 233.68 102.87)
+			(xy 236.22 102.87) (xy 233.68 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4077,7 +4287,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 86.36) (xy 270.51 86.36)
+			(xy 257.81 86.36) (xy 273.05 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4792,7 +5002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
 			(at 250.19 83.82 0)
 			(effects
 				(font
@@ -5497,7 +5707,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "https://docs.rs-online.com/01aa/A700000010723894.pdf"
 			(at 215.9 191.77 0)
 			(effects
 				(font
@@ -5616,6 +5826,75 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 241.3 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68fc06e0-0c7a-4f07-8669-9a135be756e5")
+		(property "Reference" "R313"
+			(at 242.824 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 243.078 90.932 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 239.522 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 241.3 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe8f511d-30c3-4920-b813-7080d134d330")
+		)
+		(pin "2"
+			(uuid "d24b0a68-911e-4aa7-9700-b8a05123e215")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
+					(reference "R313")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 177.8 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5631,7 +5910,7 @@
 				)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "120m"
 			(at 178.054 157.48 90)
 			(effects
 				(font
@@ -5639,7 +5918,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 177.8 156.718 90)
 			(effects
 				(font
@@ -5648,7 +5927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition08_en.pdf"
 			(at 177.8 154.94 0)
 			(effects
 				(font
@@ -5657,7 +5936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RL1220S-R12-F"
 			(at 177.8 154.94 0)
 			(effects
 				(font
@@ -5709,7 +5988,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 163.322 116.84 90)
 			(effects
 				(font
@@ -5965,7 +6244,7 @@
 		(dnp no)
 		(uuid "8aee67c3-c9f0-4d12-ade2-2f7700333551")
 		(property "Reference" "C310"
-			(at 213.868 111.506 90)
+			(at 213.614 110.998 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6034,7 +6313,7 @@
 		(dnp no)
 		(uuid "8d92ee3c-ce81-4794-bf64-bb862f2f180f")
 		(property "Reference" "D303"
-			(at 207.518 189.738 90)
+			(at 208.28 190.246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,7 +6322,7 @@
 			)
 		)
 		(property "Value" "KG EELP41.22"
-			(at 199.898 195.072 90)
+			(at 205.486 187.452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6051,7 +6330,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "https://docs.rs-online.com/e1fe/A700000013302439.pdf"
 			(at 210.82 191.77 0)
 			(effects
 				(font
@@ -6127,7 +6406,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 182.118 191.77 90)
 			(effects
 				(font
@@ -6171,14 +6450,12 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:PMOS")
-		(at 203.2 157.48 270)
-		(mirror x)
+		(at 203.2 157.48 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "95ac4889-7a6b-41d2-b9ea-cc50ad9200d1")
 		(property "Reference" "Q302"
 			(at 203.2 148.59 90)
@@ -6188,7 +6465,7 @@
 				)
 			)
 		)
-		(property "Value" "NTD25P03LT4G"
+		(property "Value" "SQJ141ELP"
 			(at 203.2 151.13 90)
 			(effects
 				(font
@@ -6196,8 +6473,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 205.74 152.4 0)
+		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
+			(at 200.66 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6205,8 +6482,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 190.5 157.48 0)
+		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
+			(at 215.9 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6224,7 +6501,7 @@
 			)
 		)
 		(property "Sim.Device" "PMOS"
-			(at 186.055 157.48 0)
+			(at 220.345 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6233,7 +6510,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 184.15 157.48 0)
+			(at 222.25 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6242,7 +6519,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 187.96 157.48 0)
+			(at 218.44 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6263,74 +6540,6 @@
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
 					(reference "Q302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:ZPDxx")
-		(at 167.64 154.94 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99050cd6-8cb3-4669-977b-8ba26fd3da94")
-		(property "Reference" "D301"
-			(at 167.64 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BZX79"
-			(at 167.64 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal"
-			(at 167.64 150.495 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://diotec.com/tl_files/diotec/files/pdf/datasheets/zpd1"
-			(at 167.64 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "500mW Zener Diode, DO-35"
-			(at 167.64 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "af970620-698e-4b83-b511-2ce2c7c9f485")
-		)
-		(pin "2"
-			(uuid "44d8e40e-4edc-4fc8-8f9d-c56fe3e7c934")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "D301")
 					(unit 1)
 				)
 			)
@@ -6361,7 +6570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 176.53 160.782 90)
 			(effects
 				(font
@@ -6569,7 +6778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
 			(at 162.56 92.71 0)
 			(effects
 				(font
@@ -6726,7 +6935,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "SQJ412EP"
 			(at 255.016 115.316 0)
 			(effects
 				(font
@@ -6735,7 +6944,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
 			(at 255.27 115.57 0)
 			(effects
 				(font
@@ -6744,7 +6953,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+		(property "Datasheet" "https://docs.rs-online.com/d57a/0900766b8126cf34.pdf"
 			(at 250.19 100.33 0)
 			(effects
 				(font
@@ -6874,16 +7083,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 237.49 93.98 0)
+		(at 236.22 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b5ece8d5-ff5f-4d2a-9b41-bb1d88f9c2be")
 		(property "Reference" "R312"
-			(at 240.03 92.7099 0)
+			(at 229.616 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6892,7 +7100,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 240.03 95.2499 0)
+			(at 231.648 94.742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6901,7 +7109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 235.712 93.98 90)
+			(at 234.442 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6910,7 +7118,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 93.98 0)
+			(at 236.22 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6919,7 +7127,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 237.49 93.98 0)
+			(at 236.22 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6969,7 +7177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 239.7252 121.92 0)
 			(effects
 				(font
@@ -6978,7 +7186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://docs.rs-online.com/efb0/0900766b815e27fe.pdf"
 			(at 238.76 118.11 0)
 			(effects
 				(font
@@ -7265,7 +7473,7 @@
 		(dnp no)
 		(uuid "c4b695e4-10fa-4f3d-8b49-29fc9f2515b9")
 		(property "Reference" "R305"
-			(at 185.166 181.864 90)
+			(at 187.96 181.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7273,7 +7481,7 @@
 			)
 		)
 		(property "Value" "511"
-			(at 189.738 181.864 90)
+			(at 187.96 186.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7324,7 +7532,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 270.51 86.36 0)
+		(at 273.05 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7332,7 +7540,7 @@
 		(dnp no)
 		(uuid "d12e9c17-670f-4a88-97d2-03eaac7cc2bc")
 		(property "Reference" "#PWR0314"
-			(at 270.51 90.17 0)
+			(at 273.05 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7341,7 +7549,7 @@
 			)
 		)
 		(property "Value" "+VPROT"
-			(at 270.51 82.804 0)
+			(at 273.05 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7349,7 +7557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 270.51 86.36 0)
+			(at 273.05 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7358,7 +7566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.51 86.36 0)
+			(at 273.05 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7367,7 +7575,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 270.51 86.36 0)
+			(at 273.05 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7676,7 +7884,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 194.056 162.814 90)
+			(at 193.294 163.068 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7752,7 +7960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
 			(at 255.27 97.79 0)
 			(effects
 				(font
@@ -7819,6 +8027,91 @@
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
 					(reference "Q303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 167.64 154.94 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f932c68b-713b-4099-99be-d81b2a1d1f72")
+		(property "Reference" "D301"
+			(at 167.386 152.146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 167.386 157.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Vishay_SMPA"
+			(at 167.64 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 167.64 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 167.64 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 167.64 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f79dc0a4-e74f-4215-aea0-4ac4955c44a5")
+		)
+		(pin "1"
+			(uuid "80a7ae9e-c4a0-4a2d-926b-17af1489b4f6")
+		)
+		(instances
+			(project ""
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
+					(reference "D301")
 					(unit 1)
 				)
 			)
