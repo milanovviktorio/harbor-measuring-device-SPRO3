@@ -2531,7 +2531,7 @@
 		)
 		(uuid e72245aa-56c1-4349-8605-40a6a23a5b4c)
 	)
-	(text "IF OUT=HIGH (NORMAL OPERATION) -> Q304 IS ON\nELSE - OVERVOLTAGE (OUT=LOW) => Q304 IS OFF => OVP"
+	(text "IF OUT=LOW (NORMAL OPERATION) -> Q305 IS ON\nELSE - OVERVOLTAGE (OUT=HIGH) => Q305 IS OFF => OVP"
 		(exclude_from_sim no)
 		(at 296.418 93.726 0)
 		(effects
@@ -2540,6 +2540,16 @@
 			)
 		)
 		(uuid "68f31473-c1d6-4983-a0ff-ab71a1677f0c")
+	)
+	(text "IF REG=HIGH (NORMAL OPERATION) -> Q305 IS ON\nELSE - UNDERVOLTAGE (REG=LOW) => Q305 IS OFF => UVP"
+		(exclude_from_sim no)
+		(at 296.672 101.092 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6f9146c7-b017-470a-ac96-bfc23a73a0c4")
 	)
 	(text "Charging"
 		(exclude_from_sim no)
@@ -2552,9 +2562,9 @@
 		)
 		(uuid "763262e4-28dc-4554-97fe-2d0869198eec")
 	)
-	(text "TPS25926"
+	(text "VPROT"
 		(exclude_from_sim no)
-		(at 23.368 18.796 0)
+		(at 20.828 18.542 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2646,13 +2656,13 @@
 		(uuid "1e5ec3b2-4024-4e3d-b438-e7cc6886ff5e")
 	)
 	(junction
-		(at 115.57 36.83)
+		(at 129.54 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e64ba22-b713-4079-a69d-70e615196ca8")
 	)
 	(junction
-		(at 115.57 24.13)
+		(at 129.54 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "20acc8f3-3f9e-4921-87c1-1c142cd8f8a6")
@@ -2706,6 +2716,12 @@
 		(uuid "58f761fd-905a-4146-8443-d3ad25ba2657")
 	)
 	(junction
+		(at 215.9 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "609b361c-54bc-4a00-aa75-11f8c8af5f12")
+	)
+	(junction
 		(at 237.49 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2730,12 +2746,6 @@
 		(uuid "8ec53b40-f624-4498-b82d-57da114de3ff")
 	)
 	(junction
-		(at 205.74 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b1ba8d1-5ce5-4350-ab72-8b8d4af3f495")
-	)
-	(junction
 		(at 238.76 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2748,13 +2758,13 @@
 		(uuid "af269bf0-5865-453b-8f03-9129aa7f115b")
 	)
 	(junction
-		(at 88.9 36.83)
+		(at 102.87 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b795525b-9788-4bfe-b2b4-58c5e8ec094f")
 	)
 	(junction
-		(at 88.9 24.13)
+		(at 102.87 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1fa19c8-9c8b-4690-87ca-bbf609d23ce8")
@@ -2772,19 +2782,13 @@
 		(uuid "c7cb93ff-efc3-45f0-8c16-85e8c3a81ceb")
 	)
 	(junction
-		(at 102.87 24.13)
+		(at 116.84 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c80d955b-46cd-4a46-a83b-aad97c840f20")
 	)
 	(junction
-		(at 196.85 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0f0540b-ef85-41cd-80aa-647ae1c115f3")
-	)
-	(junction
-		(at 102.87 36.83)
+		(at 116.84 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d41d94fd-fe94-40d7-bab0-a31f0fe42293")
@@ -2796,16 +2800,16 @@
 		(uuid "d4b2dfab-e2f9-45f3-bceb-4574e5d2e590")
 	)
 	(junction
+		(at 203.2 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d877073b-219e-4301-8f6b-782b9a9bdb63")
+	)
+	(junction
 		(at 215.9 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9d85750-1444-4eab-af30-a160a3065839")
-	)
-	(junction
-		(at 219.71 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e258d05e-c8fc-4ace-9ec4-76c42720fb8b")
 	)
 	(junction
 		(at 180.34 95.25)
@@ -2873,7 +2877,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 24.13) (xy 115.57 26.67)
+			(xy 129.54 24.13) (xy 129.54 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2903,23 +2907,13 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 165.1) (xy 196.85 162.56)
+			(xy 203.2 165.1) (xy 203.2 162.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "11b32cfd-e953-4d70-899f-9952d9309f5b")
-	)
-	(wire
-		(pts
-			(xy 196.85 165.1) (xy 209.55 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1343c9f5-5687-4a64-8649-a4aa9589e41b")
 	)
 	(wire
 		(pts
@@ -2963,7 +2957,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 154.94) (xy 191.77 154.94)
+			(xy 182.88 154.94) (xy 198.12 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3013,7 +3007,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 36.83) (xy 128.27 36.83)
+			(xy 129.54 36.83) (xy 142.24 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3053,7 +3047,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 24.13) (xy 102.87 26.67)
+			(xy 116.84 24.13) (xy 116.84 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3083,7 +3077,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 34.29) (xy 88.9 36.83)
+			(xy 102.87 34.29) (xy 102.87 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3133,7 +3127,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 34.29) (xy 102.87 36.83)
+			(xy 116.84 34.29) (xy 116.84 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3153,7 +3147,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 36.83) (xy 102.87 36.83)
+			(xy 102.87 36.83) (xy 116.84 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3163,7 +3157,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 22.86) (xy 102.87 24.13)
+			(xy 116.84 22.86) (xy 116.84 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3323,7 +3317,17 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 105.41) (xy 245.11 105.41)
+			(xy 203.2 165.1) (xy 209.55 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54660d39-3fff-49a7-b784-8e99de9e062f")
+	)
+	(wire
+		(pts
+			(xy 238.76 105.41) (xy 243.84 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3333,7 +3337,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 105.41) (xy 238.76 113.03)
+			(xy 238.76 105.41) (xy 238.76 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3393,7 +3397,17 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 147.32) (xy 205.74 154.94)
+			(xy 210.82 195.58) (xy 210.82 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "641b501b-9c18-403b-a727-acb10e60e9da")
+	)
+	(wire
+		(pts
+			(xy 215.9 147.32) (xy 215.9 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3493,7 +3507,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 34.29) (xy 74.93 36.83)
+			(xy 88.9 34.29) (xy 88.9 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3543,23 +3557,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 36.83) (xy 102.87 38.1)
+			(xy 116.84 36.83) (xy 116.84 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7ece8911-5f35-451c-a85e-ce05abb9087e")
-	)
-	(wire
-		(pts
-			(xy 205.74 154.94) (xy 219.71 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8537dc27-fc69-4684-983d-d3bf8db80c3e")
 	)
 	(wire
 		(pts
@@ -3593,7 +3597,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 165.1) (xy 195.58 165.1)
+			(xy 195.58 165.1) (xy 203.2 165.1)
 		)
 		(stroke
 			(width 0)
@@ -3603,7 +3607,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 24.13) (xy 115.57 24.13)
+			(xy 116.84 24.13) (xy 129.54 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3633,16 +3637,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 156.21) (xy 219.71 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93341028-8c30-4a2f-a641-2dc320f16e85")
-	)
-	(wire
-		(pts
 			(xy 149.86 154.94) (xy 162.56 154.94)
 		)
 		(stroke
@@ -3653,7 +3647,17 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 36.83) (xy 128.27 34.29)
+			(xy 215.9 154.94) (xy 242.57 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c36ad2-7c84-40b3-96d7-ad31f7446274")
+	)
+	(wire
+		(pts
+			(xy 142.24 36.83) (xy 142.24 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3673,7 +3677,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 26.67) (xy 74.93 24.13)
+			(xy 88.9 26.67) (xy 88.9 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3693,17 +3697,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 154.94) (xy 242.57 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a02d8e79-4a72-4de5-901d-bcd8df13e58b")
-	)
-	(wire
-		(pts
-			(xy 115.57 24.13) (xy 128.27 24.13)
+			(xy 129.54 24.13) (xy 142.24 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3723,7 +3717,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 36.83) (xy 115.57 36.83)
+			(xy 116.84 36.83) (xy 129.54 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3763,7 +3757,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 147.32) (xy 205.74 147.32)
+			(xy 185.42 147.32) (xy 215.9 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3853,7 +3847,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 184.15) (xy 215.9 189.23)
+			(xy 215.9 184.15) (xy 215.9 187.96)
 		)
 		(stroke
 			(width 0)
@@ -3873,7 +3867,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 24.13) (xy 88.9 26.67)
+			(xy 102.87 24.13) (xy 102.87 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3893,7 +3887,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 24.13) (xy 102.87 24.13)
+			(xy 102.87 24.13) (xy 116.84 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3903,7 +3897,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 24.13) (xy 88.9 24.13)
+			(xy 88.9 24.13) (xy 102.87 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3923,7 +3917,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 36.83) (xy 88.9 36.83)
+			(xy 88.9 36.83) (xy 102.87 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3953,7 +3947,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 196.85) (xy 215.9 199.39)
+			(xy 215.9 195.58) (xy 215.9 199.39)
 		)
 		(stroke
 			(width 0)
@@ -3963,7 +3957,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 24.13) (xy 128.27 26.67)
+			(xy 142.24 24.13) (xy 142.24 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4033,16 +4027,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 163.83) (xy 219.71 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4a375cd-8834-43ad-83ef-8222691b6a73")
-	)
-	(wire
-		(pts
 			(xy 194.31 198.12) (xy 207.01 198.12)
 		)
 		(stroke
@@ -4063,7 +4047,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 105.41) (xy 245.11 113.03)
+			(xy 243.84 105.41) (xy 243.84 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4073,7 +4057,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 120.65) (xy 238.76 127)
+			(xy 238.76 121.92) (xy 238.76 127)
 		)
 		(stroke
 			(width 0)
@@ -4133,7 +4117,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 186.69) (xy 210.82 189.23)
+			(xy 210.82 186.69) (xy 210.82 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4153,6 +4137,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 113.03) (xy 245.11 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea4abfbc-154b-4091-baed-b97b96c335b0")
+	)
+	(wire
+		(pts
 			(xy 252.73 105.41) (xy 252.73 107.95)
 		)
 		(stroke
@@ -4163,7 +4157,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 34.29) (xy 115.57 36.83)
+			(xy 129.54 34.29) (xy 129.54 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4203,7 +4197,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 154.94) (xy 201.93 154.94)
+			(xy 208.28 154.94) (xy 215.9 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4368,7 +4362,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 38.1 0)
+		(at 116.84 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4377,7 +4371,7 @@
 		(fields_autoplaced yes)
 		(uuid "08107da5-006c-4b59-9208-f4ca533ebaf8")
 		(property "Reference" "#PWR0308"
-			(at 102.87 44.45 0)
+			(at 116.84 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4386,7 +4380,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 43.18 0)
+			(at 116.84 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4394,7 +4388,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 38.1 0)
+			(at 116.84 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4403,7 +4397,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 38.1 0)
+			(at 116.84 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4412,7 +4406,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 38.1 0)
+			(at 116.84 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4434,7 +4428,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 74.93 30.48 0)
+		(at 88.9 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4443,7 +4437,7 @@
 		(fields_autoplaced yes)
 		(uuid "0a3b6361-9857-48b5-9a18-6ec0b5915db7")
 		(property "Reference" "C304"
-			(at 78.74 28.3209 0)
+			(at 92.71 28.3209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4452,7 +4446,7 @@
 			)
 		)
 		(property "Value" "220µ"
-			(at 78.74 30.8609 0)
+			(at 92.71 30.8609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,7 +4455,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.9"
-			(at 75.8952 34.29 0)
+			(at 89.8652 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4470,7 +4464,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/b803/A700000013358061.pdf"
-			(at 74.93 30.48 0)
+			(at 88.9 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4479,7 +4473,7 @@
 			)
 		)
 		(property "Description" "EEHZV1E221P, Panasonic 220μF Polymerkondensator 25V"
-			(at 74.93 30.48 0)
+			(at 88.9 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4636,7 +4630,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 128.27 30.48 0)
+		(at 142.24 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4645,7 +4639,7 @@
 		(fields_autoplaced yes)
 		(uuid "19f7200d-e726-435b-8771-71d7ec61505b")
 		(property "Reference" "C308"
-			(at 132.08 28.3209 0)
+			(at 146.05 28.3209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4654,7 +4648,7 @@
 			)
 		)
 		(property "Value" "220µ"
-			(at 132.08 30.8609 0)
+			(at 146.05 30.8609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,7 +4657,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.9"
-			(at 129.2352 34.29 0)
+			(at 143.2052 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4672,7 +4666,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/b803/A700000013358061.pdf"
-			(at 128.27 30.48 0)
+			(at 142.24 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4681,7 +4675,7 @@
 			)
 		)
 		(property "Description" "EEHZV1E221P, Panasonic 220μF Polymerkondensator 25V"
-			(at 128.27 30.48 0)
+			(at 142.24 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4780,7 +4774,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "277d63b1-da13-4466-86bc-a07e8c3f6342")
-		(property "Reference" "Q304"
+		(property "Reference" "Q305"
 			(at 251.46 83.312 90)
 			(effects
 				(font
@@ -4807,7 +4801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
 			(at 265.43 88.9 0)
 			(effects
 				(font
@@ -4864,7 +4858,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "Q304")
+					(reference "Q305")
 					(unit 1)
 				)
 			)
@@ -5008,72 +5002,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 219.71 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e8ed60f-fc08-4122-a0d0-d655ef38ebe5")
-		(property "Reference" "#PWR0312"
-			(at 219.71 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 219.71 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 219.71 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 219.71 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "efd3f0c0-e5e6-4560-9b3d-b2684fa70640")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "#PWR0312")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 207.01 207.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5205,7 +5133,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 102.87 22.86 0)
+		(at 116.84 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5213,7 +5141,7 @@
 		(dnp no)
 		(uuid "4037e856-acce-4636-b12a-75fef77296e2")
 		(property "Reference" "#PWR0307"
-			(at 102.87 26.67 0)
+			(at 116.84 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5222,7 +5150,7 @@
 			)
 		)
 		(property "Value" "+VPROT"
-			(at 102.87 19.304 0)
+			(at 116.84 19.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5230,7 +5158,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 22.86 0)
+			(at 116.84 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5239,7 +5167,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 22.86 0)
+			(at 116.84 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5248,7 +5176,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 102.87 22.86 0)
+			(at 116.84 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5276,7 +5204,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "47dd3184-c85e-40f6-ae32-c947a8663fb8")
 		(property "Reference" "#PWR0301"
 			(at 22.86 35.56 0)
@@ -5287,12 +5214,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VIN"
-			(at 22.86 26.67 0)
+		(property "Value" "+VPROT"
+			(at 18.796 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5406,7 +5334,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 102.87 30.48 0)
+		(at 116.84 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5415,7 +5343,7 @@
 		(fields_autoplaced yes)
 		(uuid "5df0c4e9-c2e7-4c9d-8e70-340816482c7e")
 		(property "Reference" "C306"
-			(at 106.68 28.3209 0)
+			(at 120.65 28.3209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +5352,7 @@
 			)
 		)
 		(property "Value" "220µ"
-			(at 106.68 30.8609 0)
+			(at 120.65 30.8609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5433,7 +5361,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.9"
-			(at 103.8352 34.29 0)
+			(at 117.8052 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5442,7 +5370,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/b803/A700000013358061.pdf"
-			(at 102.87 30.48 0)
+			(at 116.84 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5451,7 +5379,7 @@
 			)
 		)
 		(property "Description" "EEHZV1E221P, Panasonic 220μF Polymerkondensator 25V"
-			(at 102.87 30.48 0)
+			(at 116.84 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5543,7 +5471,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 215.9 193.04 90)
+		(at 215.9 191.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5552,7 +5480,7 @@
 		(fields_autoplaced yes)
 		(uuid "610e8b84-b572-4781-978d-309be084e2a9")
 		(property "Reference" "D304"
-			(at 219.71 193.3574 90)
+			(at 219.71 192.0874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5561,7 +5489,7 @@
 			)
 		)
 		(property "Value" "LR Q976.01"
-			(at 219.71 195.8974 90)
+			(at 219.71 194.6274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5570,7 +5498,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 193.04 0)
+			(at 215.9 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5579,7 +5507,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 193.04 0)
+			(at 215.9 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5588,7 +5516,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 215.9 193.04 0)
+			(at 215.9 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5597,7 +5525,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 215.9 193.04 0)
+			(at 215.9 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5681,75 +5609,6 @@
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
 					(reference "#PWR0304")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 219.71 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "65904e86-c02b-4eef-8b75-b943f01a0155")
-		(property "Reference" "C311"
-			(at 214.122 157.988 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 214.63 162.052 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 220.6752 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.71 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 219.71 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c7c53c8-b98f-4bd7-9bc3-859fa35e6aba")
-		)
-		(pin "2"
-			(uuid "8bbcb74d-94e3-4d13-b947-9a2f29ceebc8")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "C311")
 					(unit 1)
 				)
 			)
@@ -5894,7 +5753,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 115.57 30.48 0)
+		(at 129.54 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5903,7 +5762,7 @@
 		(fields_autoplaced yes)
 		(uuid "74962ae6-1336-4958-a760-fd5ad6ae7b02")
 		(property "Reference" "C307"
-			(at 119.38 28.3209 0)
+			(at 133.35 28.3209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5912,7 +5771,7 @@
 			)
 		)
 		(property "Value" "220µ"
-			(at 119.38 30.8609 0)
+			(at 133.35 30.8609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5921,7 +5780,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.9"
-			(at 116.5352 34.29 0)
+			(at 130.5052 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5930,7 +5789,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/b803/A700000013358061.pdf"
-			(at 115.57 30.48 0)
+			(at 129.54 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5939,7 +5798,7 @@
 			)
 		)
 		(property "Description" "EEHZV1E221P, Panasonic 220μF Polymerkondensator 25V"
-			(at 115.57 30.48 0)
+			(at 129.54 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6167,7 +6026,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 210.82 193.04 90)
+		(at 210.82 191.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6175,7 +6034,7 @@
 		(dnp no)
 		(uuid "8d92ee3c-ce81-4794-bf64-bb862f2f180f")
 		(property "Reference" "D303"
-			(at 207.518 191.008 90)
+			(at 207.518 189.738 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6184,7 +6043,7 @@
 			)
 		)
 		(property "Value" "KG EELP41.22"
-			(at 199.898 196.342 90)
+			(at 199.898 195.072 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6193,7 +6052,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 193.04 0)
+			(at 210.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6202,7 +6061,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 210.82 193.04 0)
+			(at 210.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6211,7 +6070,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 210.82 193.04 0)
+			(at 210.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6220,7 +6079,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 210.82 193.04 0)
+			(at 210.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6312,7 +6171,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:PMOS")
-		(at 196.85 157.48 270)
+		(at 203.2 157.48 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6322,7 +6181,7 @@
 		(fields_autoplaced yes)
 		(uuid "95ac4889-7a6b-41d2-b9ea-cc50ad9200d1")
 		(property "Reference" "Q302"
-			(at 196.85 148.59 90)
+			(at 203.2 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6330,7 +6189,7 @@
 			)
 		)
 		(property "Value" "NTD25P03LT4G"
-			(at 196.85 151.13 90)
+			(at 203.2 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6338,7 +6197,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 152.4 0)
+			(at 205.74 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6347,7 +6206,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 184.15 157.48 0)
+			(at 190.5 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6356,7 +6215,7 @@
 			)
 		)
 		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 196.85 157.48 0)
+			(at 203.2 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6365,7 +6224,7 @@
 			)
 		)
 		(property "Sim.Device" "PMOS"
-			(at 179.705 157.48 0)
+			(at 186.055 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6374,7 +6233,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 177.8 157.48 0)
+			(at 184.15 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6383,7 +6242,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 181.61 157.48 0)
+			(at 187.96 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6719,7 +6578,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
 			(at 177.8 97.79 0)
 			(effects
 				(font
@@ -6851,15 +6710,15 @@
 	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 250.19 113.03 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b331cc77-1d16-4d4d-8667-00dc3e0253df")
-		(property "Reference" "Q305"
-			(at 256.54 111.7599 0)
+		(property "Reference" "Q304"
+			(at 255.016 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6868,7 +6727,7 @@
 			)
 		)
 		(property "Value" "NMOS"
-			(at 256.54 114.2999 0)
+			(at 255.016 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6877,7 +6736,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 110.49 0)
+			(at 255.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6886,7 +6745,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 250.19 125.73 0)
+			(at 250.19 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6904,7 +6763,7 @@
 			)
 		)
 		(property "Sim.Device" "NMOS"
-			(at 250.19 130.175 0)
+			(at 250.19 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6913,7 +6772,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 250.19 132.08 0)
+			(at 250.19 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6922,7 +6781,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 250.19 128.27 0)
+			(at 250.19 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6942,7 +6801,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "Q305")
+					(reference "Q304")
 					(unit 1)
 				)
 			)
@@ -6957,7 +6816,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b509c2ef-ee2c-4416-b5a9-129352f3ff48")
-		(property "Reference" "#PWR0313"
+		(property "Reference" "#PWR0312"
 			(at 226.06 134.62 0)
 			(effects
 				(font
@@ -7007,7 +6866,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "#PWR0313")
+					(reference "#PWR0312")
 					(unit 1)
 				)
 			)
@@ -7085,15 +6944,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 238.76 116.84 0)
+		(at 238.76 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b80b7bef-a091-4798-8ed4-23de1ea90387")
-		(property "Reference" "C312"
-			(at 239.522 114.808 0)
+		(property "Reference" "C311"
+			(at 239.522 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7102,7 +6961,7 @@
 			)
 		)
 		(property "Value" "470nF"
-			(at 239.522 119.126 0)
+			(at 239.522 120.396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7111,7 +6970,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 239.7252 120.65 0)
+			(at 239.7252 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7120,7 +6979,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 238.76 116.84 0)
+			(at 238.76 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7129,7 +6988,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 238.76 116.84 0)
+			(at 238.76 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7146,7 +7005,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "C312")
+					(reference "C311")
 					(unit 1)
 				)
 			)
@@ -7154,7 +7013,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 88.9 30.48 0)
+		(at 102.87 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7163,7 +7022,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb61c6a6-df09-403d-970d-03e8a0db1591")
 		(property "Reference" "C305"
-			(at 92.71 28.3209 0)
+			(at 106.68 28.3209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7172,7 +7031,7 @@
 			)
 		)
 		(property "Value" "220µ"
-			(at 92.71 30.8609 0)
+			(at 106.68 30.8609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7181,7 +7040,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.9"
-			(at 89.8652 34.29 0)
+			(at 103.8352 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7190,7 +7049,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/b803/A700000013358061.pdf"
-			(at 88.9 30.48 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7199,7 +7058,7 @@
 			)
 		)
 		(property "Description" "EEHZV1E221P, Panasonic 220μF Polymerkondensator 25V"
-			(at 88.9 30.48 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7397,106 +7256,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 250.19 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0de84c8-d3bb-42db-a642-231aa41cceb2")
-		(property "Reference" "Q303"
-			(at 256.54 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 256.54 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 250.19 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 250.19 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 250.19 117.475 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 250.19 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 250.19 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a83fff5d-fb8b-470b-adc6-38999cb69f37")
-		)
-		(pin "3"
-			(uuid "1c99a2b1-b21b-4d32-99ed-e1edc0e03d22")
-		)
-		(pin "1"
-			(uuid "c8eda8d6-34f1-4bb4-a37c-63e239a950bc")
-		)
-		(instances
-			(project ""
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "Q303")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 187.96 184.15 90)
 		(unit 1)
@@ -7572,7 +7331,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d12e9c17-670f-4a88-97d2-03eaac7cc2bc")
-		(property "Reference" "#PWR0315"
+		(property "Reference" "#PWR0314"
 			(at 270.51 90.17 0)
 			(effects
 				(font
@@ -7622,7 +7381,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "#PWR0315")
+					(reference "#PWR0314")
 					(unit 1)
 				)
 			)
@@ -7843,7 +7602,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ebe69119-de7a-4e49-8c3e-b1f55be66535")
-		(property "Reference" "#PWR0314"
+		(property "Reference" "#PWR0313"
 			(at 242.57 158.75 0)
 			(effects
 				(font
@@ -7893,7 +7652,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "#PWR0314")
+					(reference "#PWR0313")
 					(unit 1)
 				)
 			)
@@ -7961,6 +7720,105 @@
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
 					(reference "R306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 250.19 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4334afd-b82f-4eda-b652-e49a725080c1")
+		(property "Reference" "Q303"
+			(at 253.492 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SQJ141ELP"
+			(at 253.492 103.632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
+			(at 250.19 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 250.19 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PMOS"
+			(at 250.19 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 250.19 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 250.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4cd30e25-8189-4709-8fd6-8da60706f481")
+		)
+		(pin "1"
+			(uuid "158e4649-1e80-4392-b24d-704bda421f40")
+		)
+		(pin "3"
+			(uuid "9d52abb2-f72b-4f37-8526-42a676826d1d")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
+					(reference "Q303")
 					(unit 1)
 				)
 			)
