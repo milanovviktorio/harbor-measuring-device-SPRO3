@@ -1,0 +1,61 @@
+(ExpressProject "TPS259260_TRANS"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\TPS259260drc_trans.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "TPS259260_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\TPS259260_trans-pspicefiles\test_bench\trans.sim"
+        (DisplayName "Test_Bench-trans")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\TPS259260_trans-pspicefiles\test_bench\trans.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\TPS259260_trans.lib"
+        (Type "Schematic Library")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "x0136102")
+  (PartMRUSelector
+    (TPS259260DRC_TRANS
+      (FullPartName "TPS259260DRC_TRANS.Normal")
+      (LibraryName
+         ".\TPS259260DRC_TRANS.OLB")
+      (DeviceIndex "0"))
+    (TPS259260_TRANS
+      (FullPartName "TPS259260_TRANS.Normal")
+      (LibraryName ".\TPS259260_TRANS.OLB")
+      (DeviceIndex "0"))
+    (csd16411q3
+      (FullPartName "csd16411q3.Normal")
+      (LibraryName ".\TPS259260_TRANS.OLB")
+      (DeviceIndex "0"))
+    (TPS2592_TRANS
+      (FullPartName "TPS2592_TRANS.Normal")
+      (LibraryName ".\TPS2592_TRANS.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory ".\TPS259260_PSPICE_TRANS")
+  (GlobalState
+    (FileView
+      (Path "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 234 0 424"))
+      (Tab 0)))
+  (ISPCBBASICLICENSE "false"))

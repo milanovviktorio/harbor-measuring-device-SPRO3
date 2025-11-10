@@ -1097,8 +1097,8 @@
 		(uuid 2020b1de-e6ec-40a8-b383-822686000fea)
 	)
 	(rectangle
-		(start 144.78 16.51)
-		(end 190.5 76.2)
+		(start 142.875 16.51)
+		(end 190.5 79.375)
 		(stroke
 			(width 0)
 			(type default)
@@ -1142,7 +1142,7 @@
 	)
 	(text "Battery connector"
 		(exclude_from_sim no)
-		(at 154.686 19.304 0)
+		(at 152.908 19.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1151,10 +1151,10 @@
 		(uuid "da60f794-90c7-4223-8de7-5c274fcf161c")
 	)
 	(junction
-		(at 157.48 41.91)
+		(at 161.29 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8b6a5d9e-4891-4469-b8f9-0ed35826fc2f")
+		(uuid "560dd802-dcf4-403d-b607-10147c8b3209")
 	)
 	(wire
 		(pts
@@ -1168,13 +1168,13 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 59.69) (xy 161.29 59.69)
+			(xy 161.29 30.48) (xy 161.29 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0e244625-8012-4e7d-ba7f-17f1dd692fe8")
+		(uuid "06c4e826-2ee3-4d64-8b0e-416bf3a39dd0")
 	)
 	(wire
 		(pts
@@ -1188,6 +1188,26 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 39.37) (xy 161.29 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "274ce668-457b-4770-900f-08cfa4d24fa3")
+	)
+	(wire
+		(pts
+			(xy 161.29 48.26) (xy 163.83 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2792ee4b-4a4c-4c8e-9cba-6879c4dff60a")
+	)
+	(wire
+		(pts
 			(xy 107.95 29.21) (xy 107.95 33.02)
 		)
 		(stroke
@@ -1198,33 +1218,23 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 35.56) (xy 161.29 36.83)
+			(xy 161.29 54.61) (xy 161.29 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2cacfb11-9592-4b92-89ad-cba96145d2cf")
+		(uuid "35c4ce97-9c33-4af9-92d2-ef08740fc154")
 	)
 	(wire
 		(pts
-			(xy 163.83 53.34) (xy 157.48 53.34)
+			(xy 161.29 71.12) (xy 163.83 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ad08d1d-3afc-4cc9-9ce7-11bb528fdb53")
-	)
-	(wire
-		(pts
-			(xy 154.94 41.91) (xy 157.48 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44c5142b-7ea2-493c-8c6d-f7ddee877576")
+		(uuid "43ea5b31-e9c6-439a-89c9-6accb7548616")
 	)
 	(wire
 		(pts
@@ -1238,13 +1248,13 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 59.69) (xy 161.29 60.96)
+			(xy 153.67 64.77) (xy 163.83 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58283d59-c095-42c8-9cea-2f4d46314374")
+		(uuid "4faeb4ff-dbe9-4370-9ebb-4935790f5287")
 	)
 	(wire
 		(pts
@@ -1268,26 +1278,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 29.21) (xy 163.83 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67eaca6c-5ce2-4a28-8fe5-214d46cb575f")
-	)
-	(wire
-		(pts
-			(xy 157.48 41.91) (xy 157.48 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "680a2088-8e12-4328-8204-cfcea9d2ebe2")
-	)
-	(wire
-		(pts
 			(xy 83.82 36.83) (xy 77.47 36.83)
 		)
 		(stroke
@@ -1295,6 +1285,26 @@
 			(type default)
 		)
 		(uuid "68875317-9e20-46f2-ac3a-3642e011ed07")
+	)
+	(wire
+		(pts
+			(xy 154.94 24.13) (xy 163.83 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f1aae00-5c89-4467-be7f-97a5806f64ae")
+	)
+	(wire
+		(pts
+			(xy 153.67 39.37) (xy 161.29 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71c80f40-eb89-4396-a8aa-7f0cec7dcb95")
 	)
 	(wire
 		(pts
@@ -1328,6 +1338,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 54.61) (xy 161.29 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77cb505b-f032-4983-8e47-c45d62d18d5d")
+	)
+	(wire
+		(pts
 			(xy 115.57 35.56) (xy 115.57 36.83)
 		)
 		(stroke
@@ -1338,13 +1358,23 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 41.91) (xy 157.48 53.34)
+			(xy 161.29 71.12) (xy 161.29 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a4cd7d2-0732-481c-9831-e1611db7f4f3")
+		(uuid "a84bf664-4a47-47e7-bdab-de39c3ab43b8")
+	)
+	(wire
+		(pts
+			(xy 163.83 30.48) (xy 161.29 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5ad8909-594f-42c2-8d82-359b04ca86d4")
 	)
 	(wire
 		(pts
@@ -1365,16 +1395,6 @@
 			(type default)
 		)
 		(uuid "db394137-cb75-482b-b0e0-0073d20d156f")
-	)
-	(wire
-		(pts
-			(xy 163.83 35.56) (xy 161.29 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e76a40c3-7bb9-45f0-b63e-2b184d668d06")
 	)
 	(wire
 		(pts
@@ -1441,7 +1461,7 @@
 	)
 	(hierarchical_label "+VBATT"
 		(shape output)
-		(at 154.94 41.91 180)
+		(at 154.94 24.13 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1485,6 +1505,19 @@
 		)
 		(uuid "76dd7ecc-d28a-44fe-bd72-ee5a436f50ca")
 	)
+	(hierarchical_label "DC"
+		(shape output)
+		(at 153.67 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "780743a0-e870-4dd6-8fca-61c10fa6f7fa")
+	)
 	(hierarchical_label "BHS"
 		(shape output)
 		(at 77.47 29.21 180)
@@ -1518,6 +1551,19 @@
 		)
 		(uuid "a5e3f498-56dc-4576-817c-30eab1861cae")
 	)
+	(hierarchical_label "VMID"
+		(shape output)
+		(at 153.67 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "e07f1fc8-a078-44ff-b7f1-07f594ade739")
+	)
 	(hierarchical_label "B_PHASE"
 		(shape input)
 		(at 31.75 31.75 180)
@@ -1530,6 +1576,140 @@
 		(uuid "eeb9a639-5928-4b87-ac70-1ee9833f7cd0")
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 166.37 71.12 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a25a25c-760c-4748-8399-02dec9d5b4f5")
+		(property "Reference" "J411"
+			(at 170.18 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DC power jack GND"
+			(at 170.18 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
+			(at 166.37 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 166.37 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "148940b3-89ed-4ec2-90ad-f4421965e5b4")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
+					(reference "J411")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 166.37 24.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11365779-056d-4272-bc12-1ad38e64905d")
+		(property "Reference" "J406"
+			(at 170.18 22.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1mm2_connector"
+			(at 170.18 25.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
+			(at 166.37 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 166.37 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab291492-b1dc-4eb8-903a-a51711529a05")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
+					(reference "J406")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x08_Pin")
 		(at 88.9 31.75 0)
 		(mirror y)
@@ -1539,7 +1719,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17572f47-ef11-488f-9798-ec88d848781a")
-		(property "Reference" "J5"
+		(property "Reference" "J404"
 			(at 89.916 30.988 0)
 			(effects
 				(font
@@ -1611,74 +1791,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 166.37 53.34 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1cd522c8-d69d-419f-b6e3-f177f0a8550e")
-		(property "Reference" "J9"
-			(at 170.18 52.0699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1mm2_connector"
-			(at 170.18 54.6099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
-			(at 166.37 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 166.37 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed0a52bb-3308-4b76-84cf-2e4f80d311f0")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J9")
+					(reference "J404")
 					(unit 1)
 				)
 			)
@@ -1694,7 +1807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ffe7c03-f43b-4ddb-a733-c6074c0e239c")
-		(property "Reference" "J6"
+		(property "Reference" "J405"
 			(at 123.19 31.7499 0)
 			(effects
 				(font
@@ -1751,23 +1864,42 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J6")
+					(reference "J405")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 161.29 36.83 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 166.37 54.61 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "2ff54a31-1fe0-4436-8383-cdd083bb50c8")
-		(property "Reference" "#PWR058"
-			(at 161.29 43.18 0)
+		(fields_autoplaced yes)
+		(uuid "30a7e80b-9844-42df-acc5-402ad902ff1e")
+		(property "Reference" "J409"
+			(at 170.18 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1mm2_connector"
+			(at 170.18 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
+			(at 166.37 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,16 +1907,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 161.29 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 36.83 0)
+		(property "Datasheet" "~"
+			(at 166.37 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1792,17 +1916,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 161.29 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 36.83 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 166.37 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1811,77 +1926,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "53ae8255-0d63-49b2-9a56-3df5aea897a9")
-		)
-		(instances
-			(project ""
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 161.29 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "41fa5e73-29b4-4557-bdd7-a03788e16e0a")
-		(property "Reference" "#PWR059"
-			(at 161.29 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 161.29 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2ff1188e-1c0c-4b68-bb7b-b51720fb6699")
+			(uuid "19019bb0-0b54-484b-8c79-d7eedcd79e62")
 		)
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR059")
+					(reference "J409")
 					(unit 1)
 				)
 			)
@@ -1896,7 +1946,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a81b68e-8114-47f8-b860-1c6f06c4083d")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR0403"
 			(at 115.57 43.18 0)
 			(effects
 				(font
@@ -1946,7 +1996,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR057")
+					(reference "#PWR0403")
 					(unit 1)
 				)
 			)
@@ -1954,16 +2004,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 166.37 59.69 270)
+		(at 166.37 30.48 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "52d77cd2-0804-4329-86ce-26f5c5266c40")
-		(property "Reference" "J10"
-			(at 170.18 58.4199 90)
+		(uuid "66e016fd-c496-42cf-b92b-d72a6e114af3")
+		(property "Reference" "J407"
+			(at 170.18 29.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1972,7 +2022,7 @@
 			)
 		)
 		(property "Value" "1mm2_connector"
-			(at 170.18 60.9599 90)
+			(at 170.18 31.7499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1981,7 +2031,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
-			(at 166.37 59.69 0)
+			(at 166.37 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1990,7 +2040,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 59.69 0)
+			(at 166.37 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1999,7 +2049,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 166.37 59.69 0)
+			(at 166.37 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2008,12 +2058,209 @@
 			)
 		)
 		(pin "1"
-			(uuid "d2a02a1e-bde4-4552-91bf-78daa90aca1b")
+			(uuid "2c380bfc-fe78-44d3-8684-f8a0ffba4ed7")
 		)
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J10")
+					(reference "J407")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76fcc235-a86b-4513-9916-ee2a4c3d2ee7")
+		(property "Reference" "#PWR0404"
+			(at 161.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.29 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1a04215-02d8-4183-b6f9-4cc240b2f7a7")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
+					(reference "#PWR0404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 166.37 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "771af61f-4682-4223-b41b-41ecac99e3c1")
+		(property "Reference" "J410"
+			(at 170.18 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DC power jack"
+			(at 170.18 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
+			(at 166.37 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 166.37 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8638dc4f-41b8-4964-a162-2ab36dc891b7")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
+					(reference "J410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "791e1042-bdfa-40dd-86ec-93443172fe1a")
+		(property "Reference" "#PWR0405"
+			(at 161.29 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd25c3b5-3bb7-448a-a209-611dbb3a290d")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
+					(reference "#PWR0405")
 					(unit 1)
 				)
 			)
@@ -2029,7 +2276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f0c757e-445c-4888-a872-c3e69f627f0a")
-		(property "Reference" "J4"
+		(property "Reference" "J403"
 			(at 39.37 36.8299 90)
 			(effects
 				(font
@@ -2080,7 +2327,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J4")
+					(reference "J403")
 					(unit 1)
 				)
 			)
@@ -2096,7 +2343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3d0371d-4bb2-4d26-8bef-0205613cc8ef")
-		(property "Reference" "J2"
+		(property "Reference" "J401"
 			(at 39.37 24.1299 90)
 			(effects
 				(font
@@ -2147,74 +2394,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 166.37 29.21 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c04c8dfc-df82-43e5-be77-9a8afdb4089f")
-		(property "Reference" "J7"
-			(at 170.18 27.9399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1mm2_connector"
-			(at 170.18 30.4799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
-			(at 166.37 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 166.37 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "871ea04a-7475-42d6-a7cc-8390a6678b2f")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J7")
+					(reference "J401")
 					(unit 1)
 				)
 			)
@@ -2230,7 +2410,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca78b7c0-b1b3-40b2-94cb-9dd082b53547")
-		(property "Reference" "J3"
+		(property "Reference" "J402"
 			(at 39.37 30.4799 90)
 			(effects
 				(font
@@ -2281,7 +2461,74 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J3")
+					(reference "J402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 166.37 48.26 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eadd37de-304a-4ac0-8502-68e6047a1d50")
+		(property "Reference" "J408"
+			(at 170.18 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1mm2_connector"
+			(at 170.18 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
+			(at 166.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 166.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "453c192b-9e00-4a77-8ae3-e08ff9133ed4")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
+					(reference "J408")
 					(unit 1)
 				)
 			)
@@ -2296,7 +2543,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f45b99cd-0670-4e13-b3a8-15e81f178cea")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR0402"
 			(at 115.57 33.02 0)
 			(effects
 				(font
@@ -2346,74 +2593,7 @@
 		(instances
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 166.37 35.56 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6cce8d7-a853-4194-8b1b-57ba90e71bfa")
-		(property "Reference" "J8"
-			(at 170.18 34.2899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1mm2_connector"
-			(at 170.18 36.8299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm"
-			(at 166.37 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 166.37 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "84dc6fb6-66ab-433e-b838-ae09acbe57ef")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "J8")
+					(reference "#PWR0402")
 					(unit 1)
 				)
 			)
@@ -2428,7 +2608,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f7773bb7-4800-407a-9c5f-48fa49add0e7")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR0401"
 			(at 107.95 33.02 0)
 			(effects
 				(font
@@ -2478,7 +2658,7 @@
 		(instances
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR055")
+					(reference "#PWR0401")
 					(unit 1)
 				)
 			)

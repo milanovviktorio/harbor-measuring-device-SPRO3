@@ -1,4 +1,4 @@
-26643416194109015
+26819625569090538
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70553,6 +70553,20 @@ Yellow 5381 Series LED
 2
 2
 MainPCB
+2171790001_MOL
+
+2171790001 
+0
+12
+12
+MainPCB
+CUI_UJC-HP-3-SMT-TR
+
+
+0
+10
+10
+MainPCB
 IC_TPS27S100BPWPR
 
 
@@ -70560,7 +70574,7 @@ IC_TPS27S100BPWPR
 21
 21
 MainPCB
-IND_SRR6038-100Y
+L_33uH
 
 
 0
@@ -105503,6 +105517,692 @@ igbt diode module
 0
 25
 25
+VIKING_connectors
+7461097
+7461097-1
+Connector
+0
+16
+16
+VIKING_connectors
+7461098
+7461098-2
+Connector
+0
+25
+25
+VIKING_connectors
+7461147
+7461147-2
+Connector
+0
+16
+16
+VIKING_connectors
+7461383
+WE 7461383-3
+Integrated Circuit
+0
+16
+16
+VIKING_connectors
+643341001
+64334-1001-1
+Connector
+0
+32
+32
+VIKING_connectors
+MPC4_64901221122_2x06_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-12A, example for new mpn: 39-28-x12x, 6 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+12
+12
+VIKING_connectors
+Samtec_IPS1-105-01-L-D
+
+Samtec IPS1-105-01-L-D
+0
+10
+10
+VIKING_connectors
+Samtec_IPT1-105-01-L-D
+
+Samtec IPT1-105-01-L-D
+0
+10
+10
+VIKING_connectors
+Samtec_IPT1-105-01-L-D_upside-down
+
+Samtec IPT1-105-01-L-D upside down
+0
+10
+10
+VIKING_connectors
+Samtech-IPS1-115-L1-L-D
+
+
+0
+30
+30
+VIKING_connectors
+Samtech-IPT1-115-01-L-D
+
+
+0
+30
+30
+VIKING_connectors
+TE_AMPSEAL_1-776087-x_3Rows_14_P0.4mm_Horizontal_3D
+Connector
+TE 776087
+0
+14
+14
+VIKING_connectors
+TE_AMPSEAL_1-776087-x_3Rows_23_P0.4mm_Horizontal_3D
+Connector
+TE 776087
+0
+23
+23
+VIKING_connectors
+TE_AMPSEAL_1-776163-x_3Rows_35_P0.4mm_Horizontal
+Connector
+TE 776163
+0
+35
+35
+VIKING_connectors
+TE_AMPSEAL_1-776228-x_3Rows_23_P0.4mm_Vertical_3D
+Connector
+TE 776228 AMPSEAL
+0
+23
+23
+VIKING_connectors
+TE_AMPSEAL_1-776262-x_3Rows_14_P4.0mm_Vertical_3D
+Connector
+TE 776228 AMPSEAL
+0
+14
+14
+VIKING_connectors
+TE_AMPSEAL_1-7762318-x_3Rows_35_P0.4mm_Vertical_3D
+Connector
+TE 776228 AMPSEAL
+0
+35
+35
+VIKING_connectors
+Wurth_WR-FPC_P0.5mm_1x08_SMT_ZIF_Vertical_687308124422
+
+
+0
+12
+9
+VIKING_connectors
+Wurth_WR-FPC_P0.5mm_1x08_SMT_ZIF_Vertical_687308124422_NTCAFLEX05
+
+
+0
+12
+9
+VIKING_connectors
+Wurth_WR-MPC3_662004236022_2x02-P3.00mm_SMT-Enforced-Pads_Horizontal_Plastic-Peg
+Molex Micro-Fit 3.0 Connector System, 43045-0410 (compatible alternatives: 43045-0411, 43045-0409), 2 Pins per row (http://www.molex.com/pdm_docs/sd/430450210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 top entry
+0
+4
+4
+VIKING_connectors
+Wurth_WR-MPC3_662004236022_2x02-P3.00mm_SMT_Horizontal_Plastic-Peg
+Molex Micro-Fit 3.0 Connector System, 43045-0410 (compatible alternatives: 43045-0411, 43045-0409), 2 Pins per row (http://www.molex.com/pdm_docs/sd/430450210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 top entry
+0
+4
+4
+VIKING_connectors
+Wurth_WR-MPC3_662105130822_1x04_P3.00mm_Horizontal
+
+
+0
+6
+5
+VIKING_connectors
+Wurth_WR-MPC3_662105130822_1x05_P3.00mm_Horizontal
+
+
+0
+7
+6
+VIKING_connectors
+Wurth_WR-MPC3_662106130822_1x06_P3.00mm_Horizontal
+
+
+0
+8
+7
+VIKING_connectors
+Wurth_WR-MPC3_66200221122_2x01-P3.00mm_Vertical
+Microfit3 Header Straight 02x01 43045-0228
+connector Microfit 02x01 header straight 3mm
+0
+2
+2
+VIKING_connectors
+Wurth_WR-MPC3_66200421022_2x02_P3.00mm_Horizontal
+
+connector Wurth top entry
+0
+4
+4
+VIKING_connectors
+Wurth_WR-MPC3_66200421122_2x02_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43045-0412 (compatible alternatives: 43045-0413, 43045-0424), 2 Pins per row (http://www.molex.com/pdm_docs/sd/430450212_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 side entry
+0
+4
+4
+VIKING_connectors
+Wurth_WR-MPC3_66200511122_1x05_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43045-0812 (compatible alternatives: 43045-0813, 43045-0824), 4 Pins per row (http://www.molex.com/pdm_docs/sd/430450212_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 side entry
+0
+5
+5
+VIKING_connectors
+Wurth_WR-MPC3_66200621122_2x03_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43045-0612 (compatible alternatives: 43045-0613, 43045-0624), 3 Pins per row (http://www.molex.com/pdm_docs/sd/430450212_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 side entry
+0
+6
+6
+VIKING_connectors
+Wurth_WR-MPC3_66200821122_2x04_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43045-0812 (compatible alternatives: 43045-0813, 43045-0824), 4 Pins per row (http://www.molex.com/pdm_docs/sd/430450212_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 side entry
+0
+8
+8
+VIKING_connectors
+Wurth_WR-MPC3_66201221122_2x06_P3.00mm_vertical
+Microfit3 Header Straight 02x06 43045-1228
+connector Microfit 02x06 header straight 3mm
+0
+12
+12
+VIKING_connectors
+Wurth_WR-MPC4_649002127222_1x02_P4.20mm_Horizontal
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-04A2, example for new mpn: 39-30-0040, 2 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryplastic_peg
+0
+2
+2
+VIKING_connectors
+Wurth_WR-MPC4_649002227222_2x01_P4.20mm_Horizontal
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-02A2, example for new mpn: 39-30-0020, 1 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryplastic_peg
+0
+2
+2
+VIKING_connectors
+Wurth_WR-MPC4_649004227222_2x02_P4.20mm_Horizontal
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-04A2, example for new mpn: 39-30-0040, 2 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryplastic_peg
+0
+4
+4
+VIKING_connectors
+Wurth_WR-MPC4_649006227222_2x03_P4.20mm_Horizontal
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-06A2, example for new mpn: 39-30-0060, 3 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryplastic_peg
+0
+6
+6
+VIKING_connectors
+Wurth_WR-MPC4_649008227222_2x04_P4.20mm_Horizontal
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-08A2, example for new mpn: 39-30-0080, 4 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryplastic_peg
+0
+8
+8
+VIKING_connectors
+Wurth_WR-MPC4_64900211122_1x02_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-04A, example for new mpn: 39-28-x04x, 2 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+2
+2
+VIKING_connectors
+Wurth_WR-MPC4_64900221122_2x01_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-02A, example for new mpn: 39-28-x02x, 1 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entry
+0
+2
+2
+VIKING_connectors
+Wurth_WR-MPC4_64900311122_1x03_P4.20mm_Vertical
+
+connector Wurth top entry
+0
+3
+3
+VIKING_connectors
+Wurth_WR-MPC4_64900421122_2x01_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-04A, example for new mpn: 39-28-x04x, 2 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+4
+4
+VIKING_connectors
+Wurth_WR-MPC4_64900421122_2x03_P4.20mm_Vertical
+
+connector Wurth top entry
+0
+6
+6
+VIKING_connectors
+Wurth_WR-MPC4_64900821122_2x04_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-08A, example for new mpn: 39-28-x08x, 4 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+8
+8
+VIKING_connectors
+Wurth_WR-MPC4_64901221122_2x06_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-12A, example for new mpn: 39-28-x12x, 6 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+12
+12
+VIKING_connectors
+Wurth_WR-MPC4_64901621122_2x08_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-16A, example for new mpn: 39-28-x16x, 8 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+16
+16
+VIKING_connectors
+Wurth_WR-MPC4_64902421122_2x12_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-24A, example for new mpn: 39-28-x24x, 12 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+24
+24
+VIKING_connectors
+Wurth_WR-PHD_61301011821_1x10_P2.54mm_Vertical
+61301011821
+Connector
+0
+10
+10
+VIKING_connectors
+Wurth_WR-PHD_61301021821_2x05_P2.54mm_Vertical
+61301021821
+Connector
+0
+10
+10
+VIKING_connectors
+Wurth_WR-WTB_61900319521_1x03_P2.54mm_Vertical
+Molex KK-254 Interconnect System, old/engineering part number: AE-6410-03A example for new part number: 22-27-2031, 3 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-254 side entry
+0
+3
+3
+VIKING_connectors
+Wurth_WR-WTB_61900519521_1x05_P2.54mm_Vertical
+Molex KK-254 Interconnect System, old/engineering part number: AE-6410-05A example for new part number: 22-27-2051, 5 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-254 side entry
+0
+5
+5
+VIKING_graphics
+DickbuttVikings_Silk_18x26mm
+
+
+0
+0
+0
+VIKING_graphics
+DickbuttVikings_Soldermask_18x26mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Cu_8x9mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Cu_9x10mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Cu_18x20mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Cu_27x30mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Cu_54x60mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Silk_8x9mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Silk_9x10mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Silk_9x10mm_mirror
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Silk_18x20mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Silk_27x30mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Silk_54x60mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingLogo_Soldermask_18x20mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Cu_37x7mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Cu_56x10mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Silk_11x2mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Silk_19x3mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Silk_37x7mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Silk_37x7mm_negative
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Silk_56x10mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Soldermask_37x7mm
+
+
+0
+0
+0
+VIKING_graphics
+VikingsText_Soldermask_56x10mm
+
+
+0
+0
+0
+VIKING_ic
+171930601
+171930601-1
+Power Supply
+0
+9
+9
+VIKING_ic
+173010335
+173010335-1
+Power Supply
+0
+3
+3
+VIKING_ic
+173010535
+173010535-2
+Power Supply
+0
+3
+3
+VIKING_ic
+831066629
+2.0x1.6x0.7mm
+Crystal or Oscillator
+0
+4
+4
+VIKING_ic
+18024215401H
+18024215401H-2
+Integrated Circuit
+0
+16
+16
+VIKING_ic
+DGN0012A-IPC_C
+
+TPS92622QDGNRQ1 
+0
+13
+13
+VIKING_ic
+QFN50P300X300X80-17N-D
+RTE  (S-PWQFN-N16)
+Integrated Circuit
+0
+17
+17
+VIKING_ic
+QFN50P400X400X90-25N-D
+24 Pin QFN MJ
+Integrated Circuit
+0
+25
+25
+VIKING_ic
+SIP-3_Wuerth_173950578
+
+
+0
+3
+3
+VIKING_ic
+SOP65P640X155-18N
+SSOP18-P-225-0.65
+Integrated Circuit
+0
+18
+18
+VIKING_ic
+SOP254P695X232-4N
+SOP-4A
+Integrated Circuit
+0
+4
+4
+VIKING_ic
+SOT95P270X145-5N
+5-Lead Plastic Small Outline Transistor (OT) [SOT-23]_11
+Integrated Circuit
+0
+5
+5
+VIKING_misc
+450301014042
+450301014042
+Switch
+0
+3
+3
+VIKING_misc
+450404015514
+450404015514-2
+Switch
+0
+7
+7
+VIKING_misc
+9775026360R
+9775026360R-3
+Hardware
+0
+1
+1
+VIKING_misc
+WA-SMSA_M3_h1mm
+78614010360
+Integrated Circuit
+0
+1
+1
+VIKING_misc
+WA-SMSA_M3_h2x5mm
+78614010360
+Integrated Circuit
+0
+1
+1
+VIKING_misc
+WA-SMSA_M3_h5mm
+78614010360
+Integrated Circuit
+0
+1
+1
+VIKING_misc
+WA-SMSA_M3_h10mm
+78614010360
+Integrated Circuit
+0
+1
+1
+VIKING_passives
+Littlefuse_Nano_Clip_157
+
+
+0
+2
+2
+VIKING_passives
+MINIASMD
+miniASMDC
+Resettable Fuse
+0
+2
+2
+VIKING_semiconductors
+DMPH6050SPD13
+PowerDI5060-8 (Type C)_2022
+MOSFET (P-Channel)
+0
+12
+12
+VIKING_semiconductors
+SOD2513X117N
+SOD-323
+Diode
+0
+2
+2
+VIKING_semiconductors
+SODFL1608X70N
+SOD−523 1.20x0.80x0.60
+Integrated Circuit
+0
+2
+2
+VIKING_semiconductors
+SOT65P220X100-3N
+SC-70 (SOT-323) CASE419-04 ISSUE M
+MOSFET (N-Channel)
+0
+3
+3
+VIKING_semiconductors
+SOT95P275X110-6N
+SOT457 (SC-74)
+Zener Diode
+0
+6
+6
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins

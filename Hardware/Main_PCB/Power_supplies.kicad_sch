@@ -4938,7 +4938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://docs.rs-online.com/e0aa/0900766b813022f4.pdf"
 			(at 74.93 41.91 0)
 			(effects
 				(font
@@ -6722,7 +6722,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MainPCB:IND_SRR6038-100Y"
+		(property "Footprint" "MainPCB:L_33uH"
 			(at 71.12 110.49 0)
 			(effects
 				(font
@@ -6731,7 +6731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://docs.rs-online.com/b98a/A700000007859832.pdf"
+		(property "Datasheet" "https://docs.rs-online.com/983b/A700000006423184.pdf"
 			(at 71.12 110.49 0)
 			(effects
 				(font
@@ -6740,7 +6740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "https://dk.rs-online.com/web/p/smd-spoler/8987889"
 			(at 71.12 110.49 0)
 			(effects
 				(font
