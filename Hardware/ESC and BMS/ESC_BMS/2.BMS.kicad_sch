@@ -2699,7 +2699,7 @@
 		)
 		(uuid e72245aa-56c1-4349-8605-40a6a23a5b4c)
 	)
-	(text "9V"
+	(text "9V and at least 1A"
 		(exclude_from_sim no)
 		(at 147.574 158.496 0)
 		(effects
@@ -2761,7 +2761,7 @@
 		)
 		(uuid "9d8da451-08e3-4ce0-97dc-d379bf543043")
 	)
-	(text "BQ2057"
+	(text "BQ2057W"
 		(exclude_from_sim no)
 		(at 53.848 18.542 0)
 		(effects
@@ -2804,12 +2804,6 @@
 		(uuid "e2835cff-b718-47ff-8185-78a51002d449")
 	)
 	(junction
-		(at 194.31 198.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0550dc5e-00e4-4e44-a22a-1e1fb862bcc4")
-	)
-	(junction
 		(at 207.01 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2822,10 +2816,10 @@
 		(uuid "13fb4265-228c-480a-b571-7425d3dbd223")
 	)
 	(junction
-		(at 207.01 198.12)
+		(at 180.34 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "172b1892-4609-4ccc-8dce-dd8259be8830")
+		(uuid "1ae0f968-718b-4272-a832-ed004a1a32e1")
 	)
 	(junction
 		(at 172.72 154.94)
@@ -2846,10 +2840,10 @@
 		(uuid "20acc8f3-3f9e-4921-87c1-1c142cd8f8a6")
 	)
 	(junction
-		(at 180.34 198.12)
+		(at 194.31 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "28fd8476-29ce-4aaf-bb1a-bdc125fdaf47")
+		(uuid "22bdda51-c47b-454f-b611-fde7f95ae449")
 	)
 	(junction
 		(at 172.72 176.53)
@@ -3157,6 +3151,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 199.39) (xy 180.34 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c7363d8-73ce-41ae-b98b-2e3450c646bb")
+	)
+	(wire
+		(pts
 			(xy 172.72 148.59) (xy 172.72 154.94)
 		)
 		(stroke
@@ -3197,7 +3201,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 176.53) (xy 172.72 198.12)
+			(xy 172.72 176.53) (xy 172.72 205.74)
 		)
 		(stroke
 			(width 0)
@@ -3387,16 +3391,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 198.12) (xy 194.31 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fcdf04c-6495-4d98-8ff9-17c330d1f458")
-	)
-	(wire
-		(pts
 			(xy 205.74 173.99) (xy 209.55 173.99)
 		)
 		(stroke
@@ -3497,7 +3491,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 179.07) (xy 180.34 187.96)
+			(xy 180.34 179.07) (xy 180.34 191.77)
 		)
 		(stroke
 			(width 0)
@@ -3557,6 +3551,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 199.39) (xy 194.31 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f103eaa-135d-48b4-833b-6b98cac9e259")
+	)
+	(wire
+		(pts
 			(xy 205.74 179.07) (xy 210.82 179.07)
 		)
 		(stroke
@@ -3567,7 +3571,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 198.12) (xy 180.34 198.12)
+			(xy 172.72 205.74) (xy 180.34 205.74)
 		)
 		(stroke
 			(width 0)
@@ -3697,6 +3701,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 205.74) (xy 194.31 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74fa2e28-9710-4c44-add8-ec2fbacfdcfc")
+	)
+	(wire
+		(pts
 			(xy 88.9 34.29) (xy 88.9 36.83)
 		)
 		(stroke
@@ -3717,7 +3731,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 205.74) (xy 207.01 207.01)
+			(xy 194.31 205.74) (xy 194.31 207.01)
 		)
 		(stroke
 			(width 0)
@@ -3737,7 +3751,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 186.69) (xy 194.31 187.96)
+			(xy 194.31 186.69) (xy 194.31 191.77)
 		)
 		(stroke
 			(width 0)
@@ -3754,16 +3768,6 @@
 			(type default)
 		)
 		(uuid "7ece8911-5f35-451c-a85e-ce05abb9087e")
-	)
-	(wire
-		(pts
-			(xy 180.34 195.58) (xy 180.34 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "868255ce-5ddf-49fc-bc59-74c1e33c5918")
 	)
 	(wire
 		(pts
@@ -3897,7 +3901,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 176.53) (xy 207.01 198.12)
+			(xy 207.01 176.53) (xy 207.01 205.74)
 		)
 		(stroke
 			(width 0)
@@ -4067,16 +4071,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 198.12) (xy 207.01 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b81539f9-4b39-4b8f-8b5f-6749e0424448")
-	)
-	(wire
-		(pts
 			(xy 102.87 24.13) (xy 102.87 26.67)
 		)
 		(stroke
@@ -4237,13 +4231,13 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 198.12) (xy 207.01 198.12)
+			(xy 194.31 205.74) (xy 207.01 205.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d54b8071-3607-4fbe-afd4-1a8c756a0887")
+		(uuid "d41524c6-756d-47ef-8cfc-68d680542528")
 	)
 	(wire
 		(pts
@@ -4374,16 +4368,6 @@
 			(type default)
 		)
 		(uuid "eb181f81-fb88-4ff3-a515-c5b8bcac0e8f")
-	)
-	(wire
-		(pts
-			(xy 194.31 195.58) (xy 194.31 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb4a3ac9-4fa0-4431-ae4a-0b7f698f6945")
 	)
 	(wire
 		(pts
@@ -4925,7 +4909,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "330"
 			(at 213.36 200.406 90)
 			(effects
 				(font
@@ -4933,7 +4917,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 212.598 200.66 90)
 			(effects
 				(font
@@ -5212,7 +5196,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 207.01 207.01 0)
+		(at 194.31 207.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5220,7 +5204,7 @@
 		(dnp no)
 		(uuid "3663800a-7b26-4c6c-910a-0aa4615c3c17")
 		(property "Reference" "#PWR0310"
-			(at 207.01 213.36 0)
+			(at 194.31 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5229,7 +5213,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 210.566 208.534 0)
+			(at 197.866 208.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5237,7 +5221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 207.01 0)
+			(at 194.31 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5246,7 +5230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 207.01 0)
+			(at 194.31 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5255,7 +5239,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 207.01 207.01 0)
+			(at 194.31 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5614,7 +5598,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 194.31 191.77 180)
+		(at 194.31 195.58 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5622,7 +5606,7 @@
 		(dnp no)
 		(uuid "607d502e-8ee3-4a04-9f6a-eea11082f446")
 		(property "Reference" "R307"
-			(at 192.024 191.77 90)
+			(at 192.024 195.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5630,15 +5614,15 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 196.85 191.516 90)
+			(at 196.85 195.326 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 196.088 191.77 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 196.088 195.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5647,7 +5631,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 191.77 0)
+			(at 194.31 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5656,7 +5640,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 194.31 191.77 0)
+			(at 194.31 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5681,16 +5665,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 215.9 191.77 90)
+		(at 210.82 191.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "610e8b84-b572-4781-978d-309be084e2a9")
-		(property "Reference" "D304"
-			(at 219.71 192.0874 90)
+		(property "Reference" "D303"
+			(at 208.28 187.198 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5699,7 +5682,7 @@
 			)
 		)
 		(property "Value" "LR Q976.01"
-			(at 219.71 194.6274 90)
+			(at 205.74 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5707,8 +5690,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "https://docs.rs-online.com/01aa/A700000010723894.pdf"
-			(at 215.9 191.77 0)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 210.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5716,8 +5699,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 215.9 191.77 0)
+		(property "Datasheet" "https://docs.rs-online.com/8aca/A700000013302491.pdf"
+			(at 210.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5726,7 +5709,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 215.9 191.77 0)
+			(at 210.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5735,7 +5718,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 215.9 191.77 0)
+			(at 210.82 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5750,9 +5733,9 @@
 			(uuid "fd73a727-4cb3-4902-871c-08bac9ff0f25")
 		)
 		(instances
-			(project ""
+			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "D304")
+					(reference "D303")
 					(unit 1)
 				)
 			)
@@ -6305,15 +6288,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 210.82 191.77 90)
+		(at 215.9 191.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "8d92ee3c-ce81-4794-bf64-bb862f2f180f")
-		(property "Reference" "D303"
-			(at 208.28 190.246 0)
+		(property "Reference" "D304"
+			(at 217.424 184.658 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6322,7 +6305,7 @@
 			)
 		)
 		(property "Value" "KG EELP41.22"
-			(at 205.486 187.452 0)
+			(at 219.71 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6330,8 +6313,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "https://docs.rs-online.com/e1fe/A700000013302439.pdf"
-			(at 210.82 191.77 0)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 215.9 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6339,8 +6322,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 210.82 191.77 0)
+		(property "Datasheet" "https://docs.rs-online.com/e1fe/A700000013302439.pdf"
+			(at 215.9 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6349,7 +6332,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 210.82 191.77 0)
+			(at 215.9 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6358,7 +6341,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 210.82 191.77 0)
+			(at 215.9 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6373,9 +6356,9 @@
 			(uuid "fd73a727-4cb3-4902-871c-08bac9ff0f26")
 		)
 		(instances
-			(project ""
+			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "D303")
+					(reference "D304")
 					(unit 1)
 				)
 			)
@@ -6383,7 +6366,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 180.34 191.77 180)
+		(at 180.34 195.58 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6391,7 +6374,7 @@
 		(dnp no)
 		(uuid "911f7fb6-ee08-4e78-814d-8a5661e09422")
 		(property "Reference" "R304"
-			(at 178.054 191.77 90)
+			(at 178.054 195.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6399,7 +6382,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 182.88 191.516 90)
+			(at 182.88 195.326 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6407,7 +6390,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 182.118 191.77 90)
+			(at 182.118 195.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6416,7 +6399,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 191.77 0)
+			(at 180.34 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6425,7 +6408,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 180.34 191.77 0)
+			(at 180.34 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6450,7 +6433,8 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:PMOS")
-		(at 203.2 157.48 90)
+		(at 203.2 157.48 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6474,7 +6458,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
-			(at 200.66 152.4 0)
+			(at 205.74 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6483,7 +6467,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
-			(at 215.9 157.48 0)
+			(at 190.5 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6501,7 +6485,7 @@
 			)
 		)
 		(property "Sim.Device" "PMOS"
-			(at 220.345 157.48 0)
+			(at 186.055 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6510,7 +6494,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 222.25 157.48 0)
+			(at 184.15 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6519,7 +6503,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 218.44 157.48 0)
+			(at 187.96 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6709,7 +6693,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 206.502 121.92 90)
 			(effects
 				(font
@@ -7108,7 +7092,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 234.442 93.98 90)
 			(effects
 				(font
@@ -7480,7 +7464,7 @@
 				)
 			)
 		)
-		(property "Value" "511"
+		(property "Value" "1k"
 			(at 187.96 186.69 90)
 			(effects
 				(font
@@ -7488,7 +7472,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 187.96 185.928 90)
 			(effects
 				(font
@@ -7620,7 +7604,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 212.725 101.092 90)
 			(effects
 				(font
@@ -7689,7 +7673,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 214.122 92.71 90)
 			(effects
 				(font
@@ -7891,7 +7875,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 191.77 166.878 90)
 			(effects
 				(font
@@ -8049,8 +8033,8 @@
 				)
 			)
 		)
-		(property "Value" "D"
-			(at 167.386 157.734 0)
+		(property "Value" "MSS1P3L-M3/89A"
+			(at 170.434 164.592 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8066,7 +8050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/89020/mss1p3l.pdf"
 			(at 167.64 154.94 0)
 			(effects
 				(font
