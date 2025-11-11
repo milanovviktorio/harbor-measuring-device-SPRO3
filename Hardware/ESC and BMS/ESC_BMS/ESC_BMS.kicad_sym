@@ -208,7 +208,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "BQ2969T"
+	(symbol "BQ2969"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -220,7 +220,7 @@
 				)
 			)
 		)
-		(property "Value" "BQ2969T"
+		(property "Value" "BQ2969"
 			(at 6.096 3.81 0)
 			(effects
 				(font
@@ -255,7 +255,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "BQ2969T_1_1"
+		(symbol "BQ2969_1_1"
 			(rectangle
 				(start -2.54 2.54)
 				(end 7.62 -7.62)
