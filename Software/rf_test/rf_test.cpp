@@ -18,6 +18,7 @@
 
 // instantiate an object for the nRF24L01 transceiver
 RF24 radio(CE_PIN, CSN_PIN);
+SPI spi;
 
 // Used to control whether this node is sending or receiving
 bool role = false; // true = TX role, false = RX role
@@ -43,8 +44,10 @@ bool setup()
         sleep_ms(10);
     }
 
+    spi.begin(spi0, 2,3,4);
+
     // initialize the transceiver on the SPI bus
-    if (!radio.begin()) {
+    if (!radio.begin(&spi)) {
         printf("radio hardware is not responding!!\n");
         return false;
     }
