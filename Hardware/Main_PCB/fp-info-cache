@@ -1,4 +1,4 @@
-26819625569090538
+26819626017936315
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70574,13 +70574,6 @@ IC_TPS27S100BPWPR
 21
 21
 MainPCB
-L_33uH
-
-
-0
-2
-2
-MainPCB
 PQFN50P300X250X97-14N
 
 
@@ -70601,6 +70594,13 @@ SW_TL3342F160QG_TR
 0
 4
 4
+MainPCB
+VLCF4018
+VLCF4018
+Inductor
+0
+2
+2
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet

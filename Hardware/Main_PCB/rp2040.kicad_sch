@@ -144,10 +144,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -156,19 +153,21 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Y"
-				(at 0 3.81 0)
+				(at 3.175 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Crystal"
-				(at 0 -3.81 0)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -189,7 +188,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Two pin crystal"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -216,10 +215,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -1.905 0)
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
 					)
 					(stroke
 						(width 0)
@@ -231,7 +230,31 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 -1.27) (xy -1.905 1.27)
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27) (xy -2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -254,19 +277,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 -1.27) (xy 1.905 1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.905 0)
+						(xy 0 3.556) (xy 0 3.81)
 					)
 					(stroke
 						(width 0)
@@ -276,8 +287,44 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Crystal_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -297,7 +344,7 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 0 5.08 270)
 					(length 1.27)
 					(name "2"
 						(effects
@@ -307,6 +354,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3332,6 +3415,18 @@
 		(uuid "1aafb41b-7d71-4b38-9f40-10f4fb1fd307")
 	)
 	(junction
+		(at 104.14 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c11f5aa-00fb-4199-a2a4-cd363e1124be")
+	)
+	(junction
+		(at 59.69 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dd0dacd-8b1a-4977-bc03-f5e8296655b7")
+	)
+	(junction
 		(at 109.22 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3627,6 +3722,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 233.68) (xy 104.14 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ae4d880-1067-4780-b9dd-31731e37664a")
+	)
+	(wire
+		(pts
 			(xy 133.35 83.82) (xy 133.35 85.09)
 		)
 		(stroke
@@ -3767,16 +3872,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 163.83) (xy 76.2 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ef493b1-81ab-4929-ad84-83f74c4d486f")
-	)
-	(wire
-		(pts
 			(xy 243.84 121.92) (xy 245.11 121.92)
 		)
 		(stroke
@@ -3884,6 +3979,16 @@
 			(type default)
 		)
 		(uuid "2b2809ef-2aab-4dc4-8a34-8a4fc794aef2")
+	)
+	(wire
+		(pts
+			(xy 59.69 162.56) (xy 59.69 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b84e70c-aaca-495a-95fa-627442577a5d")
 	)
 	(wire
 		(pts
@@ -4117,6 +4222,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 163.83) (xy 59.69 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e30d4d8-0eb7-4968-b13b-eb24be7c5cea")
+	)
+	(wire
+		(pts
 			(xy 237.49 101.6) (xy 237.49 100.33)
 		)
 		(stroke
@@ -4207,6 +4322,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 220.98) (xy 109.22 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e085e4a-52dc-42e1-ba3f-ab6e33d2157f")
+	)
+	(wire
+		(pts
 			(xy 245.11 124.46) (xy 243.84 124.46)
 		)
 		(stroke
@@ -4264,6 +4389,16 @@
 			(type default)
 		)
 		(uuid "63d33dea-1aef-4f89-bb8a-77fe56b589d8")
+	)
+	(wire
+		(pts
+			(xy 104.14 223.52) (xy 104.14 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "643826aa-f716-48b3-a8b7-8e15ce26c49a")
 	)
 	(wire
 		(pts
@@ -4537,6 +4672,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 236.22) (xy 104.14 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a4bb2dc-e247-4590-82b6-be6104a9aed9")
+	)
+	(wire
+		(pts
 			(xy 120.65 80.01) (xy 124.46 80.01)
 		)
 		(stroke
@@ -4557,7 +4702,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 151.13) (xy 62.23 151.13)
+			(xy 76.2 151.13) (xy 66.04 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4867,6 +5012,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 163.83) (xy 76.2 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aefd5a9e-ff9a-413d-aed7-f0a5e2ebf280")
+	)
+	(wire
+		(pts
 			(xy 193.04 127) (xy 194.31 127)
 		)
 		(stroke
@@ -4914,6 +5069,16 @@
 			(type default)
 		)
 		(uuid "b7f91a45-5a97-4204-a0f0-ab4b6772fee2")
+	)
+	(wire
+		(pts
+			(xy 109.22 220.98) (xy 109.22 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba2337a4-2b8e-47cb-ab56-5f919279ed7f")
 	)
 	(wire
 		(pts
@@ -5134,6 +5299,16 @@
 			(type default)
 		)
 		(uuid "d32cc430-704d-44a8-addd-5853f2ce3d34")
+	)
+	(wire
+		(pts
+			(xy 109.22 236.22) (xy 104.14 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5055a95-4fa3-4c72-85ce-7ddda8291f37")
 	)
 	(wire
 		(pts
@@ -5477,7 +5652,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 146.05) (xy 76.2 146.05)
+			(xy 66.04 146.05) (xy 76.2 146.05)
 		)
 		(stroke
 			(width 0)
@@ -5504,6 +5679,16 @@
 			(type default)
 		)
 		(uuid "ffa812a5-f012-4de7-97b7-c0cfc3c41ccf")
+	)
+	(label "Data-"
+		(at 194.31 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b5be074-be31-40fc-bef5-b097170d0de3")
 	)
 	(label "XIN"
 		(at 78.74 214.63 0)
@@ -5575,16 +5760,6 @@
 		)
 		(uuid "319914b5-4939-416c-bf6b-be777f589563")
 	)
-	(label "RUN"
-		(at 62.23 163.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "432edfb8-76db-4a59-8402-f213bb9855b1")
-	)
 	(label "QSPI_SCLK"
 		(at 62.23 127 0)
 		(effects
@@ -5596,7 +5771,7 @@
 		(uuid "638fc907-b714-4292-812a-104b51400f78")
 	)
 	(label "XOUT"
-		(at 62.23 151.13 0)
+		(at 66.04 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5635,8 +5810,18 @@
 		)
 		(uuid "82b82bfc-b421-4659-9d5b-5ecfe085cda4")
 	)
+	(label "RUN"
+		(at 71.12 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94b83f84-d464-46e7-a7b3-411095692988")
+	)
 	(label "XIN"
-		(at 62.23 146.05 0)
+		(at 66.04 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5674,6 +5859,16 @@
 			(justify left bottom)
 		)
 		(uuid "b380a66b-9412-4462-b366-2dd3040384ed")
+	)
+	(label "Data+"
+		(at 194.31 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c28ce54d-f0db-42aa-952e-dac60f9a029b")
 	)
 	(label "QSPI_SD0"
 		(at 62.23 115.57 0)
@@ -6285,7 +6480,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005edae9f0")
-		(property "Reference" "R306"
+		(property "Reference" "R307"
 			(at 199.39 223.3422 90)
 			(effects
 				(font
@@ -6336,7 +6531,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "R306")
+					(reference "R307")
 					(unit 1)
 				)
 			)
@@ -6351,7 +6546,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005edc82df")
-		(property "Reference" "#PWR0307"
+		(property "Reference" "#PWR0309"
 			(at 107.95 203.2 0)
 			(effects
 				(font
@@ -6400,7 +6595,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0307")
+					(reference "#PWR0309")
 					(unit 1)
 				)
 			)
@@ -6415,7 +6610,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005edc8ac7")
-		(property "Reference" "#PWR0306"
+		(property "Reference" "#PWR0307"
 			(at 95.25 203.2 0)
 			(effects
 				(font
@@ -6464,7 +6659,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0306")
+					(reference "#PWR0307")
 					(unit 1)
 				)
 			)
@@ -6479,7 +6674,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005eee74ce")
-		(property "Reference" "#PWR0304"
+		(property "Reference" "#PWR0305"
 			(at 87.63 62.23 0)
 			(effects
 				(font
@@ -6528,7 +6723,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0304")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -7291,7 +7486,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ef621a6")
-		(property "Reference" "#PWR0314"
+		(property "Reference" "#PWR0316"
 			(at 201.93 78.74 0)
 			(effects
 				(font
@@ -7340,7 +7535,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0314")
+					(reference "#PWR0316")
 					(unit 1)
 				)
 			)
@@ -7355,7 +7550,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005efccd2a")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR0303"
 			(at 67.31 77.47 0)
 			(effects
 				(font
@@ -7404,7 +7599,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0302")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -7419,7 +7614,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f00afba")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR0304"
 			(at 78.74 91.44 0)
 			(effects
 				(font
@@ -7468,7 +7663,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0303")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -7483,7 +7678,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f00b2d4")
-		(property "Reference" "#PWR0310"
+		(property "Reference" "#PWR0312"
 			(at 133.35 91.44 0)
 			(effects
 				(font
@@ -7532,7 +7727,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0310")
+					(reference "#PWR0312")
 					(unit 1)
 				)
 			)
@@ -7713,7 +7908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0357e4f7-e3c5-4130-94c7-baf3227e09a6")
-		(property "Reference" "R301"
+		(property "Reference" "R302"
 			(at 118.11 222.2499 0)
 			(effects
 				(font
@@ -7767,7 +7962,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "R301")
+					(reference "R302")
 					(unit 1)
 				)
 			)
@@ -7783,7 +7978,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04c49831-5add-4df0-abd6-9434022c7e5d")
-		(property "Reference" "R304"
+		(property "Reference" "R305"
 			(at 189.23 124.46 90)
 			(effects
 				(font
@@ -7835,7 +8030,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "R304")
+					(reference "R305")
 					(unit 1)
 				)
 			)
@@ -8118,7 +8313,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25304bba-73fc-4f17-91a0-879cb87f3e43")
-		(property "Reference" "#PWR0313"
+		(property "Reference" "#PWR0315"
 			(at 180.34 148.59 0)
 			(effects
 				(font
@@ -8167,7 +8362,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0313")
+					(reference "#PWR0315")
 					(unit 1)
 				)
 			)
@@ -8183,7 +8378,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "266deadd-b103-4ef2-af2a-74a29477b057")
-		(property "Reference" "#PWR0312"
+		(property "Reference" "#PWR0314"
 			(at 180.34 118.11 0)
 			(effects
 				(font
@@ -8232,7 +8427,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0312")
+					(reference "#PWR0314")
 					(unit 1)
 				)
 			)
@@ -8385,7 +8580,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38ba423d-803e-4718-9a86-7313947a3a60")
-		(property "Reference" "R305"
+		(property "Reference" "R306"
 			(at 189.23 138.684 90)
 			(effects
 				(font
@@ -8437,7 +8632,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "R305")
+					(reference "R306")
 					(unit 1)
 				)
 			)
@@ -8453,7 +8648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39781264-8d46-4a3e-adf1-4ae9d23fe9aa")
-		(property "Reference" "#PWR0316"
+		(property "Reference" "#PWR0318"
 			(at 248.92 207.01 0)
 			(effects
 				(font
@@ -8503,7 +8698,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0316")
+					(reference "#PWR0318")
 					(unit 1)
 				)
 			)
@@ -8582,7 +8777,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f432046-25c5-4fd2-bb06-f1f54781eb93")
-		(property "Reference" "#PWR0320"
+		(property "Reference" "#PWR0322"
 			(at 255.27 220.98 0)
 			(effects
 				(font
@@ -8631,7 +8826,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0320")
+					(reference "#PWR0322")
 					(unit 1)
 				)
 			)
@@ -8647,7 +8842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d1690e9-7c3a-4cb9-94ce-3efa7f1d797a")
-		(property "Reference" "#PWR0309"
+		(property "Reference" "#PWR0311"
 			(at 124.46 62.23 0)
 			(effects
 				(font
@@ -8697,7 +8892,7 @@
 		(instances
 			(project ""
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0309")
+					(reference "#PWR0311")
 					(unit 1)
 				)
 			)
@@ -8713,7 +8908,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "622ff1c2-faab-4b85-8a36-c6e7e2497274")
-		(property "Reference" "#PWR0318"
+		(property "Reference" "#PWR0320"
 			(at 250.19 143.51 0)
 			(effects
 				(font
@@ -8762,7 +8957,80 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0318")
+					(reference "#PWR0320")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 104.14 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71696ede-5c73-4365-841c-c370f87690e2")
+		(property "Reference" "Y301"
+			(at 97.79 223.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12MHz"
+			(at 97.536 225.552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm"
+			(at 104.14 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://dk.rs-online.com/web/p/krystalenheder/1712841"
+			(at 104.14 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 104.14 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "08d6727b-157b-43a6-af2e-36ff966a45fc")
+		)
+		(pin "1"
+			(uuid "c51c721d-14f7-44a1-96de-caeade0c7ee9")
+		)
+		(pin "4"
+			(uuid "ccfcc1df-67db-4e6d-92bd-778c46f4f05a")
+		)
+		(pin "3"
+			(uuid "80d2a237-70f9-4c25-9e5e-71dbd01b2063")
+		)
+		(instances
+			(project ""
+				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
+					(reference "Y301")
 					(unit 1)
 				)
 			)
@@ -8777,7 +9045,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d6ebfa2-1724-4cde-8c40-68bf086645ce")
-		(property "Reference" "#PWR0317"
+		(property "Reference" "#PWR0319"
 			(at 248.92 255.905 0)
 			(effects
 				(font
@@ -8826,7 +9094,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0317")
+					(reference "#PWR0319")
 					(unit 1)
 				)
 			)
@@ -8912,7 +9180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85881502-f38a-4532-9313-a6d0f35c6fbe")
-		(property "Reference" "#PWR0315"
+		(property "Reference" "#PWR0317"
 			(at 237.49 104.14 0)
 			(effects
 				(font
@@ -8962,75 +9230,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0315")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Crystal")
-		(at 104.14 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b3723b6-26c4-4130-a44b-142dcf50d3fe")
-		(property "Reference" "Y301"
-			(at 104.14 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "12Mhz"
-			(at 104.14 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm"
-			(at 104.14 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://dk.rs-online.com/web/p/krystalenheder/1712841"
-			(at 104.14 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two pin crystal"
-			(at 104.14 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "684d8837-7b96-4044-89d6-2573c0e7e935")
-		)
-		(pin "1"
-			(uuid "4ae1d35d-6420-45b6-9d7d-3417fe652593")
-		)
-		(instances
-			(project "Main_PCB"
-				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "Y301")
+					(reference "#PWR0317")
 					(unit 1)
 				)
 			)
@@ -9045,7 +9245,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9069820d-cb49-4533-ae5b-27c2ebd18f8d")
-		(property "Reference" "#PWR0319"
+		(property "Reference" "#PWR0321"
 			(at 252.73 118.11 0)
 			(effects
 				(font
@@ -9094,7 +9294,74 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0319")
+					(reference "#PWR0321")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 104.14 240.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98553e04-63b2-4a78-9c74-a3f4cc99e4fd")
+		(property "Reference" "#PWR0308"
+			(at 104.14 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9828985-bc1b-44f5-b91b-48dfc43c12bc")
+		)
+		(instances
+			(project "Main_PCB"
+				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
+					(reference "#PWR0308")
 					(unit 1)
 				)
 			)
@@ -9110,7 +9377,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e00850f-ac57-4f66-ba65-8d23afb8f563")
-		(property "Reference" "R302"
+		(property "Reference" "R303"
 			(at 189.23 108.204 90)
 			(effects
 				(font
@@ -9162,7 +9429,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "R302")
+					(reference "R303")
 					(unit 1)
 				)
 			)
@@ -9177,7 +9444,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a68b5deb-730e-4096-a69f-5c61ec150009")
-		(property "Reference" "R307"
+		(property "Reference" "R308"
 			(at 232.41 203.0222 90)
 			(effects
 				(font
@@ -9228,7 +9495,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "R307")
+					(reference "R308")
 					(unit 1)
 				)
 			)
@@ -9245,7 +9512,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b91afff3-9528-47df-8ac9-f5e13679d49b")
-		(property "Reference" "#PWR0305"
+		(property "Reference" "#PWR0306"
 			(at 92.71 246.38 0)
 			(effects
 				(font
@@ -9295,7 +9562,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0305")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -9312,7 +9579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c85ef31b-fd12-457a-a387-1b013c1110b8")
-		(property "Reference" "#PWR0311"
+		(property "Reference" "#PWR0313"
 			(at 156.21 256.54 0)
 			(effects
 				(font
@@ -9362,7 +9629,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0311")
+					(reference "#PWR0313")
 					(unit 1)
 				)
 			)
@@ -9379,7 +9646,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c906cd9e-6da6-4dd5-8ce9-de93bc0cbc4a")
-		(property "Reference" "#PWR0308"
+		(property "Reference" "#PWR0310"
 			(at 115.57 246.38 0)
 			(effects
 				(font
@@ -9429,7 +9696,7 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "#PWR0308")
+					(reference "#PWR0310")
 					(unit 1)
 				)
 			)
@@ -9514,6 +9781,76 @@
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
 					(reference "U302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59.69 158.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5fe8911-c268-4770-8ec1-8d49fbda4380")
+		(property "Reference" "R301"
+			(at 62.23 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 62.23 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 61.468 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "604bbba4-ff86-4bc9-9ea0-2d0377f708c4")
+		)
+		(pin "1"
+			(uuid "8cff8225-69e1-400f-9992-bc5450df45ff")
+		)
+		(instances
+			(project "Main_PCB"
+				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -9665,7 +10002,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e980f381-ef00-4369-8d0d-8dbff171077e")
-		(property "Reference" "R303"
+		(property "Reference" "R304"
 			(at 189.23 116.84 90)
 			(effects
 				(font
@@ -9717,7 +10054,72 @@
 		(instances
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
-					(reference "R303")
+					(reference "R304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 59.69 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0170520-0857-4319-b36b-3c2ff27c1e78")
+		(property "Reference" "#PWR0302"
+			(at 59.69 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 59.69 150.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 59.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6801c01a-59a7-4e9d-954c-7559fa83f4cc")
+		)
+		(instances
+			(project "Main_PCB"
+				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/8fb1cb5a-ea35-412e-8cdc-a6dc24bbe761"
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
