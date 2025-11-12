@@ -1336,6 +1336,10 @@
 		(color 0 0 0 0)
 		(uuid "560dd802-dcf4-403d-b607-10147c8b3209")
 	)
+	(no_connect
+		(at 83.82 41.91)
+		(uuid "4a31974b-4382-45c8-ad85-cde5a3709e1f")
+	)
 	(wire
 		(pts
 			(xy 83.82 24.13) (xy 77.47 24.13)
@@ -1478,7 +1482,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 39.37) (xy 161.29 39.37)
+			(xy 154.94 39.37) (xy 161.29 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1733,7 +1737,7 @@
 	)
 	(hierarchical_label "VMID"
 		(shape output)
-		(at 153.67 39.37 180)
+		(at 154.94 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)

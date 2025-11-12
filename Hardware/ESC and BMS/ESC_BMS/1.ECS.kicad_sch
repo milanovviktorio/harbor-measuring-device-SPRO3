@@ -9788,7 +9788,7 @@
 		(dnp no)
 		(uuid "a2896025-6efb-412d-8a7d-2628ee0088fb")
 		(property "Reference" "U209"
-			(at 323.85 177.8702 0)
+			(at 321.31 178.308 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9796,7 +9796,7 @@
 			)
 		)
 		(property "Value" "TL331"
-			(at 323.85 175.3302 0)
+			(at 321.31 175.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
