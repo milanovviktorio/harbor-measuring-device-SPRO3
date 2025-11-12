@@ -23876,7 +23876,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Main PCB\nGroup 6\nESPRO3"
+	(gr_text "Main PCB\nGroup 6\nEE-SPRO3"
 		(at 112 59 0)
 		(layer "F.SilkS")
 		(uuid "770bdfcc-679d-4971-9f01-a285a0f40499")
