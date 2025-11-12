@@ -618,6 +618,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1738,7 +1845,7 @@
 		)
 	)
 	(rectangle
-		(start 21.59 21.59)
+		(start 21.59 17.526)
 		(end 92.71 48.26)
 		(stroke
 			(width 0)
@@ -1799,7 +1906,7 @@
 	)
 	(text "Connectors for ESC/BMS-board"
 		(exclude_from_sim no)
-		(at 44.196 24.13 0)
+		(at 44.196 20.32 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -1808,6 +1915,12 @@
 			)
 		)
 		(uuid "a7848272-f1c2-4d32-bfd4-f22325c831ed")
+	)
+	(junction
+		(at 66.04 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "476c9718-4c7e-4ed1-9bf1-3558f5b77848")
 	)
 	(no_connect
 		(at 34.29 45.72)
@@ -1899,7 +2012,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 33.02) (xy 66.04 31.75)
+			(xy 66.04 27.94) (xy 66.04 29.21)
 		)
 		(stroke
 			(width 0)
@@ -1929,7 +2042,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 35.56) (xy 59.69 35.56)
+			(xy 67.31 35.56) (xy 58.42 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1979,7 +2092,27 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 35.56) (xy 59.69 31.75)
+			(xy 66.04 29.21) (xy 66.04 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8128082e-b11f-4545-9205-96f85234f878")
+	)
+	(wire
+		(pts
+			(xy 66.04 29.21) (xy 71.12 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "986fe2b5-5751-4247-8e96-66ad0ab11df6")
+	)
+	(wire
+		(pts
+			(xy 58.42 35.56) (xy 58.42 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2901,7 +3034,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 66.04 31.75 0)
+		(at 66.04 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2909,7 +3042,7 @@
 		(dnp no)
 		(uuid "992410f5-d857-485b-a5e9-86bd4c747480")
 		(property "Reference" "#PWR0604"
-			(at 66.04 35.56 0)
+			(at 66.04 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2917,8 +3050,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDC"
-			(at 66.04 28.194 0)
+		(property "Value" "+VPROT"
+			(at 66.04 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2926,7 +3059,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 31.75 0)
+			(at 66.04 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2935,7 +3068,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 31.75 0)
+			(at 66.04 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2944,7 +3077,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 66.04 31.75 0)
+			(at 66.04 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3237,7 +3370,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 59.69 31.75 0)
+		(at 58.42 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3245,7 +3378,7 @@
 		(dnp no)
 		(uuid "a8138454-b039-48ba-9556-be5545f48f31")
 		(property "Reference" "#PWR0603"
-			(at 59.69 35.56 0)
+			(at 58.42 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3254,7 +3387,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 59.69 28.194 0)
+			(at 58.42 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3262,7 +3395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 31.75 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,7 +3404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 31.75 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3280,7 +3413,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 59.69 31.75 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3295,6 +3428,72 @@
 			(project "Main_PCB"
 				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/2fd609f6-122d-440e-b3d6-5f283f47ac3b"
 					(reference "#PWR0603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 71.12 29.21 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bea56291-ad10-4e3e-afe4-852784cd8c54")
+		(property "Reference" "TP601"
+			(at 76.2 27.9399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+VPROT test point"
+			(at 73.152 30.988 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 71.12 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63e00832-c84e-4b45-8460-690550a79280")
+		)
+		(instances
+			(project ""
+				(path "/90d7beec-e1a2-46f8-bbb2-6b8f3489db10/2fd609f6-122d-440e-b3d6-5f283f47ac3b"
+					(reference "TP601")
 					(unit 1)
 				)
 			)

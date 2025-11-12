@@ -4232,7 +4232,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 101.6) (xy 237.49 100.33)
+			(xy 234.95 101.6) (xy 234.95 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4522,7 +4522,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 101.6) (xy 237.49 101.6)
+			(xy 240.03 101.6) (xy 234.95 101.6)
 		)
 		(stroke
 			(width 0)
@@ -9172,16 +9172,15 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 237.49 100.33 0)
+		(at 234.95 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "85881502-f38a-4532-9313-a6d0f35c6fbe")
 		(property "Reference" "#PWR0317"
-			(at 237.49 104.14 0)
+			(at 234.95 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9189,16 +9188,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDC"
-			(at 237.49 95.25 0)
+		(property "Value" "+VPROT"
+			(at 230.886 96.774 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 100.33 0)
+			(at 234.95 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9207,7 +9207,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 100.33 0)
+			(at 234.95 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9216,7 +9216,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 237.49 100.33 0)
+			(at 234.95 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
