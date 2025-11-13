@@ -1403,16 +1403,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 71.12) (xy 95.25 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17124248-9ea3-4edb-a974-33458d9700c0")
-	)
-	(wire
-		(pts
 			(xy 50.8 68.58) (xy 50.8 80.01)
 		)
 		(stroke
@@ -1450,6 +1440,16 @@
 			(type default)
 		)
 		(uuid "234dd751-88b6-43cd-acbe-0a5bbc14a667")
+	)
+	(wire
+		(pts
+			(xy 90.17 71.12) (xy 95.25 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "348df359-4ab8-4787-ba5c-0052b0b91bbd")
 	)
 	(wire
 		(pts
@@ -1921,6 +1921,16 @@
 		)
 		(uuid "4babfc9c-0c32-4147-8800-79e1bc93fc08")
 	)
+	(label "Button1"
+		(at 95.25 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "553b44dd-fc3e-4fa8-80d3-c8bede7b3250")
+	)
 	(label "MOSI"
 		(at 57.15 38.1 0)
 		(effects
@@ -2041,16 +2051,6 @@
 		)
 		(uuid "e915d726-78bd-40a7-8451-dfc503972e4e")
 	)
-	(label "Button1"
-		(at 95.25 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fb1e4135-5e83-4a6d-8f58-7198509a7d65")
-	)
 	(hierarchical_label "GPIO18"
 		(shape tri_state)
 		(at 46.99 35.56 180)
@@ -2061,6 +2061,17 @@
 			(justify right)
 		)
 		(uuid "04d7a7c1-2e81-4d74-bb23-ee10a5574e09")
+	)
+	(hierarchical_label "GPIO1"
+		(shape bidirectional)
+		(at 46.99 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18e4ef33-eabc-460e-a87d-93c1179fa773")
 	)
 	(hierarchical_label "GPIO20"
 		(shape tri_state)
@@ -2084,17 +2095,6 @@
 		)
 		(uuid "3adcf21b-27a0-4ed4-b116-f0b67028e3d7")
 	)
-	(hierarchical_label "GPIO1"
-		(shape tri_state)
-		(at 46.99 62.23 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "498428ab-5f8a-46c6-b776-6d87d4eebcf4")
-	)
 	(hierarchical_label "GPIO16"
 		(shape tri_state)
 		(at 46.99 33.02 180)
@@ -2117,17 +2117,6 @@
 		)
 		(uuid "6aa05b40-0822-495c-a497-b10700b3ce22")
 	)
-	(hierarchical_label "GPIO0"
-		(shape tri_state)
-		(at 46.99 59.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7c7df4c1-9b13-4741-b5ed-c94e89a6db47")
-	)
 	(hierarchical_label "GPIO21"
 		(shape tri_state)
 		(at 46.99 30.48 180)
@@ -2139,7 +2128,7 @@
 		)
 		(uuid "84195d81-cb33-4f1f-85be-3eeb65cb88f8")
 	)
-	(hierarchical_label "GPIO26"
+	(hierarchical_label "GPIO26_ADC0"
 		(shape tri_state)
 		(at 46.99 44.45 180)
 		(effects
@@ -2172,7 +2161,7 @@
 		)
 		(uuid "a5a6cdf6-f964-46a0-9222-51f4a92e1c40")
 	)
-	(hierarchical_label "GPIO27"
+	(hierarchical_label "GPIO27_ADC1"
 		(shape tri_state)
 		(at 46.99 46.99 180)
 		(effects
@@ -2194,6 +2183,17 @@
 		)
 		(uuid "be4e514b-1915-42af-888e-d546a684be71")
 	)
+	(hierarchical_label "GPIO0"
+		(shape bidirectional)
+		(at 46.99 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ca82f2bc-2b18-49f6-9a1e-92a6f2d5fb38")
+	)
 	(hierarchical_label "GPIO5"
 		(shape tri_state)
 		(at 46.99 53.34 180)
@@ -2205,7 +2205,7 @@
 		)
 		(uuid "cbfea455-188b-4c82-a18f-0334008cce2f")
 	)
-	(hierarchical_label "GPIO28"
+	(hierarchical_label "GPIO28_ADC2"
 		(shape tri_state)
 		(at 46.99 66.04 180)
 		(effects
@@ -2702,7 +2702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+3V3"
 			(at 152.4 30.48 0)
 			(effects
 				(font
