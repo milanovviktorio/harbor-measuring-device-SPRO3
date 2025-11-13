@@ -711,16 +711,6 @@
 		)
 		(uuid "16b0b6a0-8b1a-4bd2-bcab-6483544c4f6f")
 	)
-	(wire
-		(pts
-			(xy 168.91 69.85) (xy 179.07 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18117c3e-ce8b-41e5-a520-0f11981f9335")
-	)
 	(polyline
 		(pts
 			(xy 125.73 31.75) (xy 127 30.48)
@@ -1337,7 +1327,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 67.31) (xy 179.07 67.31)
+			(xy 168.91 68.58) (xy 179.07 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1517,7 +1507,7 @@
 	)
 	(hierarchical_label "VMID"
 		(shape output)
-		(at 168.91 67.31 180)
+		(at 168.91 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1526,20 +1516,9 @@
 		)
 		(uuid "1f477fce-c29d-48df-b71f-930f7ba4dd11")
 	)
-	(hierarchical_label "DC"
-		(shape input)
-		(at 179.07 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "369d14ea-f7cf-4e82-8691-88c79685230e")
-	)
 	(hierarchical_label "VMID"
 		(shape input)
-		(at 179.07 67.31 0)
+		(at 179.07 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1547,17 +1526,6 @@
 			(justify left)
 		)
 		(uuid "4751c08f-c574-4fff-945d-1dcd7bd3daa1")
-	)
-	(hierarchical_label "DC"
-		(shape output)
-		(at 168.91 69.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f5fbd3a9-248a-4982-88e3-eda3cd304d9f")
 	)
 	(sheet
 		(at 179.07 27.94)
