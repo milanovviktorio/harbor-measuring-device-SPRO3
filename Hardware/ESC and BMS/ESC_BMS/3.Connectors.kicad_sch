@@ -1410,7 +1410,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 64.77) (xy 166.37 64.77)
+			(xy 156.21 64.77) (xy 166.37 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1793,6 +1793,19 @@
 		)
 		(uuid "e07f1fc8-a078-44ff-b7f1-07f594ade739")
 	)
+	(hierarchical_label "+VCHARGE"
+		(shape output)
+		(at 156.21 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "e1f05181-cdfc-48a2-8a22-02f8cd7b67db")
+	)
 	(hierarchical_label "B_PHASE"
 		(shape input)
 		(at 31.75 31.75 180)
@@ -1954,71 +1967,6 @@
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
 					(reference "J404")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 152.4 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1e11ede5-8b2a-418d-8219-2f94846b4802")
-		(property "Reference" "#PWR0406"
-			(at 152.4 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VCHARGE"
-			(at 152.4 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 152.4 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a51483ad-28eb-44ac-92d3-d8616da9f777")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/b843d17e-7d6d-4569-97d7-0fdd5bf8acb0"
-					(reference "#PWR0406")
 					(unit 1)
 				)
 			)

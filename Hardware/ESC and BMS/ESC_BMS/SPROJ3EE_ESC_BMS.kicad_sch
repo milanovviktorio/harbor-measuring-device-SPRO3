@@ -1164,6 +1164,16 @@
 		)
 		(uuid "a3223830-29c8-4987-ab42-5a90b68e2437")
 	)
+	(wire
+		(pts
+			(xy 168.91 69.85) (xy 179.07 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a39085ee-6bea-448c-86bd-e52d8d9b4b91")
+	)
 	(polyline
 		(pts
 			(xy 60.96 83.185) (xy 62.23 83.185)
@@ -1327,7 +1337,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 68.58) (xy 179.07 68.58)
+			(xy 168.91 67.31) (xy 179.07 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1505,28 +1515,6 @@
 		)
 		(uuid "ffebde23-42db-4bcb-addc-4060f7c470f1")
 	)
-	(hierarchical_label "VMID"
-		(shape output)
-		(at 168.91 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1f477fce-c29d-48df-b71f-930f7ba4dd11")
-	)
-	(hierarchical_label "VMID"
-		(shape input)
-		(at 179.07 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4751c08f-c574-4fff-945d-1dcd7bd3daa1")
-	)
 	(sheet
 		(at 179.07 27.94)
 		(size 13.97 43.815)
@@ -1663,6 +1651,26 @@
 		(pin "+VBATT" output
 			(at 179.07 64.77 180)
 			(uuid "6c7ee984-8bd1-4275-9e85-42d373f63155")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VMID" output
+			(at 179.07 67.31 180)
+			(uuid "5163dfb7-3f17-4b41-9f7a-54699830df40")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+VCHARGE" output
+			(at 179.07 69.85 180)
+			(uuid "4774ee90-f0a2-410d-99af-d510824dba95")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1855,6 +1863,26 @@
 		(pin "+VBATT" input
 			(at 168.91 64.77 0)
 			(uuid "147d9abb-4adc-4e66-aecf-12019758bbc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VMID" input
+			(at 168.91 67.31 0)
+			(uuid "3561c13d-6d14-4e9f-9325-671df5afea28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+VCHARGE" input
+			(at 168.91 69.85 0)
+			(uuid "a041bccc-4a3b-4cf8-9e00-87641f9bc28a")
 			(effects
 				(font
 					(size 1.27 1.27)
