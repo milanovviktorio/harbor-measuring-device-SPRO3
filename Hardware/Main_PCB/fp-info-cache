@@ -1,4 +1,4 @@
-26819626017996284
+26821400386195421
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70573,6 +70573,13 @@ IC_TPS27S100BPWPR
 0
 21
 21
+MainPCB
+LGA-14L_2p5X3X0p83_STM
+
+LSM6DSV320XTR 
+0
+14
+14
 MainPCB
 PQFN50P300X250X97-14N
 
