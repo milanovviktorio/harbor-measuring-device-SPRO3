@@ -279,16 +279,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 39.37) (xy 138.43 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d332371-a956-413c-8966-580aef188c98")
-	)
-	(wire
-		(pts
 			(xy 173.99 66.04) (xy 179.07 66.04)
 		)
 		(stroke
@@ -326,16 +316,6 @@
 			(type default)
 		)
 		(uuid "8923b1be-bb09-4c33-8643-0e685d518e9a")
-	)
-	(wire
-		(pts
-			(xy 115.57 29.21) (xy 138.43 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c8bfe24-3934-4272-8977-9430ea7cc635")
 	)
 	(wire
 		(pts
@@ -1677,7 +1657,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "c6d47e36-3031-4d07-ba70-df8c4b187df5")
-		(property "Sheetname" "ICM42688"
+		(property "Sheetname" "MPU6050"
 			(at 138.43 26.2124 0)
 			(effects
 				(font
@@ -1693,16 +1673,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "AP_CS" bidirectional
-			(at 138.43 29.21 180)
-			(uuid "99006991-24c7-4199-9518-67f4820bd5f6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "AP_SCL" bidirectional
@@ -1728,16 +1698,6 @@
 		(pin "INT1" input
 			(at 138.43 36.83 180)
 			(uuid "0eeadd71-5ba7-4a3d-9b0e-91702a8a06f0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "INT2" input
-			(at 138.43 39.37 180)
-			(uuid "abe04de3-fb81-4be5-8745-56542f8aaac1")
 			(effects
 				(font
 					(size 1.27 1.27)
