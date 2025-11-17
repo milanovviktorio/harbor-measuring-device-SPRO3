@@ -5702,16 +5702,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:SQJQ131EL")
-		(at 255.27 173.99 90)
+		(at 203.2 157.48 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3e8f433f-7e3a-4a8e-b604-7e91d61cdcb6")
 		(property "Reference" "Q305"
-			(at 255.27 165.1 90)
+			(at 203.2 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5719,7 +5719,7 @@
 			)
 		)
 		(property "Value" "SQJQ131EL"
-			(at 255.27 167.64 90)
+			(at 203.2 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,7 +5727,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
-			(at 257.175 168.91 0)
+			(at 201.295 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5738,7 +5738,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
-			(at 259.08 168.91 0)
+			(at 199.39 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5748,7 +5748,7 @@
 			)
 		)
 		(property "Description" "-232A Id, 340V Vds, P-Channel MOSFET, 1.4mOhm Ron, 82nC Qgd, -55 to 175 °C, LFPAK88"
-			(at 247.65 171.45 0)
+			(at 210.82 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7677,7 +7677,7 @@
 				)
 			)
 		)
-		(property "Value" "BQ2969T"
+		(property "Value" "BQ2969"
 			(at 226.568 98.044 0)
 			(effects
 				(font
