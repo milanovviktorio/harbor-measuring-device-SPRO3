@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "starved_thermal|131000000|90600000|b5c339a5-62a1-46ee-bea0-bd974d2e0313|0ade93d2-ce01-4035-9a14-0fe3da07da7d|F.Cu",
+          "kicad being funny"
+        ]
+      ],
       "meta": {
         "version": 2
       },

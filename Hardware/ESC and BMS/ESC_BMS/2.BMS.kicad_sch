@@ -7677,7 +7677,7 @@
 				)
 			)
 		)
-		(property "Value" "BQ2969"
+		(property "Value" "BQ2969T"
 			(at 226.568 98.044 0)
 			(effects
 				(font
