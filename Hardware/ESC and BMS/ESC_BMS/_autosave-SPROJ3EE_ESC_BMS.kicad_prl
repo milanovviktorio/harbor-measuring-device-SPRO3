@@ -4,59 +4,7 @@
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
-    "hidden_nets": [
-      "+3.3V",
-      "+VPROT",
-      "A_PHASE",
-      "Net-(D201-K)",
-      "Net-(D202-K)",
-      "C_PHASE",
-      "Net-(D203-K)",
-      "B_PHASE",
-      "VDD",
-      "Net-(U302-V1)",
-      "Net-(Q304-G)",
-      "Net-(D301-A)",
-      "Net-(D303-A1)",
-      "Net-(D303-K1)",
-      "Net-(D303-A2)",
-      "/2. BMS/+VBATT",
-      "/1. ESC/CHS",
-      "/1. ESC/BEMF",
-      "/1. ESC/BLS",
-      "/1. ESC/BHS",
-      "/1. ESC/AHS",
-      "/1. ESC/CLS",
-      "/1. ESC/ALS",
-      "/2. BMS/+VCHARGE",
-      "Net-(Q201-G)",
-      "Net-(Q202-G)",
-      "Net-(Q203-G)",
-      "Net-(Q204-G)",
-      "Net-(Q205-G)",
-      "Net-(Q206-G)",
-      "Net-(Q303-G)",
-      "Net-(U205-HO)",
-      "Net-(U205-LO)",
-      "Net-(U206-HO)",
-      "Net-(U206-LO)",
-      "Net-(U209--)",
-      "Net-(U209-+)",
-      "Net-(U210-HO)",
-      "Net-(U210-LO)",
-      "Net-(U301-TS)",
-      "Net-(U302-V2)",
-      "/2. BMS/VMID",
-      "/1. ESC/ANAND",
-      "/1. ESC/ALSS",
-      "/1. ESC/AHSS",
-      "/1. ESC/CLSS",
-      "/1. ESC/CNAND",
-      "/1. ESC/CHSS",
-      "/1. ESC/BLSS",
-      "/1. ESC/BHSS",
-      "/1. ESC/BNAND"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -65,7 +13,7 @@
       "shapes": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
-      "zones": 0.5
+      "zones": 0.10999999940395355
     },
     "selection_filter": {
       "dimensions": true,
@@ -100,7 +48,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff7_ffffffdf",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -109,7 +57,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "SPROJ3EE_ESC_BMS.kicad_prl",
+    "filename": "_autosave-SPROJ3EE_ESC_BMS.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

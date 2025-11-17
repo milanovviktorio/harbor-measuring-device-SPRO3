@@ -1497,23 +1497,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -1.778 3.556 0)
+			(property "Reference" "U302"
+				(at 3.048 5.588 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "BQ2969T"
-				(at 6.096 3.81 0)
+			(property "Value" "BQ2969"
+				(at 3.048 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.2x2mm_ThermalVias"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1531,7 +1531,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "BQ296xxx Overvoltage Protection for 2-Series, 3-Series, and 4-Series Cell Li-Ion Batteries with Regulated Output Supply"
+			(property "Description" "BQ296909DSGR"
 				(at 3.048 -21.59 0)
 				(effects
 					(font
@@ -1645,7 +1645,7 @@
 				(pin output line
 					(at 10.16 1.27 180)
 					(length 2.54)
-					(name "OUT"
+					(name "REG"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1660,10 +1660,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin output line
 					(at 10.16 -1.27 180)
 					(length 2.54)
-					(name "CTL"
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1678,10 +1678,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin passive line
 					(at 10.16 -3.81 180)
 					(length 2.54)
-					(name "REG"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2456,6 +2456,342 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:SQJQ131EL"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SQJQ131EL"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:LFPAK88"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/77936/sqjq131el.pdf"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "-280A Id, 30V Vds, P-Channel MOSFET, 1.4mOhm Ron, 82nC Qgd, -55 to 175 °C, LFPAK88"
+				(at 2.54 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Power MOSFET P-MOS Automotive AEC-Q101 PowerPAK 8x8L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LFPAK88*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SQJQ131EL_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SQJQ131EL_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -2967,6 +3303,12 @@
 		(uuid "e2835cff-b718-47ff-8185-78a51002d449")
 	)
 	(junction
+		(at 238.76 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "112984c2-e203-477e-b498-de1a8bb58956")
+	)
+	(junction
 		(at 215.9 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3003,34 +3345,16 @@
 		(uuid "22bdda51-c47b-454f-b611-fde7f95ae449")
 	)
 	(junction
-		(at 241.3 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "369cbe26-aca8-4f06-9b8b-b009630c3aa4")
-	)
-	(junction
 		(at 205.74 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38ed330d-7d1e-4903-b0d8-0ce03728f82f")
 	)
 	(junction
-		(at 236.22 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d6f09e8-f75d-41bd-a79c-4f5fc12b3128")
-	)
-	(junction
 		(at 180.34 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "412b22e4-a84c-48c3-86b6-ff37b32ca233")
-	)
-	(junction
-		(at 252.73 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "449cd521-9597-4e6c-89f7-4805e61ea819")
 	)
 	(junction
 		(at 172.72 167.64)
@@ -3045,22 +3369,10 @@
 		(uuid "4fb71c7e-ba08-4a6a-8985-411b74a76bfb")
 	)
 	(junction
-		(at 171.45 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "514b3bbc-82df-459d-8f7e-d3db8531092d")
-	)
-	(junction
 		(at 218.44 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51d137db-81fa-4aea-bf3f-9fa22fb6f352")
-	)
-	(junction
-		(at 238.76 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "58f761fd-905a-4146-8443-d3ad25ba2657")
 	)
 	(junction
 		(at 215.9 154.94)
@@ -3073,6 +3385,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60da4fa5-714f-4071-8216-2da6632a14d8")
+	)
+	(junction
+		(at 243.84 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6260cff9-bbdc-41e1-b021-fc6be55f96fd")
 	)
 	(junction
 		(at 201.93 95.25)
@@ -3099,10 +3417,22 @@
 		(uuid "76872e01-0aa9-460c-82a9-30ac9c3260c4")
 	)
 	(junction
+		(at 171.45 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "781a8fab-bd5d-4e03-91ab-1081de6196f9")
+	)
+	(junction
 		(at 186.69 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "79fe8744-b7cd-4267-b4cc-23f9c888d318")
+	)
+	(junction
+		(at 242.57 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f00eb15-fbbd-4e1d-a00a-11fa8cad6c25")
 	)
 	(junction
 		(at 212.09 179.07)
@@ -3129,10 +3459,16 @@
 		(uuid "9f281658-21e1-49f2-915e-a236c0b70259")
 	)
 	(junction
-		(at 238.76 105.41)
+		(at 252.73 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ac994f09-bb75-46aa-a6b8-5c7083b890d6")
+		(uuid "a0c4a81e-7136-4838-8ac1-a8033687cd01")
+	)
+	(junction
+		(at 242.57 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5bba293-b92a-42ad-90b8-3b34da598133")
 	)
 	(junction
 		(at 102.87 36.83)
@@ -3177,6 +3513,12 @@
 		(uuid "d9d85750-1444-4eab-af30-a160a3065839")
 	)
 	(junction
+		(at 226.06 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1504268-a82f-4f9a-98d8-ccfd4a36843c")
+	)
+	(junction
 		(at 207.01 212.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3195,12 +3537,6 @@
 		(uuid "f470f698-9e72-4d64-800b-40453c4738af")
 	)
 	(junction
-		(at 238.76 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f71c3f94-adba-44f6-9a0d-00f3054a2313")
-	)
-	(junction
 		(at 201.93 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3215,6 +3551,16 @@
 			(type default)
 		)
 		(uuid "034cd4e3-c78b-48b9-94c7-1af67caa79a6")
+	)
+	(wire
+		(pts
+			(xy 241.3 96.52) (xy 241.3 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "050ec9eb-74b9-49f9-a628-6dcd1f0c2a10")
 	)
 	(wire
 		(pts
@@ -3258,16 +3604,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 93.98) (xy 252.73 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d9db17e-4cbb-459d-b6dc-567976e5b9d5")
-	)
-	(wire
-		(pts
 			(xy 137.16 95.25) (xy 137.16 91.44)
 		)
 		(stroke
@@ -3308,7 +3644,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 86.36) (xy 236.22 86.36)
+			(xy 215.9 86.36) (xy 241.3 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3408,16 +3744,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 93.98) (xy 252.73 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "209136ee-6464-4498-b355-1da47c89403d")
-	)
-	(wire
-		(pts
 			(xy 189.23 173.99) (xy 185.42 173.99)
 		)
 		(stroke
@@ -3425,16 +3751,6 @@
 			(type default)
 		)
 		(uuid "23edd5e6-0911-4e8b-a7de-823c98993247")
-	)
-	(wire
-		(pts
-			(xy 171.45 104.14) (xy 171.45 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23fcdfa5-b9f4-4753-8f30-2671cfe22611")
 	)
 	(wire
 		(pts
@@ -3458,6 +3774,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 96.52) (xy 252.73 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "275d3a78-233c-491c-b908-66abb873e14d")
+	)
+	(wire
+		(pts
 			(xy 205.74 95.25) (xy 205.74 102.87)
 		)
 		(stroke
@@ -3475,6 +3801,16 @@
 			(type default)
 		)
 		(uuid "2a5b0f26-823c-4340-97b8-d02e27ef2564")
+	)
+	(wire
+		(pts
+			(xy 241.3 87.63) (xy 241.3 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bb562d9-b34f-420a-ac06-c36c2d87d61b")
 	)
 	(wire
 		(pts
@@ -3498,6 +3834,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 102.87) (xy 240.03 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "303dab09-e186-4f49-b2e6-0825fffad592")
+	)
+	(wire
+		(pts
 			(xy 226.06 127) (xy 226.06 128.27)
 		)
 		(stroke
@@ -3505,6 +3851,26 @@
 			(type default)
 		)
 		(uuid "3176534a-70df-4bf0-8250-20eadc5663e1")
+	)
+	(wire
+		(pts
+			(xy 236.22 105.41) (xy 236.22 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32030424-4586-426f-9a51-b01e1250dacf")
+	)
+	(wire
+		(pts
+			(xy 252.73 93.98) (xy 252.73 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33ad31ce-e88a-48e3-9fc6-8b95071304eb")
 	)
 	(wire
 		(pts
@@ -3588,6 +3954,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 119.38) (xy 252.73 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42dd81fc-633b-4e14-b964-51412e522e5a")
+	)
+	(wire
+		(pts
 			(xy 186.69 165.1) (xy 186.69 167.64)
 		)
 		(stroke
@@ -3658,16 +4034,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 97.79) (xy 236.22 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ce9b28d-3769-4b39-b25f-33b491aca368")
-	)
-	(wire
-		(pts
 			(xy 212.09 185.42) (xy 212.09 186.69)
 		)
 		(stroke
@@ -3685,6 +4051,16 @@
 			(type default)
 		)
 		(uuid "4e368e69-2aad-4e7c-977f-c140b5c10d45")
+	)
+	(wire
+		(pts
+			(xy 252.73 127) (xy 242.57 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50a28288-0309-4b07-9411-04212953fa6d")
 	)
 	(wire
 		(pts
@@ -3708,23 +4084,43 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 105.41) (xy 241.3 105.41)
+			(xy 226.06 115.57) (xy 236.22 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "568b62f9-9ae5-4a19-befe-0311beded6f3")
+		(uuid "564c0748-4974-452c-acf8-8414d9dc4e8e")
 	)
 	(wire
 		(pts
-			(xy 238.76 105.41) (xy 238.76 114.3)
+			(xy 242.57 102.87) (xy 242.57 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56e2fbda-67fb-4e41-9189-c1c091b09891")
+		(uuid "59571477-bf1f-463f-b238-cfe7b9e565da")
+	)
+	(wire
+		(pts
+			(xy 242.57 100.33) (xy 242.57 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ac36444-8363-4206-bdfb-5fa6925ccfee")
+	)
+	(wire
+		(pts
+			(xy 226.06 115.57) (xy 226.06 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e554060-4d8b-4d3e-a46d-12caffb2039d")
 	)
 	(wire
 		(pts
@@ -3748,13 +4144,13 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 90.17) (xy 236.22 86.36)
+			(xy 233.68 102.87) (xy 238.76 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "627c4f74-9923-42d3-a871-99386e6d7918")
+		(uuid "637c2ef1-b674-4241-bfbe-5dbf6bd28614")
 	)
 	(wire
 		(pts
@@ -3798,16 +4194,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 127) (xy 252.73 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b231b7f-8d66-406a-9543-992eebe58d1d")
-	)
-	(wire
-		(pts
 			(xy 172.72 162.56) (xy 172.72 167.64)
 		)
 		(stroke
@@ -3845,16 +4231,6 @@
 			(type default)
 		)
 		(uuid "73511a8d-c524-4af3-8350-6cb31dc2a1c6")
-	)
-	(wire
-		(pts
-			(xy 233.68 105.41) (xy 238.76 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7479dada-bd86-43b0-9c60-3a116897d371")
 	)
 	(wire
 		(pts
@@ -3968,13 +4344,13 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 105.41) (xy 243.84 105.41)
+			(xy 233.68 105.41) (xy 236.22 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8346f411-34d6-4afc-9d4f-11334651e750")
+		(uuid "82d4840c-365e-4f7d-87f8-678eed86117a")
 	)
 	(wire
 		(pts
@@ -4068,6 +4444,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 114.3) (xy 245.11 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9695288e-12ff-4b42-bc1a-be4f460115e6")
+	)
+	(wire
+		(pts
 			(xy 186.69 165.1) (xy 187.96 165.1)
 		)
 		(stroke
@@ -4075,6 +4461,16 @@
 			(type default)
 		)
 		(uuid "988c28d2-b967-46b0-ad0a-d281d2992c06")
+	)
+	(wire
+		(pts
+			(xy 240.03 102.87) (xy 240.03 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99e0156c-8e02-465e-8e8d-02f0e19825d9")
 	)
 	(wire
 		(pts
@@ -4088,7 +4484,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 111.76) (xy 226.06 127)
+			(xy 226.06 111.76) (xy 226.06 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4105,16 +4501,6 @@
 			(type default)
 		)
 		(uuid "a10f6744-5f59-428d-8913-c815eeaa943d")
-	)
-	(wire
-		(pts
-			(xy 236.22 86.36) (xy 241.3 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1b429a2-4380-4f28-a4c0-1a6060e6b92d")
 	)
 	(wire
 		(pts
@@ -4148,13 +4534,13 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 100.33) (xy 238.76 100.33)
+			(xy 241.3 96.52) (xy 252.73 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a5182db9-d532-49d7-aaf8-0e019612eec0")
+		(uuid "a4f7917e-895f-4809-b425-0a21bc46f096")
 	)
 	(wire
 		(pts
@@ -4165,16 +4551,6 @@
 			(type default)
 		)
 		(uuid "a525eda3-6d5f-4c9a-ad66-4f1771e748d3")
-	)
-	(wire
-		(pts
-			(xy 252.73 118.11) (xy 252.73 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7163d8d-dcb8-4265-b022-cae000588c61")
 	)
 	(wire
 		(pts
@@ -4235,16 +4611,6 @@
 			(type default)
 		)
 		(uuid "b022f82d-0b84-487b-91e2-5d4154b9a348")
-	)
-	(wire
-		(pts
-			(xy 236.22 102.87) (xy 233.68 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3f756ce-4cfc-4b08-8cf7-4e0dff90d5f2")
 	)
 	(wire
 		(pts
@@ -4338,6 +4704,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 100.33) (xy 242.57 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb6bf588-5526-4bfc-8b41-12a31f6c1d51")
+	)
+	(wire
+		(pts
 			(xy 88.9 36.83) (xy 102.87 36.83)
 		)
 		(stroke
@@ -4358,7 +4734,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 127) (xy 238.76 127)
+			(xy 226.06 127) (xy 242.57 127)
 		)
 		(stroke
 			(width 0)
@@ -4448,6 +4824,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 95.25) (xy 167.64 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1491bee-5f5f-4737-8a00-84d1a7ce7022")
+	)
+	(wire
+		(pts
 			(xy 172.72 176.53) (xy 189.23 176.53)
 		)
 		(stroke
@@ -4478,6 +4864,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 102.87) (xy 245.11 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d44ece76-ea25-4e21-a59a-6b3018eb2428")
+	)
+	(wire
+		(pts
 			(xy 172.72 212.09) (xy 180.34 212.09)
 		)
 		(stroke
@@ -4485,16 +4881,6 @@
 			(type default)
 		)
 		(uuid "d49d4b11-68fb-4f3b-a2d0-d603198cbacf")
-	)
-	(wire
-		(pts
-			(xy 238.76 100.33) (xy 245.11 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5d4820a-a526-468d-aeee-b724901e21f0")
 	)
 	(wire
 		(pts
@@ -4508,17 +4894,27 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 105.41) (xy 243.84 113.03)
+			(xy 238.76 99.06) (xy 238.76 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d822c3b8-8970-4525-a657-67d4407845b8")
+		(uuid "d8292478-bc70-4120-a5ff-f99a3303e7f3")
 	)
 	(wire
 		(pts
-			(xy 238.76 121.92) (xy 238.76 127)
+			(xy 171.45 95.25) (xy 171.45 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8aa2357-b1ce-4852-9b11-a105538b79c0")
+	)
+	(wire
+		(pts
+			(xy 242.57 124.46) (xy 242.57 127)
 		)
 		(stroke
 			(width 0)
@@ -4588,6 +4984,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 107.95) (xy 252.73 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7ca6d75-f934-4076-b185-cdd314cf87fb")
+	)
+	(wire
+		(pts
 			(xy 217.17 205.74) (xy 222.25 205.74)
 		)
 		(stroke
@@ -4595,26 +5001,6 @@
 			(type default)
 		)
 		(uuid "ea401e40-6033-4d61-89bf-01bb118b37bb")
-	)
-	(wire
-		(pts
-			(xy 243.84 113.03) (xy 245.11 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea4abfbc-154b-4091-baed-b97b96c335b0")
-	)
-	(wire
-		(pts
-			(xy 252.73 105.41) (xy 252.73 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eae9172f-b3ee-47a3-b626-4f5504653d4d")
 	)
 	(wire
 		(pts
@@ -4658,16 +5044,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 95.25) (xy 171.45 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f27c31ba-43e3-4ce1-927e-2dc6275ee917")
-	)
-	(wire
-		(pts
 			(xy 186.69 167.64) (xy 207.01 167.64)
 		)
 		(stroke
@@ -4675,6 +5051,26 @@
 			(type default)
 		)
 		(uuid "f2ba9fc0-57ab-4649-a47b-2232c00f1a4e")
+	)
+	(wire
+		(pts
+			(xy 242.57 102.87) (xy 243.84 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f489d8c3-d975-4533-9c50-999a34f44315")
+	)
+	(wire
+		(pts
+			(xy 243.84 101.6) (xy 243.84 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5f325ff-9a87-41a4-8f89-ed7a425cb489")
 	)
 	(wire
 		(pts
@@ -4695,6 +5091,36 @@
 			(type default)
 		)
 		(uuid "fc81bb8b-5d16-48ba-b4b8-65288e2a6f4f")
+	)
+	(label "Poly_OUT"
+		(at 205.74 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "889cca4b-b22e-4cb3-a152-b961dd6edb9b")
+	)
+	(label "SW_OUT"
+		(at 143.51 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c45a9b1c-44f9-49e9-9c89-9e768a850bfa")
+	)
+	(label "Poly_IN"
+		(at 171.45 95.25 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "cfd7dcd1-a6f8-4d2e-a892-2a7d324a28b2")
 	)
 	(hierarchical_label "+VBATT"
 		(shape input)
@@ -5076,7 +5502,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 238.76 100.33 0)
+		(at 243.84 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5084,7 +5510,7 @@
 		(dnp no)
 		(uuid "2765c8dc-ac9c-4807-afce-0e3ed698d225")
 		(property "Reference" "TP301"
-			(at 239.268 98.552 0)
+			(at 244.856 98.044 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5093,7 +5519,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 241.3 98.2979 0)
+			(at 246.38 99.5679 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5103,7 +5529,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 243.84 100.33 0)
+			(at 248.92 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5112,7 +5538,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 100.33 0)
+			(at 248.92 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5121,7 +5547,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 238.76 100.33 0)
+			(at 243.84 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5136,106 +5562,6 @@
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
 					(reference "TP301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 252.73 88.9 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "277d63b1-da13-4466-86bc-a07e8c3f6342")
-		(property "Reference" "Q305"
-			(at 249.428 82.804 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SQJ141ELP"
-			(at 254.762 90.932 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
-			(at 255.27 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
-			(at 240.03 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 235.585 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 233.68 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 237.49 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6d26da7f-e4e4-46e9-827e-75faa20935ce")
-		)
-		(pin "1"
-			(uuid "f127394f-a36e-49c3-bbae-5ffe8e179a05")
-		)
-		(pin "3"
-			(uuid "db7d2a31-3ae3-47f9-a73e-3a6bc18f9913")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "Q305")
 					(unit 1)
 				)
 			)
@@ -5369,6 +5695,86 @@
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
 					(reference "#PWR0310")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:SQJQ131EL")
+		(at 255.27 173.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e8f433f-7e3a-4a8e-b604-7e91d61cdcb6")
+		(property "Reference" "Q305"
+			(at 255.27 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SQJQ131EL"
+			(at 255.27 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
+			(at 257.175 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
+			(at 259.08 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-232A Id, 340V Vds, P-Channel MOSFET, 1.4mOhm Ron, 82nC Qgd, -55 to 175 °C, LFPAK88"
+			(at 247.65 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38bccf5b-1385-4dba-a26c-f1882aa75704")
+		)
+		(pin "2"
+			(uuid "87a1f0d2-3c41-4835-a994-b58606bd5ab0")
+		)
+		(pin "5"
+			(uuid "553d7e3a-563b-4d1f-b185-14dc522918b2")
+		)
+		(pin "3"
+			(uuid "20ee4943-e97e-4734-8908-17229433de48")
+		)
+		(pin "4"
+			(uuid "426a4ac0-f229-47ea-9429-96a138c87f7c")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
+					(reference "Q305")
 					(unit 1)
 				)
 			)
@@ -5846,7 +6252,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 90.17 0)
+		(at 241.3 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5854,7 +6260,7 @@
 		(dnp no)
 		(uuid "68fc06e0-0c7a-4f07-8669-9a135be756e5")
 		(property "Reference" "R313"
-			(at 242.824 88.646 0)
+			(at 242.824 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5863,7 +6269,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 243.078 90.932 0)
+			(at 243.078 92.202 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5872,7 +6278,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 239.522 90.17 90)
+			(at 239.522 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5881,7 +6287,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 90.17 0)
+			(at 241.3 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5890,7 +6296,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 241.3 90.17 0)
+			(at 241.3 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6256,6 +6662,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:SQJQ131EL")
+		(at 162.56 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "856b4564-6c2f-44c4-bf74-6b278b6cf000")
+		(property "Reference" "Q306"
+			(at 162.56 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SQJQ131EL"
+			(at 162.56 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
+			(at 164.465 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
+			(at 166.37 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-232A Id, 340V Vds, P-Channel MOSFET, 1.4mOhm Ron, 82nC Qgd, -55 to 175 °C, LFPAK88"
+			(at 154.94 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf7253b8-4924-453d-b54c-e66d532b8171")
+		)
+		(pin "2"
+			(uuid "9637777b-4d01-4dfd-bdd4-0df9b97cd090")
+		)
+		(pin "5"
+			(uuid "ce21def6-e96a-40e6-ac55-b0c00eaad38a")
+		)
+		(pin "3"
+			(uuid "708bb198-21cb-4987-8b60-c147dbb89cff")
+		)
+		(pin "4"
+			(uuid "6097479a-358b-4eb0-8c0b-1064b637c6b9")
+		)
+		(instances
+			(project ""
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
+					(reference "Q306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 22.86 41.91 0)
 		(unit 1)
@@ -6451,104 +6937,6 @@
 			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
 					(reference "R304")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 203.2 157.48 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "95ac4889-7a6b-41d2-b9ea-cc50ad9200d1")
-		(property "Reference" "Q302"
-			(at 203.2 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SQJ141ELP"
-			(at 203.2 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
-			(at 205.74 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
-			(at 190.5 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 203.2 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 186.055 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 184.15 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 187.96 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "148d8b5c-650e-401b-99c0-7a64d4153563")
-		)
-		(pin "3"
-			(uuid "45a423cc-1d1b-4b3b-92f3-a4f92082d5ca")
-		)
-		(pin "1"
-			(uuid "decb99b6-821b-4243-ac13-ab2c6de4f07c")
-		)
-		(instances
-			(project ""
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "Q302")
 					(unit 1)
 				)
 			)
@@ -6761,7 +7149,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 241.3 105.41 0)
+		(at 238.76 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6769,7 +7157,7 @@
 		(dnp no)
 		(uuid "ab2944af-45d5-4de3-b2da-c4304996d9ef")
 		(property "Reference" "TP302"
-			(at 242.062 103.886 0)
+			(at 231.902 95.504 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6778,7 +7166,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 243.84 103.3779 0)
+			(at 241.3 97.0279 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6788,7 +7176,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 246.38 105.41 0)
+			(at 243.84 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6797,7 +7185,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 105.41 0)
+			(at 243.84 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6806,7 +7194,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 241.3 105.41 0)
+			(at 238.76 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6821,105 +7209,6 @@
 			(project ""
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
 					(reference "TP302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 162.56 97.79 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aca9ae51-69b0-4654-b01f-8cbf6d52289a")
-		(property "Reference" "Q301"
-			(at 159.004 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SQJ141ELP"
-			(at 169.672 91.694 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
-			(at 160.02 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
-			(at 175.26 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 162.56 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 179.705 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 181.61 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 177.8 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3356cd7b-80bc-4b01-81ef-e56f408996ff")
-		)
-		(pin "1"
-			(uuid "502cd53b-4d48-4163-9bdf-913abc7f1f4a")
-		)
-		(pin "3"
-			(uuid "2cf67808-cf0e-497c-8245-a1b4e0655bed")
-		)
-		(instances
-			(project ""
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "Q301")
 					(unit 1)
 				)
 			)
@@ -6993,7 +7282,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
-		(at 250.19 113.03 0)
+		(at 250.19 102.87 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7002,7 +7291,7 @@
 		(dnp no)
 		(uuid "b331cc77-1d16-4d4d-8667-00dc3e0253df")
 		(property "Reference" "Q304"
-			(at 255.016 111.76 0)
+			(at 255.016 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7011,7 +7300,7 @@
 			)
 		)
 		(property "Value" "PMV20XNEA"
-			(at 253.746 116.586 0)
+			(at 253.746 106.426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7020,7 +7309,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 255.27 115.57 0)
+			(at 255.27 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7029,7 +7318,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/a784/0900766b815f54e9.pdf"
-			(at 250.19 100.33 0)
+			(at 250.19 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7038,7 +7327,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 250.19 113.03 0)
+			(at 250.19 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7047,7 +7336,7 @@
 			)
 		)
 		(property "Sim.Device" "NMOS"
-			(at 250.19 95.885 0)
+			(at 250.19 85.725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7056,7 +7345,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 250.19 93.98 0)
+			(at 250.19 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7065,7 +7354,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 250.19 97.79 0)
+			(at 250.19 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7233,77 +7522,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 236.22 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b5ece8d5-ff5f-4d2a-9b41-bb1d88f9c2be")
-		(property "Reference" "R312"
-			(at 229.616 92.456 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1M"
-			(at 231.648 94.742 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 234.442 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79fe19e3-c707-4d08-a78a-54981975bcc2")
-		)
-		(pin "2"
-			(uuid "91d612e2-111e-474e-b7c9-4af86f868a50")
-		)
-		(instances
-			(project "SPROJ3EE_ESC_BMS"
-				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
-					(reference "R312")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 238.76 118.11 0)
+		(at 242.57 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7311,7 +7531,7 @@
 		(dnp no)
 		(uuid "b80b7bef-a091-4798-8ed4-23de1ea90387")
 		(property "Reference" "C311"
-			(at 239.522 116.078 0)
+			(at 243.332 118.618 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7320,7 +7540,7 @@
 			)
 		)
 		(property "Value" "470nF"
-			(at 239.522 120.396 0)
+			(at 243.332 122.936 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7329,7 +7549,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 239.7252 121.92 0)
+			(at 243.5352 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7338,7 +7558,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/efb0/0900766b815e27fe.pdf"
-			(at 238.76 118.11 0)
+			(at 242.57 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7347,7 +7567,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 238.76 118.11 0)
+			(at 242.57 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7747,6 +7967,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:SQJQ131EL")
+		(at 252.73 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d598ddd2-ca71-4f4a-97bd-07cb958ea834")
+		(property "Reference" "Q301"
+			(at 252.73 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SQJQ131EL"
+			(at 252.73 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
+			(at 250.825 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://docs.rs-online.com/afb1/A700000014240545.pdf"
+			(at 248.92 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-232A Id, 340V Vds, P-Channel MOSFET, 1.4mOhm Ron, 82nC Qgd, -55 to 175 °C, LFPAK88"
+			(at 260.35 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1317bf9b-f387-4e03-a412-dbed6d3d080c")
+		)
+		(pin "2"
+			(uuid "0bddae10-bf76-4dd9-a341-fde0c0c3abb3")
+		)
+		(pin "5"
+			(uuid "c6d5d832-1506-4580-b329-f89ed9a3453b")
+		)
+		(pin "3"
+			(uuid "44468433-495e-49bc-9b74-1495dd39d1e8")
+		)
+		(pin "4"
+			(uuid "652e7977-c4c7-4b29-bf03-ac6aab30ea7e")
+		)
+		(instances
+			(project "SPROJ3EE_ESC_BMS"
+				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/eb2740b7-11f5-4644-9e72-e71a449b99af"
+					(reference "Q301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 210.82 102.87 270)
 		(unit 1)
@@ -7910,7 +8210,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 40.3352 40.64 0)
 			(effects
 				(font
@@ -8086,7 +8386,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:PMOS")
-		(at 250.19 100.33 0)
+		(at 250.19 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8094,7 +8394,7 @@
 		(dnp no)
 		(uuid "f4334afd-b82f-4eda-b652-e49a725080c1")
 		(property "Reference" "Q303"
-			(at 253.492 96.52 0)
+			(at 253.492 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8103,7 +8403,7 @@
 			)
 		)
 		(property "Value" "FDV304P"
-			(at 253.492 103.632 0)
+			(at 253.492 117.602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8112,7 +8412,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 255.27 97.79 0)
+			(at 255.27 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8121,7 +8421,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/d95a/0900766b800ae907.pdf"
-			(at 250.19 113.03 0)
+			(at 250.19 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8130,7 +8430,7 @@
 			)
 		)
 		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 250.19 100.33 0)
+			(at 250.19 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8139,7 +8439,7 @@
 			)
 		)
 		(property "Sim.Device" "PMOS"
-			(at 250.19 117.475 0)
+			(at 250.19 131.445 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8148,7 +8448,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 250.19 119.38 0)
+			(at 250.19 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8157,7 +8457,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 250.19 115.57 0)
+			(at 250.19 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
