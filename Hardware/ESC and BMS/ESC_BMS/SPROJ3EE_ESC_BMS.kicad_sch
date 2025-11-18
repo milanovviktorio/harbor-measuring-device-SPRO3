@@ -345,7 +345,7 @@
 		)
 		(uuid "6d0db2bf-a295-4fc9-a84d-271a245761b8")
 	)
-	(text "+Vprot"
+	(text "+VPROT"
 		(exclude_from_sim no)
 		(at 143.002 23.114 0)
 		(effects
@@ -519,7 +519,7 @@
 		)
 		(uuid "b545b3ad-1882-4e8d-80d3-8e2bcc0ea1b9")
 	)
-	(text "BQ2969T"
+	(text "BQ2969"
 		(exclude_from_sim no)
 		(at 67.056 88.265 0)
 		(effects
