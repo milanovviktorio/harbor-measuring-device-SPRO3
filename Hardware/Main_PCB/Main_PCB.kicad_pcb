@@ -135,9 +135,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "../../../../GerberSPROJ/MainPCB/")
 		)
 	)
 	(net 0 "")
@@ -4745,7 +4745,7 @@
 		(uuid "4112bfb2-490a-44a1-901e-a6aa32064db6")
 		(at 107.2 64.625)
 		(property "Reference" "U201"
-			(at 0.4 -2.025 -0)
+			(at 0.4 -2.025 0)
 			(layer "B.SilkS")
 			(uuid "779700ad-6292-4e29-8973-6575fd3a8045")
 			(effects
@@ -8245,7 +8245,7 @@
 		(at 87.25 98.49)
 		(tags "2171790001 ")
 		(property "Reference" "J301"
-			(at 0 0.51 -0)
+			(at 0 0.51 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "4847db5d-6de7-4cf7-aa23-48c2594131c4")
@@ -17202,7 +17202,7 @@
 		(uuid "c1890263-ec08-4dd0-87a4-1b9c0bf47c8a")
 		(at 104.65 78.3)
 		(property "Reference" "U402"
-			(at 0 -2.75 -0)
+			(at 0 -2.75 0)
 			(layer "B.SilkS")
 			(uuid "bfa4716d-1e30-4958-96d4-11a846c2c48a")
 			(effects

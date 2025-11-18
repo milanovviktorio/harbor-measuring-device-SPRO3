@@ -521,7 +521,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../../../GerberSPROJ/MainPCB/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

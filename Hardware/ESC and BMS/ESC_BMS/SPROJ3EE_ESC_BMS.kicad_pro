@@ -499,7 +499,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../../../../GerberSPROJ/ESCBMS/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
