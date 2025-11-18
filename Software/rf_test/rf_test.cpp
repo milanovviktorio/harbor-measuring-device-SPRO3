@@ -44,7 +44,7 @@ bool setup()
         sleep_ms(10);
     }
 
-    spi.begin(spi0, 2,3,4);
+    spi.begin(spi0, 16,18,19);
 
     // initialize the transceiver on the SPI bus
     if (!radio.begin(&spi)) {
