@@ -1677,7 +1677,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "c6d47e36-3031-4d07-ba70-df8c4b187df5")
-		(property "Sheetname" "MPU6050"
+		(property "Sheetname" "ICM42688 - Gyro"
 			(at 138.43 26.2124 0)
 			(effects
 				(font
@@ -1715,7 +1715,7 @@
 				(justify left)
 			)
 		)
-		(pin "INT1" input
+		(pin "INT1" output
 			(at 138.43 36.83 180)
 			(uuid "0eeadd71-5ba7-4a3d-9b0e-91702a8a06f0")
 			(effects
@@ -1735,9 +1735,9 @@
 				(justify left)
 			)
 		)
-		(pin "INT2" input
+		(pin "AP_SDO" bidirectional
 			(at 138.43 39.37 180)
-			(uuid "b56fd523-8bc6-46b1-a2d7-2b470c57bca0")
+			(uuid "2bf00fae-421a-47a1-b890-083d0e3c0483")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1769,7 +1769,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "fb18f23d-afe6-46fa-a762-d7c19ead7543")
-		(property "Sheetname" "Sonar"
+		(property "Sheetname" "TUSS4470 - SONAR"
 			(at 23.495 20.2434 0)
 			(effects
 				(font

@@ -3762,7 +3762,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 110.49) (xy 180.34 110.49)
+			(xy 184.15 111.76) (xy 182.88 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3772,7 +3772,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 110.49) (xy 193.04 110.49)
+			(xy 201.93 111.76) (xy 191.77 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3852,7 +3852,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 100.33) (xy 170.18 100.33)
+			(xy 139.7 100.33) (xy 168.91 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4112,7 +4112,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 119.38) (xy 185.42 119.38)
+			(xy 168.91 119.38) (xy 184.15 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4172,7 +4172,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 119.38) (xy 200.66 119.38)
+			(xy 191.77 119.38) (xy 200.66 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4252,7 +4252,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 116.84) (xy 201.93 110.49)
+			(xy 201.93 116.84) (xy 201.93 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4442,7 +4442,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 140.97) (xy 180.34 140.97)
+			(xy 184.15 134.62) (xy 182.88 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4462,7 +4462,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 110.49) (xy 180.34 111.76)
+			(xy 182.88 111.76) (xy 182.88 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4782,7 +4782,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 127) (xy 167.64 102.87)
+			(xy 166.37 127) (xy 166.37 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4842,7 +4842,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 140.97) (xy 180.34 142.24)
+			(xy 182.88 134.62) (xy 182.88 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5022,7 +5022,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 127) (xy 194.31 127)
+			(xy 191.77 127) (xy 194.31 127)
 		)
 		(stroke
 			(width 0)
@@ -5222,7 +5222,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 102.87) (xy 167.64 102.87)
+			(xy 139.7 102.87) (xy 166.37 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5382,7 +5382,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 127) (xy 198.12 140.97)
+			(xy 198.12 127) (xy 198.12 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5472,7 +5472,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 100.33) (xy 170.18 119.38)
+			(xy 168.91 100.33) (xy 168.91 119.38)
 		)
 		(stroke
 			(width 0)
@@ -5512,7 +5512,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 127) (xy 185.42 127)
+			(xy 166.37 127) (xy 184.15 127)
 		)
 		(stroke
 			(width 0)
@@ -5672,7 +5672,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 140.97) (xy 198.12 140.97)
+			(xy 191.77 134.62) (xy 198.12 134.62)
 		)
 		(stroke
 			(width 0)
@@ -7970,7 +7970,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 189.23 127 270)
+		(at 187.96 127 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7979,7 +7979,7 @@
 		(dnp no)
 		(uuid "04c49831-5add-4df0-abd6-9434022c7e5d")
 		(property "Reference" "R305"
-			(at 189.23 124.46 90)
+			(at 187.96 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7987,7 +7987,7 @@
 			)
 		)
 		(property "Value" "27"
-			(at 189.23 129.54 90)
+			(at 187.96 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7995,7 +7995,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 189.23 128.778 90)
+			(at 187.96 128.778 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8004,7 +8004,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 127 0)
+			(at 187.96 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8013,7 +8013,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 189.23 127 0)
+			(at 187.96 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8229,7 +8229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MainPCB:2171790001_MOL"
+		(property "Footprint" "SPRO3:2171790001_MOL"
 			(at 203.2 116.84 0)
 			(effects
 				(font
@@ -8305,7 +8305,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 142.24 0)
+		(at 182.88 135.89 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8314,7 +8314,7 @@
 		(dnp no)
 		(uuid "25304bba-73fc-4f17-91a0-879cb87f3e43")
 		(property "Reference" "#PWR0315"
-			(at 180.34 148.59 0)
+			(at 182.88 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8323,7 +8323,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 146.05 0)
+			(at 182.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8331,7 +8331,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 142.24 0)
+			(at 182.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8340,7 +8340,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 142.24 0)
+			(at 182.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8349,7 +8349,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 142.24 0)
+			(at 182.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8370,7 +8370,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 111.76 0)
+		(at 182.88 113.03 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8379,7 +8379,7 @@
 		(dnp no)
 		(uuid "266deadd-b103-4ef2-af2a-74a29477b057")
 		(property "Reference" "#PWR0314"
-			(at 180.34 118.11 0)
+			(at 182.88 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8388,7 +8388,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 115.57 0)
+			(at 182.88 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8396,7 +8396,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 111.76 0)
+			(at 182.88 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8405,7 +8405,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 111.76 0)
+			(at 182.88 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8414,7 +8414,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 111.76 0)
+			(at 182.88 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8572,7 +8572,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 189.23 140.97 270)
+		(at 187.96 134.62 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8581,7 +8581,7 @@
 		(dnp no)
 		(uuid "38ba423d-803e-4718-9a86-7313947a3a60")
 		(property "Reference" "R306"
-			(at 189.23 138.684 90)
+			(at 187.96 132.334 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8589,7 +8589,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 188.976 143.256 90)
+			(at 187.706 136.906 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8597,7 +8597,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 189.23 142.748 90)
+			(at 187.96 136.398 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8606,7 +8606,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 140.97 0)
+			(at 187.96 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8615,7 +8615,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 189.23 140.97 0)
+			(at 187.96 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9369,7 +9369,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 189.23 110.49 270)
+		(at 187.96 111.76 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9378,7 +9378,7 @@
 		(dnp no)
 		(uuid "9e00850f-ac57-4f66-ba65-8d23afb8f563")
 		(property "Reference" "R303"
-			(at 189.23 108.204 90)
+			(at 187.96 109.474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9386,7 +9386,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 188.976 112.776 90)
+			(at 187.706 114.046 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9394,7 +9394,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 189.23 112.268 90)
+			(at 187.96 113.538 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9403,7 +9403,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 110.49 0)
+			(at 187.96 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9412,7 +9412,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 189.23 110.49 0)
+			(at 187.96 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9994,7 +9994,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 189.23 119.38 270)
+		(at 187.96 119.38 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10003,7 +10003,7 @@
 		(dnp no)
 		(uuid "e980f381-ef00-4369-8d0d-8dbff171077e")
 		(property "Reference" "R304"
-			(at 189.23 116.84 90)
+			(at 187.96 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10011,7 +10011,7 @@
 			)
 		)
 		(property "Value" "27"
-			(at 189.23 121.92 90)
+			(at 187.96 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,7 +10019,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 189.23 121.158 90)
+			(at 187.96 121.158 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10028,7 +10028,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 119.38 0)
+			(at 187.96 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10037,7 +10037,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 189.23 119.38 0)
+			(at 187.96 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
