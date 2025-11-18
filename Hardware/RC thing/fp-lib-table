@@ -1,6 +1,5 @@
 (fp_lib_table
   (version 7)
-  (lib (name "Main_PCB")(type "KiCad")(uri "C:/Users/gvida/OneDrive/Desktop/semster project/harbor-measuring-device-SPRO3-main/Hardware/Main_PCB")(options "")(descr ""))
-  (lib (name "Main_PCB-backups")(type "KiCad")(uri "C:/Users/bobos/Documents/GitHub/harbor-measuring-device-SPRO3/Hardware/Main_PCB/Main_PCB-backups.pretty")(options "")(descr ""))
+  (lib (name "Main_PCB")(type "KiCad")(uri "C:/Users/usnam/Documents/GitHub/harbor-measuring-device-SPRO3/Hardware/Main_PCB")(options "")(descr ""))
   (lib (name "rctg")(type "KiCad")(uri "${KIPRJMOD}/rctg.pretty")(options "")(descr ""))
 )
