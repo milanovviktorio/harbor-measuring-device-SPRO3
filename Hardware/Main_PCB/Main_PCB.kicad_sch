@@ -149,6 +149,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 29.21) (xy 138.43 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19c6ad54-4e82-409f-a5e1-1eaa8163af63")
+	)
+	(wire
+		(pts
 			(xy 43.18 39.37) (xy 49.53 39.37)
 		)
 		(stroke
@@ -476,6 +486,16 @@
 			(type default)
 		)
 		(uuid "dba53d94-6b16-47d5-8fd9-5aabe25ef993")
+	)
+	(wire
+		(pts
+			(xy 115.57 39.37) (xy 138.43 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e767edd1-56cb-4528-8cba-4f2380e6a902")
 	)
 	(wire
 		(pts
@@ -1698,6 +1718,26 @@
 		(pin "INT1" input
 			(at 138.43 36.83 180)
 			(uuid "0eeadd71-5ba7-4a3d-9b0e-91702a8a06f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AP_CS" bidirectional
+			(at 138.43 29.21 180)
+			(uuid "e563268a-301e-417d-9ecd-c3a1cdee34ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INT2" input
+			(at 138.43 39.37 180)
+			(uuid "b56fd523-8bc6-46b1-a2d7-2b470c57bca0")
 			(effects
 				(font
 					(size 1.27 1.27)
