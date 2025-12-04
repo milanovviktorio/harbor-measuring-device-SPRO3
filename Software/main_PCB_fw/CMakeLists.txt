@@ -66,6 +66,7 @@ include(lib/RF24/CMakeLists.txt)
 target_link_libraries(main_PCB_fw 
         hardware_spi
         hardware_i2c
+        hardware_pwm
         RF24
         )
 
