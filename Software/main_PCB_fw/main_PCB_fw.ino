@@ -47,27 +47,37 @@ void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle);
     * Take measurements of the bottom from the sonar
 */
 
+/*
+  RC stack checklist because I can't think for how to do this for shit rn. The stack needs to:
+    * Init SPI and start receiving payloads from the remote. How long should the payloads be? 4 bytes maybe?
+    * Process those payloads into something more manageable (whether they're control signals for the steering, process those into what the motors should be doing)
+    * Say like the controller sends 4 bytes with a status byte, and then a few bytes that more or less send the position of the analog sticks, more or less
+    * Probably send a status message every once in a while to make sure the connection is still good (I'll need to check how the example code handles this)
+    * The same formula for what the boat needs to send back
+    * Massive if statement might be incoming
+*/
+
 // the setup function runs once when you press reset or power the board
 void setup() {
   pinMode(p25,OUTPUT);
   Serial.begin(115200);
+  delay(3000);
   digitalWrite(p25, HIGH);
   motor_pwm_setup();
   digitalWrite(p25, LOW);
-  radio_spi.begin();
-  if (!radio.begin(&radio_spi)) {
-    Serial.println(F("radio hardware not responding!!"));
-    while (1) {} // hold program in infinite loop to prevent subsequent errors
-  }
+  radio_setup();
   digitalWrite(p25, HIGH);
-  
+  motor_pwm_startup();
+  uint8_t radio_pipe;
 }
 
 // the loop function runs over and over again forever
 void loop() {
-
-  motor_pwm_startup();
-
+  if (radio.available(&radio_pipe)) {               // is there a payload? get the pipe number that received it
+    uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
+    radio.read(&payload, bytes);            // fetch payload from FIFO
+  }
+  
   
 }
 
@@ -145,3 +155,47 @@ void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle) {
   pwm_set_output_polarity(slice_num, false, true);
   pwm_set_enabled(slice_num, true);
 }
+
+void radio_setup()
+{
+    // Let these addresses be used for the pair
+    uint8_t address[][6] = {"1Node", "2Node"};
+    // It is very helpful to think of an address as a path instead of as
+    // an identifying device destination
+
+    // to use different addresses on a pair of radios, we need a variable to
+    // uniquely identify which address this radio will use to transmit
+    bool radioNumber = 1; // 0 uses address[0] to transmit, 1 uses address[1] to transmit
+
+    radio_spi.begin();
+    if (!radio.begin(&radio_spi)) {
+      Serial.println("radio hardware not responding!!");
+      while (1) {} // hold program in infinite loop to prevent subsequent errors
+    }
+
+
+    /*// To set the radioNumber via the Serial terminal on startup
+    printf("Which radio is this? Enter '0' or '1'. Defaults to '0'\n");
+    char input = getchar();
+    radioNumber = input == 49;
+    printf("radioNumber = %d\n", (int)radioNumber);
+    */
+
+    // Set the PA Level low to try preventing power supply related problems
+    // because these examples are likely run with nodes in close proximity to
+    // each other.
+    radio.setPALevel(RF24_PA_LOW); // RF24_PA_MAX is default.
+
+    // save on transmission time by setting the radio to only transmit the
+    // number of bytes we need to transmit a float
+    radio.setPayloadSize(sizeof(payload)); // float datatype occupies 4 bytes
+
+    // set the TX address of the RX node for use on the TX pipe (pipe 0)
+    radio.stopListening(address[radioNumber]);
+
+    // set the RX address of the TX node into a RX pipe
+    radio.openReadingPipe(1, address[!radioNumber]); // using pipe 1
+
+    
+    return true;
+} // setup
