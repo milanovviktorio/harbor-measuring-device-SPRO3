@@ -1,6 +1,9 @@
 #include "hardware/pwm.h"
 #include "hardware/clocks.h"
 #include "hardware/gpio.h"
+#include <SPI.h>
+
+#include "RF24.h"
 
 const int T_DELAY = 1000;
 
@@ -12,6 +15,17 @@ const int T_DELAY = 1000;
 #define BHS 23
 #define ALS 24
 #define AHS 25
+
+// SPI radio defines
+#define rCE_PIN  7
+#define rCSN_PIN 8
+#define rMISO 16
+#define rMOSI 19
+#define rSCK 18
+
+// SPI radio other shit
+RF24 radio(rCE_PIN, rCSN_PIN);
+MbedSPI radio_spi(rMISO,rMOSI,rSCK);
 
 unsigned int motor_step;
 
@@ -35,16 +49,24 @@ void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle);
 
 // the setup function runs once when you press reset or power the board
 void setup() {
+  pinMode(p25,OUTPUT);
+  Serial.begin(115200);
+  digitalWrite(p25, HIGH);
   motor_pwm_setup();
-  pinMode(p25, OUTPUT);
+  digitalWrite(p25, LOW);
+  radio_spi.begin();
+  if (!radio.begin(&radio_spi)) {
+    Serial.println(F("radio hardware not responding!!"));
+    while (1) {} // hold program in infinite loop to prevent subsequent errors
+  }
+  digitalWrite(p25, HIGH);
+  
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(p25, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(T_DELAY);             // wait for a second
-  digitalWrite(p25, LOW);    // turn the LED off by making the voltage LOW
-  delay(T_DELAY);             // wait for a second
+
+  motor_pwm_startup();
 
   
 }
@@ -99,8 +121,9 @@ void motor_pwm_startup() {
   motor_pwm_state(CLS, CHS, 20000, 0.0);
   motor_step=0;
   delay(200);
-
+  Serial.println("Tried to start motor");
   attachInterrupt(digitalPinToInterrupt(BEMF), BEMF_call, RISING);
+  Serial.println("Hand-off to interrupt");
 }
 
 void BEMF_call() {
