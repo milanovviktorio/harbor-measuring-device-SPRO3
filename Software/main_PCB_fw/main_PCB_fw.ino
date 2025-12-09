@@ -25,7 +25,6 @@ const int T_DELAY = 1000;
 
 // SPI radio other shit
 RF24 radio(rCE_PIN, rCSN_PIN);
-MbedSPI radio_spi(rMISO,rMOSI,rSCK);
 
 unsigned int motor_step;
 
@@ -59,24 +58,24 @@ void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle);
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  pinMode(p25,OUTPUT);
+  //pinMode(D25,OUTPUT);
   Serial.begin(115200);
   delay(3000);
-  digitalWrite(p25, HIGH);
+  //digitalWrite(D25, HIGH);
   motor_pwm_setup();
-  digitalWrite(p25, LOW);
+  //digitalWrite(p25, LOW);
   radio_setup();
-  digitalWrite(p25, HIGH);
+  //digitalWrite(p25, HIGH);
   motor_pwm_startup();
   uint8_t radio_pipe;
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  if (radio.available(&radio_pipe)) {               // is there a payload? get the pipe number that received it
-    uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
-    radio.read(&payload, bytes);            // fetch payload from FIFO
-  }
+  //if (radio.available(&radio_pipe)) {               // is there a payload? get the pipe number that received it
+  //  uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
+  //  radio.read(&payload, bytes);            // fetch payload from FIFO
+  //}
   
   
 }
@@ -167,8 +166,12 @@ void radio_setup()
     // uniquely identify which address this radio will use to transmit
     bool radioNumber = 1; // 0 uses address[0] to transmit, 1 uses address[1] to transmit
 
-    radio_spi.begin();
-    if (!radio.begin(&radio_spi)) {
+    SPI.setRX(16);   // MISO
+    SPI.setTX(19);   // MOSI
+    SPI.setSCK(18);  // SCK
+
+    SPI.begin();
+    if (!radio.begin()) {
       Serial.println("radio hardware not responding!!");
       while (1) {} // hold program in infinite loop to prevent subsequent errors
     }
@@ -184,7 +187,7 @@ void radio_setup()
     // Set the PA Level low to try preventing power supply related problems
     // because these examples are likely run with nodes in close proximity to
     // each other.
-    radio.setPALevel(RF24_PA_LOW); // RF24_PA_MAX is default.
+    /*radio.setPALevel(RF24_PA_LOW); // RF24_PA_MAX is default.
 
     // save on transmission time by setting the radio to only transmit the
     // number of bytes we need to transmit a float
@@ -197,5 +200,5 @@ void radio_setup()
     radio.openReadingPipe(1, address[!radioNumber]); // using pipe 1
 
     
-    return true;
+    return true;*/
 } // setup

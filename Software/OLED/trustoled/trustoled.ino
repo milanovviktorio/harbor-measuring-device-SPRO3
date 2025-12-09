@@ -2,9 +2,11 @@
 #include <U8g2lib.h>
 
 // Constructor for I2C, SH1106, 128×64, hardware I2C
-U8G2_SH1106_128X64_NONAME_F_HW_I2C oled(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);
+U8G2_SH1106_128X64_NONAME_F_HW_I2C oled(U8G2_R0,/* reset=*/ U8X8_PIN_NONE);
 
 void setup() {
+  Wire.setSDA(0);
+  Wire.setSCL(1);
   oled.begin();
 }
 
