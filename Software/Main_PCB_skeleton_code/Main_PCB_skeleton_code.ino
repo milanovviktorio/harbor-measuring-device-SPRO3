@@ -40,6 +40,7 @@ Servo myservo;
 // ICM42688 object using I2C1
 ICM42688 IMU(I2C1_bus, 0x68);
 
+
 //Setting up the pins and protocols
 void setup() {
   Serial.begin(9600);  
