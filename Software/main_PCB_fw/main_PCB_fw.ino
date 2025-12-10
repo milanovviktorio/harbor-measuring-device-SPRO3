@@ -1,6 +1,7 @@
 #include "hardware/pwm.h"
 #include "hardware/clocks.h"
 #include "hardware/gpio.h"
+#include "pico/stdlib.h"
 #include <SPI.h>
 
 #include "RF24.h"
@@ -64,7 +65,7 @@ void setup() {
   //digitalWrite(D25, HIGH);
   motor_pwm_setup();
   //digitalWrite(p25, LOW);
-  radio_setup();
+  //radio_setup();
   //digitalWrite(p25, HIGH);
   motor_pwm_startup();
   uint8_t radio_pipe;
@@ -116,12 +117,12 @@ void motor_commutate(int step) {
 }
 
 void motor_pwm_setup() {
-  pinMode(AHS, OUTPUT);
-  pinMode(ALS, OUTPUT);
-  pinMode(BHS, OUTPUT);
-  pinMode(BLS, OUTPUT);
-  pinMode(CHS, OUTPUT);
-  pinMode(CLS, OUTPUT);
+  gpio_set_function(AHS, GPIO_FUNC_PWM);
+  gpio_set_function(ALS, GPIO_FUNC_PWM);
+  gpio_set_function(BHS, GPIO_FUNC_PWM);
+  gpio_set_function(BLS, GPIO_FUNC_PWM);
+  gpio_set_function(CHS, GPIO_FUNC_PWM);
+  gpio_set_function(CLS, GPIO_FUNC_PWM);
 }
 
 void motor_pwm_startup() {
@@ -137,21 +138,34 @@ void motor_pwm_startup() {
 
 void BEMF_call() {
   delayMicroseconds(8);
-  motor_commutate(motor_step+1);
+  motor_step++;
+  if(motor_step>5 || motor_step<0)
+    motor_step=0;
+  motor_commutate(motor_step);
 }
 
 void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle) {
   uint slice_num = pwm_gpio_to_slice_num(pin);
   uint channel = pwm_gpio_to_channel(pin);
+  uint channel2 = pwm_gpio_to_channel(pin_comp);
   
-  // Set frequency
-  uint32_t clock = 125000000; // Pico default clock
-  uint32_t divider = clock / freq / 65536;
+  uint32_t clock = clock_get_hz(clk_sys); // system clock
+  uint32_t divider = 1;                   // integer divider
+  uint32_t wrap = clock / (divider * freq) - 1;
+  
   pwm_set_clkdiv(slice_num, divider);
-  pwm_set_wrap(slice_num, 65535);
+  pwm_set_wrap(slice_num, wrap);
 
-  pwm_set_chan_level(slice_num, channel, duty_cycle * 65535);
-  pwm_set_output_polarity(slice_num, false, true);
+  pwm_set_output_polarity(slice_num, true, false);
+
+  if (duty_cycle < 0.0f) duty_cycle = 0.0f;
+  if (duty_cycle > 1.0f) duty_cycle = 1.0f;
+
+  uint32_t level = (uint32_t)(duty_cycle * wrap);
+
+  pwm_set_chan_level(slice_num, channel, level);
+  pwm_set_chan_level(slice_num, channel2, level);
+
   pwm_set_enabled(slice_num, true);
 }
 
