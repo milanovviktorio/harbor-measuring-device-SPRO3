@@ -1,6 +1,7 @@
 #include "ICM42688.h"
 #include <Wire.h>
 
+const int CS = 9;
 const int SDA_PIN = 10;
 const int SCL_PIN = 11;
 
@@ -22,7 +23,7 @@ void setup() {
   Serial.begin(9600);  
   pinMode(SDA_PIN, INPUT_PULLUP);
   pinMode(SCL_PIN, INPUT_PULLUP);
-  pinMode(9, INPUT_PULLUP);
+  pinMode(CS, INPUT_PULLUP);
   while (!Serial) {}
 
   // Initialize I2C1
