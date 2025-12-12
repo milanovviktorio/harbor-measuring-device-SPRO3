@@ -25,8 +25,21 @@ const int rSCK = 18;
 // SPI radio init
 RF24 radio(rCE_PIN, rCSN_PIN);
 
+// Analog stick defines
+const int AS0 = 26;
+const int AS1 = 27;
+
+// Button defines
+const int BPin0 = 4;
+const int BPin1 = 5;
+const int BPin2 = 6;
+
 // Constructor for I2C, SH1106, 128×64, hardware I2C
 U8G2_SH1106_128X64_NONAME_F_HW_I2C oled(U8G2_R0,/* reset=*/ U8X8_PIN_NONE);
+
+uint8_t boat_bat_level;
+uint16_t cur_depth;
+
 
 /* DEVELOPMENT CHECKLIST
     This shit needs to:
@@ -61,15 +74,29 @@ void setup() {
   
   radio_setup();
   
+  uint8_t rf_packet[6],pipe;
+  uint8_t AS0_val, AS1_val;
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  //if (radio.available(&radio_pipe)) {               // is there a payload? get the pipe number that received it
-  //  uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
-  //  radio.read(&payload, bytes);            // fetch payload from FIFO
-  //}
-  
+  radio.startListening();
+  if(radio.available(&pipe)) 
+  {
+    if(read_frame(rf_packet))
+    {
+      if(!(process_frame_remote(rf_packet)))
+        //make it do something to display an error
+    }
+  }
+  radio.stopListening();
+  AS0_val=analogRead(AS0)/4;
+  if(AS0_val>249)
+    AS0_val=255;
+  AS1_val=analogRead(AS1)/4;
+  if(AS1_val>249)
+    AS1_val=255;
+  send_frame(0, AS0_val, AS1_val, 0);
   
 }
 
@@ -116,33 +143,60 @@ void radio_setup()
     return true;*/
 } // setup
 
-void radio_comm() {
-  if (RF_state) {
-  // This device is a TX node
-
+bool send_frame(uint8_t seq, uint8_t ch1, uint8_t ch2, uint8_t flags) {
+  uint8_t pkt[6] = {0xAA, seq, ch1, ch2, flags, 0};
+  pkt[5] = crc8(pkt, 5);
   uint64_t start_timer = to_us_since_boot(get_absolute_time());  // start the timer
-  bool report = radio.write(&payload, PAYLOAD_SIZE);             // transmit & save the report
+  bool report = radio.write(&pkt, PAYLOAD_SIZE);             // transmit & save the report
   uint64_t end_timer = to_us_since_boot(get_absolute_time());    // end the timer
 
   if (report) {
     // payload was delivered; print the payload sent & the timer result
     printf("Transmission successful! Time to transmit = %llu us. Sent: %f\n", end_timer - start_timer, payload);
+    return 1;
   } else {
     // payload was not delivered
-    printf("Transmission failed or timed out\n");
+    return 0;
   }
+}
 
-    // to make this example readable in the serial terminal
-    sleep_ms(1000); // slow transmissions down by 1 second
-  }
-  else {
-      // This device is a RX node
-      uint8_t pipe;
-      if (radio.available(&pipe)) {               // is there a payload? get the pipe number that received it
-          uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
-          radio.read(&payload, bytes);            // fetch payload from FIFO
-      }
-  } // role
+// 0 - signature (always 0xAA)
+// 1 - seq (boat battery level) (0xFF for keepalive)
+// 2 - pot chan 1 (0x0 for keepalive) (high byte 1 of a uint16_t for depth)
+// 3 - pot chan 2 (0x0 for keepalive) (low byte 2 of a uint16_t for depth)
+// 4 - flags (0xF for keepalive) (0x1 for boat depth and status)
+// 5 - CRC8
+
+bool read_frame(uint8_t* pkt) {
+    // Sync on 0xAA, then read 5 more bytes. Implement a ring buffer in practice.
+    uint8_t pipe;
+    if(radio.available(&pipe)) 
+    {
+      uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
+      if(bytes==6) {
+      radio.read(pkt, bytes);                 // fetch payload from FIFO
+      if (pkt[0] == 0xAA) {
+        uint8_t c = crc8(payload, 5);
+        return c == pkt[5];
+      }}
+    }
+    return false;
+}
+
+uint8_t process_frame_remote(uint8_t* pkt) {
+  uint8_t crc_check = crc8(pkt,5);
+  if(pkt[4] == 0)
+    {
+      boat_bat_level = pkt[1];
+      cur_depth = (pkt[2] << 8) | pkt[3];
+      return 1;
+    }
+  else if(pkt[4] == 1)
+    {
+      if(pkt[1] == 0xFF && pkt[2] == 0 && pkt[3] == 0 && pkt[4] == 0 && pkt[5] == crc_check)
+      return 2;
+    }
+  return 0;
 }
 
 uint8_t crc8(const uint8_t* d, size_t n) {
