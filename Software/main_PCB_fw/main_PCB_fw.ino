@@ -54,6 +54,8 @@ float cur_gyro_y;
 int measure_sonarX = 0;
 int measure_sonarY = 0;
 
+#define PAYLOAD_SIZE 6
+
 // Create TwoWire instance for I2C1 using hardware i2c1
 TwoWire I2C1_bus(i2c1, IMU_SDA, IMU_SCL);  // i2c1 = hardware I2C1, SDA=10, SCL=11
 
@@ -66,6 +68,14 @@ ICM42688 IMU(I2C1_bus, 0x68);
 // SPI radio init
 RF24 radio(rCE_PIN, rCSN_PIN);
 
+//Sonar stuff
+SPIClassRP2040 sonarSPI(spi0, sonar_MISO, sonar_CS, sonar_SCK, sonar_MOSI);
+
+bool read_frame(uint8_t* pkt);
+bool send_frame(uint8_t seq, uint8_t ch1, uint8_t ch2, uint8_t flags);
+uint8_t crc8(const uint8_t* d, size_t n);
+uint8_t process_frame_remote(uint8_t* pkt);
+
 unsigned int motor_step;
 
 void motor_commutate(int step);
@@ -75,6 +85,11 @@ void motor_pwm_setup();
 void motor_pwm_startup();
 
 void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle);
+
+bool read_frame(uint8_t* pkt);
+bool send_frame(uint8_t seq, uint8_t ch1, uint8_t ch2, uint8_t flags);
+uint8_t crc8(const uint8_t* d, size_t n);
+uint8_t process_frame_main(uint8_t* pkt);
 
 /* DEVELOPMENT CHECKLIST
     This shit needs to:
@@ -95,6 +110,66 @@ void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle);
     * The same formula for what the boat needs to send back
     * Massive if statement might be incoming
 */
+
+byte misoBuf[2];  // SPI receive buffer
+byte inByteArr[2];  // SPI transmit buffer
+
+volatile int pulseCount = 0;
+volatile int sampleIndex = 0;
+
+volatile bool detectedDepth = false;  // Condition flag
+volatile uint16_t depthDetectSample = 0;
+
+byte tuss4470Read(byte addr) {
+  inByteArr[0] = 0x80 + ((addr & 0x3F) << 1);  // Set read bit and address
+  inByteArr[1] = 0x00;  // Empty data byte
+  inByteArr[0] |= tuss4470Parity(inByteArr);
+  spiTransfer(inByteArr, sizeof(inByteArr));
+
+  return misoBuf[1];
+}
+
+void tuss4470Write(byte addr, byte data) {
+  inByteArr[0] = (addr & 0x3F) << 1;  // Set write bit and address
+  inByteArr[1] = data;
+  inByteArr[0] |= tuss4470Parity(inByteArr);
+  spiTransfer(inByteArr, sizeof(inByteArr));
+}
+
+byte tuss4470Parity(byte* spi16Val) {
+  return parity16(BitShiftCombine(spi16Val[0], spi16Val[1]));
+}
+
+void spiTransfer(byte* mosi, byte sizeOfArr) {
+  memset(misoBuf, 0x00, sizeof(misoBuf));
+
+  digitalWrite(sonar_CS, LOW);
+  for (int i = 0; i < sizeOfArr; i++) {
+    misoBuf[i] = sonarSPI.transfer(mosi[i]);
+  }
+  digitalWrite(sonar_CS, HIGH);
+}
+
+unsigned int BitShiftCombine(unsigned char x_high, unsigned char x_low) {
+  return (x_high << 8) | x_low;  // Combine high and low bytes
+}
+
+byte parity16(unsigned int val) {
+  byte ones = 0;
+  for (int i = 0; i < 16; i++) {
+    if ((val >> i) & 1) {
+      ones++;
+    }
+  }
+  return (ones + 1) % 2;  // Odd parity calculation
+}
+
+void handleInterrupt() {
+  if (!detectedDepth) {
+    depthDetectSample = sampleIndex;
+    detectedDepth = true;
+  }
+}
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -259,22 +334,17 @@ void radio_setup()
       while (1) {} // hold program in infinite loop to prevent subsequent errors
     }
 
-
-    /*// To set the radioNumber via the Serial terminal on startup
-    printf("Which radio is this? Enter '0' or '1'. Defaults to '0'\n");
-    char input = getchar();
-    radioNumber = input == 49;
-    printf("radioNumber = %d\n", (int)radioNumber);
-    */
+    //set radio number. This is the secondary bc it's the remote
+    radioNumber=1;
 
     // Set the PA Level low to try preventing power supply related problems
     // because these examples are likely run with nodes in close proximity to
     // each other.
-    /*radio.setPALevel(RF24_PA_LOW); // RF24_PA_MAX is default.
+    radio.setPALevel(RF24_PA_MAX); // RF24_PA_MAX is default.
 
     // save on transmission time by setting the radio to only transmit the
     // number of bytes we need to transmit a float
-    radio.setPayloadSize(sizeof(payload)); // float datatype occupies 4 bytes
+    radio.setPayloadSize(PAYLOAD_SIZE); // float datatype occupies 4 bytes
 
     // set the TX address of the RX node for use on the TX pipe (pipe 0)
     radio.stopListening(address[radioNumber]);
@@ -282,9 +352,73 @@ void radio_setup()
     // set the RX address of the TX node into a RX pipe
     radio.openReadingPipe(1, address[!radioNumber]); // using pipe 1
 
-    
-    return true;*/
 } // setup
+
+bool send_frame(uint8_t seq, uint8_t ch1, uint8_t ch2, uint8_t flags) {
+  uint8_t pkt[6] = {0xAA, seq, ch1, ch2, flags, 0};
+  pkt[5] = crc8(pkt, 5);
+  uint64_t start_timer = to_us_since_boot(get_absolute_time());  // start the timer
+  bool report = radio.write(&pkt, PAYLOAD_SIZE);             // transmit & save the report
+  uint64_t end_timer = to_us_since_boot(get_absolute_time());    // end the timer
+
+  if (report) {
+    // payload was delivered; print the payload sent & the timer result
+    printf("Transmission successful! Time to transmit = %llu us. Sent: %f\n", end_timer - start_timer, pkt);
+    return 1;
+  } else {
+    // payload was not delivered
+    return 0; 
+  }
+}
+
+// 0 - signature (always 0xAA)
+// 1 - seq (boat battery level) (0xFF for keepalive)
+// 2 - pot chan 1 (0x0 for keepalive) (high byte 1 of a uint16_t for depth)
+// 3 - pot chan 2 (0x0 for keepalive) (low byte 2 of a uint16_t for depth)
+// 4 - flags (0xF for keepalive) (0x1 for boat depth and status)
+// 5 - CRC8
+
+bool read_frame(uint8_t* pkt) {
+    // Sync on 0xAA, then read 5 more bytes. Implement a ring buffer in practice.
+    uint8_t pipe;
+    if(radio.available(&pipe)) 
+    {
+      uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
+      if(bytes==6) {
+      radio.read(pkt, bytes);                 // fetch payload from FIFO
+      if (pkt[0] == 0xAA) {
+        uint8_t c = crc8(pkt, 5);
+        return c == pkt[5];
+      }}
+    }
+    return false;
+}
+
+uint8_t process_frame_main(uint8_t* pkt) {
+  uint8_t crc_check = crc8(pkt,5);
+  if(pkt[4] == 0)
+    {
+      boat_bat_level = pkt[1];
+      cur_depth = (pkt[2] << 8) | pkt[3];
+      return 1;
+    }
+  else if(pkt[4] == 1)
+    {
+      if(pkt[1] == 0xFF && pkt[2] == 0 && pkt[3] == 0 && pkt[4] == 0 && pkt[5] == crc_check)
+      return 2;
+    }
+  return 0;
+}
+
+uint8_t crc8(const uint8_t* d, size_t n) {
+    uint8_t c = 0;
+    for (size_t i = 0; i < n; i++) {
+        c ^= d[i];
+        for (int b = 0; b < 8; b++)
+            c = (c & 0x80) ? (c << 1) ^ 0x07 : (c << 1);
+    }
+    return c;
+}
 
 //Everything that the IMU does"
 //Gets the values for the Gyro X and Y axis
@@ -341,4 +475,3 @@ int detect_imu()
   //Serial.println(IMU.temp(), 6);
   Serial.println();
 }
-
