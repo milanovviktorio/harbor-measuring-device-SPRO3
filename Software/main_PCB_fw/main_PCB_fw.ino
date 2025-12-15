@@ -345,6 +345,9 @@ void loop() {
 
     float time_of_flight = depthDetectSample * 13.2e-6f;
     float depth_m = (time_of_flight * 1450.0f) / 2.0f;
+
+    Serial.print("depth or something is");
+    Serial.println(depth_m);
   }
   else
   {
