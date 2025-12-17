@@ -137,8 +137,10 @@ void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle);
 /*current dev checklist:
   * Lots of testing needs to be done. Rn everything is building blocks. And the main function is kinda empty.
   * RC needs testing. I think it should be functional, but I haven't been able to test it yet.
-  * The ESC code should be functional, it can be tested, but I haven't fully thought of a way to handle starting and stopping the motor. Probably a simple function that deactivates the interrupt and then sets all duty cycles to 0
-  * The TUSS code is very very questionable. I used a lot of Copilot to port the basics of the openecho code for it, if everything goes well it should be able to initiate the TUSS, get a ToF reading, and do some math to turn that into depth
+  * The ESC code should be functional, it can be tested, but I haven't fully thought of a way to handle starting and stopping the motor. 
+  Probably a simple function that deactivates the interrupt and then sets all duty cycles to 0
+  * The TUSS code is very very questionable. I used a lot of Copilot to port the basics of the openecho code for it, if everything goes well it should be able to initiate the TUSS, 
+  get a ToF reading, and do some math to turn that into depth
   * The IMU just works
 
   The big challenge: Program flow. Go ask ChatGPT about it I guess. Lots of tape required
