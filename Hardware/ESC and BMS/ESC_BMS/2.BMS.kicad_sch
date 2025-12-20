@@ -3157,7 +3157,7 @@
 		(uuid 03e05542-1c06-4254-84c7-359506edbe4e)
 	)
 	(rectangle
-		(start 196.215 80.645)
+		(start 196.215 78.74)
 		(end 266.065 132.08)
 		(stroke
 			(width 0)
@@ -3218,7 +3218,7 @@
 		)
 		(uuid "67f9e57c-8944-4aff-b98b-28ff81183778")
 	)
-	(text "IF OUT=LOW (NORMAL OPERATION) -> Q305 IS ON\nELSE - OVERVOLTAGE (OUT=HIGH) => Q305 IS OFF => OVP"
+	(text "IF OUT=LOW (NORMAL OPERATION) -> Q303 IS ON\nELSE - OVERVOLTAGE (OUT=HIGH) => Q303 IS OFF => OVP"
 		(exclude_from_sim no)
 		(at 296.418 93.726 0)
 		(effects
@@ -3228,7 +3228,7 @@
 		)
 		(uuid "68f31473-c1d6-4983-a0ff-ab71a1677f0c")
 	)
-	(text "IF REG=HIGH (NORMAL OPERATION) -> Q305 IS ON\nELSE - UNDERVOLTAGE (REG=LOW) => Q305 IS OFF => UVP"
+	(text "IF REG=HIGH (NORMAL OPERATION) -> Q304 IS ON\nELSE - UNDERVOLTAGE (REG=LOW) => Q304 IS OFF => UVP"
 		(exclude_from_sim no)
 		(at 296.672 101.092 0)
 		(effects
@@ -3282,7 +3282,7 @@
 	)
 	(text "Balancing"
 		(exclude_from_sim no)
-		(at 201.676 82.55 0)
+		(at 201.422 80.518 0)
 		(effects
 			(font
 				(size 1.27 1.27)

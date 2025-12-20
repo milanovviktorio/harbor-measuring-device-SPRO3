@@ -1,9 +1,9 @@
 #define TUSS_CLK_PIN 0
 #define PING_LENGTH_US 50   // number of cycles at 200 kHz (≈250us)
-#define ECHO_ADC_PIN A0     // TUSS4470 echo envelope
+#define ECHO_ADC_PIN 26     // TUSS4470 echo envelope
 
-int MAX_TIMEOUT = 2000; //for 2m
-int THRESHOLD = 250;
+int MAX_TIMEOUT = 4000; //for 2m
+int THRESHOLD = 230; // VERY IMPORTANT - HOW BIG SHOULD THE SPIKES ON A0 BE IN ORDER TO DETECT ECHO REFLECTION
 
 void setup() {
   Serial.begin(115200);
