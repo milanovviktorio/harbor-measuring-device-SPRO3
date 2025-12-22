@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "306ec9d9-92f1-48cc-b955-0fa48a3d5839")
 	(paper "A5")
+	(title_block
+		(title "Master controller")
+		(date "22/12/2025")
+		(company "Made by Liubomir Stanev")
+		(comment 1 "Page 6: Connectors")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
@@ -2707,7 +2713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf"
+		(property "Datasheet" "https://www.handsontec.com/dataspecs/module/NRF24L01+PA.pdf"
 			(at 44.45 97.79 0)
 			(effects
 				(font

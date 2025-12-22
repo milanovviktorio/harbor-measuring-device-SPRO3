@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "69c9b4dd-89b3-4ec8-b295-99f72de895a4")
 	(paper "A5")
+	(title_block
+		(title "Master controller")
+		(date "22/12/2025")
+		(company "Made by Liubomir Stanev")
+		(comment 1 "Page 2: SONAR")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names

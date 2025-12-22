@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "90d7beec-e1a2-46f8-bbb2-6b8f3489db10")
 	(paper "A5")
+	(title_block
+		(title "Master controller")
+		(date "22/12/2025")
+		(company "Made by Liubomir Stanev")
+		(comment 1 "Page 1: Connections")
+	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole"
 			(pin_names

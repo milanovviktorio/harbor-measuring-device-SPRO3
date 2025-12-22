@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "919ea89c-9106-4073-b90c-0e38742d102a")
 	(paper "A5")
+	(title_block
+		(title "Master controller")
+		(date "22/12/2025")
+		(company "Made by Liubomir Stanev")
+		(comment 1 "Page 5: IMU")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers

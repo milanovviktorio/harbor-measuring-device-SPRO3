@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "6c88ba34-9289-412f-8489-89c5a22d09ba")
 	(paper "A4")
+	(title_block
+		(title "Master controller")
+		(date "22/12/2025")
+		(company "Made by Liubomir Stanev")
+		(comment 1 "Page 4: Power supply unit")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
