@@ -11,7 +11,7 @@
 
 const int T_DELAY = 1000;
 
-// BLDC driver defines
+/* BLDC driver defines
 const int BEMF = 6;
 const int CLS = 20;
 const int CHS = 21;
@@ -19,6 +19,9 @@ const int BLS = 22;
 const int BHS = 23;
 const int ALS = 24;
 const int AHS = 25;
+*/
+
+
 
 // SPI radio defines
 const int rCE_PIN = 7;
@@ -45,6 +48,9 @@ const int IMU_SCL = 11;
 
 //Servo pin
 const int servo_pin = 17;
+const int mainMotor_pin = 25;
+
+unsigned int mmTarget=0;
 
 //IMU Variables
 float cur_gyro_x;
@@ -106,7 +112,7 @@ volatile bool burstFlag = false;
 TwoWire I2C1_bus(i2c1, IMU_SDA, IMU_SCL);  // i2c1 = hardware I2C1, SDA=10, SCL=11
 
 //Servo init
-Servo myservo;
+Servo myservo,mainMotor;
 
 // ICM42688 object using I2C1
 ICM42688 IMU(I2C1_bus, 0x68);
@@ -124,15 +130,7 @@ uint8_t process_frame_remote(uint8_t* pkt);
 
 uint8_t AS0_val=0, AS1_val=0;
 
-unsigned int motor_step;
 
-void motor_commutate(int step);
-
-void motor_pwm_setup();
-
-void motor_pwm_startup();
-
-void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle);
 
 /*current dev checklist:
   * Lots of testing needs to be done. Rn everything is building blocks. And the main function is kinda empty.
@@ -261,6 +259,8 @@ void setup() {
   pinMode(IMU_SCL, INPUT_PULLUP);
   pinMode(IMU_CS, INPUT_PULLUP);
   myservo.attach(servo_pin);  // attaches the servo on the appropriate pint o the Servo object
+  mainMotor.attach(mainMotor_pin);
+  mainMotor.writeMicroseconds(1000); // Send "Stop" signal
   while (!Serial) {}
 
   // Initialize I2C1
@@ -286,24 +286,24 @@ void setup() {
 
   setupBurstTimer(); 
 
-  int status = IMU.begin();
-  if (status < 0) {
+  //int status = IMU.begin();
+  /*if (status < 0) {
     Serial.println("IMU initialization unsuccessful");
     Serial.println("Check IMU wiring or try cycling power");
     Serial.print("Status: ");
     Serial.println(status);
     while (1) {}
   }
-  Serial.println("ax,ay,az,gx,gy,gz,temp_C");
+  Serial.println("ax,ay,az,gx,gy,gz,temp_C");*/
   
   Serial.begin(115200);
   delay(3000);
   
-  motor_pwm_setup();
+  //motor_pwm_setup();
 
   radio_setup();
 
-  motor_pwm_startup();
+  //motor_pwm_startup();
   
 }
 
@@ -313,13 +313,13 @@ void loop() {
   //  uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
   //  radio.read(&payload, bytes);            // fetch payload from FIFO
   //}
-  Serial.println(detect_imu());
-
+  //Serial.println(detect_imu());
+  
   //The most important part of the code!!!
-  if(detect_imu() == 1)
+  //if(detect_imu() == 1)
   {
     // Trigger time-of-flight measurement
-    tuss4470Write(0x1B, 0x01);
+    /*tuss4470Write(0x1B, 0x01);
     
     burstTimerStart(); //starts the burst timer if it's not already running. I think. I dunno. Copilot seems confused
     //The burst timer's job is to strobe IO2 while the 
@@ -346,12 +346,12 @@ void loop() {
     tuss4470Write(0x1B, 0x00);
 
     float time_of_flight = depthDetectSample * 13.2e-6f;
-    float depth_m = (time_of_flight * 1450.0f) / 2.0f;
+    float depth_m = (time_of_flight * 1450.0f) / 2.0f;*/
 
-    Serial.print("depth or something is");
-    Serial.println(depth_m);
+    //Serial.print("depth or something is");
+    //Serial.println(depth_m);
   }
-  else
+  //else
   {
     //The boat moves
     //Get the values from the RF controller for the movement
@@ -359,94 +359,6 @@ void loop() {
     //Steer the boat with the servo
   }
   
-}
-
-void motor_commutate(int step) {
-    switch(step) {
-        case 0:
-            motor_pwm_state(ALS, AHS, 20000, AS1_val*0.8);
-            motor_pwm_state(BLS, BHS, 20000, AS1_val*0.2);
-            motor_pwm_state(CLS, CHS, 20000, AS1_val*0.0);
-            break;
-        case 1:
-            motor_pwm_state(ALS, AHS, 20000, AS1_val*0.8);
-            motor_pwm_state(BLS, BHS, 20000, AS1_val*0.0);
-            motor_pwm_state(CLS, CHS, 20000, AS1_val*0.2);
-            break;
-        case 2:
-            motor_pwm_state(ALS, AHS, 20000, AS1_val*0.2);
-            motor_pwm_state(BLS, BHS, 20000, AS1_val*0.0);
-            motor_pwm_state(CLS, CHS, 20000, AS1_val*0.2);
-            break;
-        case 3:
-            motor_pwm_state(ALS, AHS, 20000, AS1_val*0.0);
-            motor_pwm_state(BLS, BHS, 20000, AS1_val*0.2);
-            motor_pwm_state(CLS, CHS, 20000, AS1_val*0.8);
-            break;
-        case 4:
-            motor_pwm_state(ALS, AHS, 20000, AS1_val*0.0);
-            motor_pwm_state(BLS, BHS, 20000, AS1_val*0.8);
-            motor_pwm_state(CLS, CHS, 20000, AS1_val*0.2);
-            break;
-        case 5:
-            motor_pwm_state(ALS, AHS, 20000, AS1_val*0.2);
-            motor_pwm_state(BLS, BHS, 20000, AS1_val*0.8);
-            motor_pwm_state(CLS, CHS, 20000, AS1_val*0.0);
-            break;
-    }
-}
-
-void motor_pwm_setup() {
-  gpio_set_function(AHS, GPIO_FUNC_PWM);
-  gpio_set_function(ALS, GPIO_FUNC_PWM);
-  gpio_set_function(BHS, GPIO_FUNC_PWM);
-  gpio_set_function(BLS, GPIO_FUNC_PWM);
-  gpio_set_function(CHS, GPIO_FUNC_PWM);
-  gpio_set_function(CLS, GPIO_FUNC_PWM);
-}
-
-void motor_pwm_startup() {
-  motor_pwm_state(ALS, AHS, 20000, 0.8);
-  motor_pwm_state(BLS, BHS, 20000, 0.2);
-  motor_pwm_state(CLS, CHS, 20000, 0.0);
-  motor_step=0;
-  delay(200);
-  Serial.println("Tried to start motor");
-  attachInterrupt(digitalPinToInterrupt(BEMF), BEMF_call, RISING);
-  Serial.println("Hand-off to interrupt");
-}
-
-void BEMF_call() {
-  delayMicroseconds(8);
-  motor_step++;
-  if(motor_step>5 || motor_step<0)
-    motor_step=0;
-  motor_commutate(motor_step);
-}
-
-void motor_pwm_state(uint pin, uint pin_comp, uint freq, float duty_cycle) {
-  uint slice_num = pwm_gpio_to_slice_num(pin);
-  uint channel = pwm_gpio_to_channel(pin);
-  uint channel2 = pwm_gpio_to_channel(pin_comp);
-  
-  uint32_t clock = clock_get_hz(clk_sys); // system clock
-  uint32_t divider = 1;                   // integer divider
-  uint32_t wrap = clock / (divider * freq) - 1;
-  
-  pwm_set_clkdiv(slice_num, divider);
-  pwm_set_wrap(slice_num, wrap);
-
-  pwm_set_output_polarity(slice_num, true, false);
-
-  if (duty_cycle < 0.0f) duty_cycle = 0.0f;
-  if (duty_cycle > 1.0f) duty_cycle = 1.0f;
-
-  uint32_t level = (uint32_t)(duty_cycle * wrap);
-
-  pwm_set_chan_level(slice_num, channel, level);
-  pwm_set_chan_level(slice_num, channel2, level);
-
-  pwm_set_enabled(slice_num, true);
 }
 
 void radio_setup()
