@@ -1,16 +1,16 @@
-LTspice 24.1.1 for Windows
-Circuit: C:\Users\Viktorio\Desktop\Github REPOS\harbor-measuring-device-SPRO3\Simulations\ESC_BMS\RPP\Rpp.net
-Start Time: Sat Nov  8 17:51:20 2025
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\vikip\Desktop\GitHub Repos\harbor-measuring-device-SPRO3\Simulations\ESC_BMS\RPP\Rpp.net
+Start Time: Sat Jan 24 18:01:11 2026
 solver = Normal
 Maximum thread count: 16
 tnom = 27
 temp = 27
 method = trap
-Direct Newton iteration for .op point succeeded.
-Total elapsed time: 0.123 seconds.
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.128 seconds.
 
 Files loaded:
-C:\Users\Viktorio\Desktop\Github REPOS\harbor-measuring-device-SPRO3\Simulations\ESC_BMS\RPP\Rpp.net
-C:\Users\Viktorio\AppData\Local\LTspice\lib\cmp\standard.dio
-C:\Users\Viktorio\AppData\Local\LTspice\lib\cmp\standard.mos
+C:\Users\vikip\Desktop\GitHub Repos\harbor-measuring-device-SPRO3\Simulations\ESC_BMS\RPP\Rpp.net
+C:\Users\vikip\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\vikip\AppData\Local\LTspice\lib\cmp\standard.mos
 

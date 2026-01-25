@@ -2957,6 +2957,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 160.02) (xy 312.42 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dec972a-d2d3-4157-8d59-9962319fb2da")
+	)
+	(wire
+		(pts
 			(xy 133.35 157.48) (xy 133.35 158.75)
 		)
 		(stroke
@@ -3134,6 +3144,16 @@
 			(type default)
 		)
 		(uuid "3581296f-0b1e-4258-ad73-59645a771ef1")
+	)
+	(wire
+		(pts
+			(xy 317.5 160.02) (xy 317.5 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3592fc22-d694-4711-b2d2-7533bf631a76")
 	)
 	(wire
 		(pts
@@ -3394,16 +3414,6 @@
 			(type default)
 		)
 		(uuid "582346be-9304-4c00-81ee-9ee10b4048e3")
-	)
-	(wire
-		(pts
-			(xy 312.42 162.56) (xy 312.42 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5831cc27-a34a-4768-b112-e051015a7a3b")
 	)
 	(wire
 		(pts
@@ -4257,6 +4267,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 179.07) (xy 312.42 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb7e0174-9dc6-45f4-a55c-2cc9c39f23fe")
+	)
+	(wire
+		(pts
 			(xy 135.89 217.17) (xy 139.7 217.17)
 		)
 		(stroke
@@ -4284,6 +4304,16 @@
 			(type default)
 		)
 		(uuid "bd528e78-4ad4-44e8-8752-b9ddc9d0641a")
+	)
+	(wire
+		(pts
+			(xy 306.07 182.88) (xy 312.42 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdb0e081-e9fe-4056-989b-843f162b01d1")
 	)
 	(wire
 		(pts
@@ -4444,6 +4474,16 @@
 			(type default)
 		)
 		(uuid "cd1dfc03-b443-4c1e-8a74-dc8922a7156b")
+	)
+	(wire
+		(pts
+			(xy 306.07 181.61) (xy 306.07 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd600d0f-8fa6-4076-b74b-1ee40f277851")
 	)
 	(wire
 		(pts
@@ -4697,6 +4737,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 160.02) (xy 317.5 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1b6e12f-f615-42e8-a4f0-a7e2e5bd55d2")
+	)
+	(wire
+		(pts
 			(xy 222.25 107.95) (xy 233.68 107.95)
 		)
 		(stroke
@@ -4854,16 +4904,6 @@
 			(type default)
 		)
 		(uuid "ed900575-d9b5-42a4-8de9-ad7dd558e23c")
-	)
-	(wire
-		(pts
-			(xy 312.42 179.07) (xy 312.42 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ede8b6d9-78a5-4e36-8e07-d2b9991809bf")
 	)
 	(wire
 		(pts
@@ -5384,7 +5424,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 312.42 180.34 0)
+		(at 317.5 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5393,7 +5433,7 @@
 		(fields_autoplaced yes)
 		(uuid "0575f6fe-6e75-4e1d-b450-182146c7e1de")
 		(property "Reference" "#PWR0248"
-			(at 312.42 186.69 0)
+			(at 317.5 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5402,7 +5442,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 312.42 185.42 0)
+			(at 317.5 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5410,7 +5450,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 180.34 0)
+			(at 317.5 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5419,7 +5459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 180.34 0)
+			(at 317.5 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5428,7 +5468,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 312.42 180.34 0)
+			(at 317.5 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5440,7 +5480,7 @@
 			(uuid "377dcacf-9ddc-464d-b6c7-138a020f9084")
 		)
 		(instances
-			(project ""
+			(project "SPROJ3EE_ESC_BMS"
 				(path "/64aee9f2-a448-43ef-b28d-f00e276bd9f5/cbf19aec-b6c8-49c6-ab18-d6d5f10759f9"
 					(reference "#PWR0248")
 					(unit 1)
@@ -8869,7 +8909,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 312.42 162.56 0)
+		(at 306.07 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8877,7 +8917,7 @@
 		(dnp no)
 		(uuid "8a9172f7-9a0d-435a-aa9f-c6bac5e6e657")
 		(property "Reference" "#PWR0247"
-			(at 312.42 166.37 0)
+			(at 306.07 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8886,7 +8926,7 @@
 			)
 		)
 		(property "Value" "+VPROT"
-			(at 312.42 159.004 0)
+			(at 306.07 178.054 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8894,7 +8934,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 162.56 0)
+			(at 306.07 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8903,7 +8943,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 162.56 0)
+			(at 306.07 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8912,7 +8952,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 312.42 162.56 0)
+			(at 306.07 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
