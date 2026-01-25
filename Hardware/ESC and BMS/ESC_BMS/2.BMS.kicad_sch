@@ -8387,6 +8387,7 @@
 	(symbol
 		(lib_id "Simulation_SPICE:PMOS")
 		(at 250.19 114.3 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8394,7 +8395,7 @@
 		(dnp no)
 		(uuid "f4334afd-b82f-4eda-b652-e49a725080c1")
 		(property "Reference" "Q303"
-			(at 253.492 110.49 0)
+			(at 253.492 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8403,7 +8404,7 @@
 			)
 		)
 		(property "Value" "FDV304P"
-			(at 253.492 117.602 0)
+			(at 253.492 110.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8412,7 +8413,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 255.27 111.76 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8421,7 +8422,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.rs-online.com/d95a/0900766b800ae907.pdf"
-			(at 250.19 127 0)
+			(at 250.19 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8439,7 +8440,7 @@
 			)
 		)
 		(property "Sim.Device" "PMOS"
-			(at 250.19 131.445 0)
+			(at 250.19 97.155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8448,7 +8449,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 250.19 133.35 0)
+			(at 250.19 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8457,7 +8458,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 250.19 129.54 0)
+			(at 250.19 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
