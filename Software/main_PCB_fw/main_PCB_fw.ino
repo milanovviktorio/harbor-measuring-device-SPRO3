@@ -120,6 +120,8 @@ ICM42688 IMU(I2C1_bus, 0x68);
 // SPI radio init
 RF24 radio(rCE_PIN, rCSN_PIN);
 
+volatile int curRadioPkt[6];
+
 //Sonar stuff
 SPIClassRP2040 sonarSPI(spi0, sonar_MISO, sonar_CS, sonar_SCK, sonar_MOSI);
 
@@ -255,13 +257,19 @@ void handleInterrupt() {
 
 // the setup function runs once when you press reset or power the board
 void setup() {
+
+  while (!Serial) {}
   pinMode(IMU_SDA, INPUT_PULLUP);
   pinMode(IMU_SCL, INPUT_PULLUP);
   pinMode(IMU_CS, INPUT_PULLUP);
   myservo.attach(servo_pin);  // attaches the servo on the appropriate pint o the Servo object
   mainMotor.attach(mainMotor_pin);
-  mainMotor.writeMicroseconds(1000); // Send "Stop" signal
-  while (!Serial) {}
+  Serial.println("arming");
+  mainMotor.writeMicroseconds(1500);
+  delay(5000);
+  Serial.println("arming 2");
+  Serial.println("armed");
+  
 
   // Initialize I2C1
   I2C1_bus.begin();
@@ -303,6 +311,8 @@ void setup() {
 
   radio_setup();
 
+  mainMotor.writeMicroseconds(1000);
+
   //motor_pwm_startup();
   
 }
@@ -313,13 +323,16 @@ void loop() {
   //  uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
   //  radio.read(&payload, bytes);            // fetch payload from FIFO
   //}
-  //Serial.println(detect_imu());
-  
+  Serial.println(detect_imu());
+
   //The most important part of the code!!!
-  //if(detect_imu() == 1)
+  if(detect_imu() == 1)
   {
-    // Trigger time-of-flight measurement
-    /*tuss4470Write(0x1B, 0x01);
+    //read_frame(curRadioPkt);
+    //process_frame_main(curRadioPkt);
+    
+    /*// Trigger time-of-flight measurement
+    tuss4470Write(0x1B, 0x01);
     
     burstTimerStart(); //starts the burst timer if it's not already running. I think. I dunno. Copilot seems confused
     //The burst timer's job is to strobe IO2 while the 
@@ -346,13 +359,20 @@ void loop() {
     tuss4470Write(0x1B, 0x00);
 
     float time_of_flight = depthDetectSample * 13.2e-6f;
-    float depth_m = (time_of_flight * 1450.0f) / 2.0f;*/
+    float depth_m = (time_of_flight * 1450.0f) / 2.0f;
 
-    //Serial.print("depth or something is");
-    //Serial.println(depth_m);
+    Serial.print("depth or something is");
+    Serial.println(depth_m);*/
+
+    
   }
-  //else
+  else
   {
+  //there should probably be some form of safety check here. That's to do for later, and that's why we have the IMU
+    //AS1_val=100;
+    mmTarget=1500+500*(((float)AS1_val)/255);
+    mainMotor.writeMicroseconds(mmTarget);
+
     //The boat moves
     //Get the values from the RF controller for the movement
     //Execute code for the BLDC motor for the boat to move
@@ -390,6 +410,10 @@ void radio_setup()
     // each other.
     radio.setPALevel(RF24_PA_MAX); // RF24_PA_MAX is default.
 
+    radio.setDataRate(RF24_1MBPS); 
+
+    radio.setChannel(108);
+
     // save on transmission time by setting the radio to only transmit the
     // number of bytes we need to transmit a float
     radio.setPayloadSize(PAYLOAD_SIZE); // float datatype occupies 4 bytes
@@ -403,6 +427,7 @@ void radio_setup()
 } // setup
 
 bool send_frame(uint8_t seq, uint16_t depth, uint8_t flags) {
+  radio.stopListening(address[radioNumber]);
   uint8_t low,high;
   high = (uint8_t)(depth >> 8);   // upper 8 bits
   low  = (uint8_t)(depth & 0xFF); // lower 8 bits
@@ -423,6 +448,7 @@ bool send_frame(uint8_t seq, uint16_t depth, uint8_t flags) {
 }
 
 bool send_frame_keepalive() {
+  radio.stopListening(address[radioNumber]);
   uint8_t pkt[6] = {0xAA, 0xFF, 0, 0, 1, 0};
   pkt[5] = crc8(pkt, 5);
   uint64_t start_timer = to_us_since_boot(get_absolute_time());  // start the timer
@@ -444,6 +470,7 @@ bool send_frame_keepalive() {
 // 5 - CRC8
 
 bool read_frame(uint8_t* pkt) {
+    radio.startListening(address[!radioNumber]);
     // Sync on 0xAA, then read 5 more bytes. Implement a ring buffer in practice.
     uint8_t pipe;
     if(radio.available(&pipe)) 
