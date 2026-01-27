@@ -51,6 +51,7 @@ const int servo_pin = 17;
 const int mainMotor_pin = 25;
 
 unsigned int mmTarget=0;
+unsigned int pos=0;
 
 //IMU Variables
 float cur_gyro_x;
@@ -258,7 +259,7 @@ void handleInterrupt() {
 // the setup function runs once when you press reset or power the board
 void setup() {
 
-  while (!Serial) {}
+  //while (!Serial) {}
   pinMode(IMU_SDA, INPUT_PULLUP);
   pinMode(IMU_SCL, INPUT_PULLUP);
   pinMode(IMU_CS, INPUT_PULLUP);
@@ -275,7 +276,7 @@ void setup() {
   I2C1_bus.begin();
 
   //Sonar shit
-  sonarSPI.begin();
+  /*sonarSPI.begin();
   sonarSPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE1)); 
 
   pinMode(sonar_CS, OUTPUT);
@@ -292,9 +293,9 @@ void setup() {
   tuss4470Write(0x1A, 0x0F);  // Set burst pulses to 16
   tuss4470Write(0x17, THRESHOLD_VALUE); // enable threshold detection on OUT_4
 
-  setupBurstTimer(); 
+  setupBurstTimer(); */
 
-  //int status = IMU.begin();
+  int status = IMU.begin();
   /*if (status < 0) {
     Serial.println("IMU initialization unsuccessful");
     Serial.println("Check IMU wiring or try cycling power");
@@ -304,14 +305,14 @@ void setup() {
   }
   Serial.println("ax,ay,az,gx,gy,gz,temp_C");*/
   
-  Serial.begin(115200);
+  //Serial.begin(115200);
   delay(3000);
   
   //motor_pwm_setup();
 
-  radio_setup();
+  //radio_setup();
 
-  mainMotor.writeMicroseconds(1000);
+  //mainMotor.writeMicroseconds(1000);
 
   //motor_pwm_startup();
   
@@ -323,11 +324,14 @@ void loop() {
   //  uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
   //  radio.read(&payload, bytes);            // fetch payload from FIFO
   //}
-  Serial.println(detect_imu());
 
   //The most important part of the code!!!
   if(detect_imu() == 1)
   {
+    
+    
+    //myservo.write(pos);              // tell servo to go to position in variable 'pos'
+
     //read_frame(curRadioPkt);
     //process_frame_main(curRadioPkt);
     
@@ -369,15 +373,26 @@ void loop() {
   else
   {
   //there should probably be some form of safety check here. That's to do for later, and that's why we have the IMU
-    //AS1_val=100;
-    mmTarget=1500+500*(((float)AS1_val)/255);
-    mainMotor.writeMicroseconds(mmTarget);
+    
 
     //The boat moves
     //Get the values from the RF controller for the movement
     //Execute code for the BLDC motor for the boat to move
     //Steer the boat with the servo
   }
+  AS1_val=67;
+    mmTarget=1500+500*(((float)AS1_val)/255);
+    mainMotor.writeMicroseconds(mmTarget);
+    
+    //AS0_val=69;
+    //pos=(((float)AS0_val)/255)*180;
+    Serial.println(measure_sonarX);
+    if(measure_sonarX==0)
+      myservo.write(120);
+    if(measure_sonarX==2)
+      myservo.write(60);
+    if(measure_sonarX==1)
+      myservo.write(90);
   
 }
 
@@ -427,7 +442,7 @@ void radio_setup()
 } // setup
 
 bool send_frame(uint8_t seq, uint16_t depth, uint8_t flags) {
-  radio.stopListening(address[radioNumber]);
+  //radio.stopListening(address[radioNumber]);
   uint8_t low,high;
   high = (uint8_t)(depth >> 8);   // upper 8 bits
   low  = (uint8_t)(depth & 0xFF); // lower 8 bits
@@ -448,7 +463,7 @@ bool send_frame(uint8_t seq, uint16_t depth, uint8_t flags) {
 }
 
 bool send_frame_keepalive() {
-  radio.stopListening(address[radioNumber]);
+  //radio.stopListening(address[radioNumber]);
   uint8_t pkt[6] = {0xAA, 0xFF, 0, 0, 1, 0};
   pkt[5] = crc8(pkt, 5);
   uint64_t start_timer = to_us_since_boot(get_absolute_time());  // start the timer
@@ -470,7 +485,7 @@ bool send_frame_keepalive() {
 // 5 - CRC8
 
 bool read_frame(uint8_t* pkt) {
-    radio.startListening(address[!radioNumber]);
+    //radio.startListening(address[!radioNumber]);
     // Sync on 0xAA, then read 5 more bytes. Implement a ring buffer in practice.
     uint8_t pipe;
     if(radio.available(&pipe)) 
@@ -517,15 +532,18 @@ int detect_imu()
   cur_gyro_x = IMU.accX();
   cur_gyro_y = IMU.accY();
   delay(500);
+  
   if(cur_gyro_x > 0.5)
   {
     Serial.println("X: Tilted right");
     measure_sonarX = 0;
-  }else if(cur_gyro_x < -0.5)
+  }
+  else if(cur_gyro_x < -0.5)
   {
     Serial.println("X: Tilted left");
-    measure_sonarX = 0;
-  }else{
+    measure_sonarX = 2;
+  }
+  else{
     Serial.println("X: Resting");
     measure_sonarX = 1;
   }
@@ -536,22 +554,24 @@ int detect_imu()
   }else if(cur_gyro_y < -0.5)
   {
     Serial.println("Y: Tilted backwards");
-    measure_sonarY = 0;
+    measure_sonarY = 2;
   }else{
     Serial.println("Y: Resting");
     measure_sonarY = 1;
   }
-
-  if((measure_sonarX & measure_sonarY) == 1)
+  Serial.println(measure_sonarX);
+  if(((measure_sonarX==1) & (measure_sonarY==1)) == 1)
   {
     
     Serial.println("Free to measure the sonar");
     return 1;
-  }else{
+  }
+  else{
     
     Serial.println("Do not measure the sonar");
     return 0;
   }
+  
 
   Serial.print(IMU.accX(), 6); Serial.print("\t");
   Serial.print(IMU.accY(), 6); Serial.print("\t");
